@@ -1,47 +1,76 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  return (
-    <header className="fixed top-0 left-0 right-0 bg-[#1A1A1A] text-white shadow-lg z-50 transition-all duration-300">
-      <div className="w-screen max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <Link to="/" className="text-3xl font-bold text-white hover:text-gray-400 transition duration-300">
-          White Bull
-        </Link>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-        {/* Navigation */}
-        <nav>
-          <ul className="flex space-x-6 text-lg">
-            <li>
-              <Link to="/" className="hover:text-[#F7C200] transition duration-300">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="hover:text-[#F7C200] transition duration-300">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" className="hover:text-[#F7C200] transition duration-300">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/blog" className="hover:text-[#F7C200] transition duration-300">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="hover:text-[#F7C200] transition duration-300">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  return (
+    <nav className="bg-green-200 p-4">
+      {/* desktop view */}
+      <div className="hidden items-center justify-between lg:flex">
+        <Link to={"/"} className="text-2xl font-bold text-white">
+          ANPM
+        </Link>
+        <ul className="flex space-x-6">
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link to={"/about"}>About</Link>
+          </li>
+          <li>
+            <Link to={"/services"}>Services</Link>
+          </li>
+          <li>
+            <Link to={"/blog"}>Blog</Link>
+          </li>
+          <li>
+            <Link to={"contact"}>Contact</Link>
+          </li>
+        </ul>
       </div>
-    </header>
+
+      {/* mobile view */}
+      <div className="flex items-center justify-between lg:hidden">
+        <Link to={"/"} className="text-2xl font-bold text-white">
+          ANPM
+        </Link>
+        <button onClick={toggleMenu} className="text-white focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            className="h-6 w-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* mobile menu dropdown */}
+      {isMenuOpen && (
+        <div className="flex flex-col items-center space-y-4 bg-green-300 p-4 text-white lg:hidden">
+          <Link to={"/"}>Home</Link>
+
+          <Link to={"/about"}>About</Link>
+
+          <Link to={"/services"}>Services</Link>
+
+          <Link to={"/blog"}>Blog</Link>
+
+          <Link to={"contact"}>Contact</Link>
+        </div>
+      )}
+    </nav>
   );
 };
 
