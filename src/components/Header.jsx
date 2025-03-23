@@ -3,15 +3,26 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setIsServicesOpen(false);
+  };
+
+  const toggleServicesMenu = () => {
+    setIsServicesOpen(!isServicesOpen);
+  };
+
   return (
     <nav className="bg-green-200 p-4">
       {/* desktop view */}
       <div className="hidden items-center justify-between lg:flex">
-        <Link to={"/"} className="text-2xl font-bold text-white">
+        <Link to={"/"} className="text-4xl">
           ANPM
         </Link>
         <ul className="flex space-x-6">
@@ -21,8 +32,37 @@ const Header = () => {
           <li>
             <Link to={"/about"}>About</Link>
           </li>
-          <li>
-            <Link to={"/services"}>Services</Link>
+          <li className="group relative">
+            <div className="flex flex-row items-center justify-center gap-1 hover:cursor-pointer">
+              <a>Services</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className={`h-4 w-4 transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <div className="absolute left-0 hidden space-y-2 bg-green-300 p-4 text-white group-hover:block">
+              <Link to={"/services/accounting"}>Accounting Services</Link>
+              <Link to={"/services/bookkeeping"}>Bookkeeping Services</Link>
+              <Link to={"/services/yearendaccounting"}>
+                Year-End Accounting
+              </Link>
+              <Link to={"/services/taxreturn"}>Tax Return Preparation</Link>
+              <Link to={"/services/payroll"}> Payroll Services</Link>
+              <Link to={"/services/vat"}>VAT Return Filing Services</Link>
+              <Link to={"/services/financialanalysis"}>
+                Financial Analysis Services
+              </Link>
+            </div>
           </li>
           <li>
             <Link to={"/blog"}>Blog</Link>
@@ -59,15 +99,66 @@ const Header = () => {
       {/* mobile menu dropdown */}
       {isMenuOpen && (
         <div className="flex flex-col items-center space-y-4 bg-green-300 p-4 text-white lg:hidden">
-          <Link to={"/"}>Home</Link>
-
-          <Link to={"/about"}>About</Link>
-
-          <Link to={"/services"}>Services</Link>
-
-          <Link to={"/blog"}>Blog</Link>
-
-          <Link to={"contact"}>Contact</Link>
+          <Link onClick={closeMenu} to={"/"}>
+            Home
+          </Link>
+          <Link onClick={closeMenu} to={"/about"}>
+            About
+          </Link>
+          <div className="text-center">
+            <div
+              onClick={toggleServicesMenu}
+              className="flex w-full items-center justify-center gap-1 hover:cursor-pointer"
+            >
+              <a>Services</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className={`h-4 w-4 transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            {isServicesOpen && (
+              <div className="flex flex-col space-y-2 bg-green-400 p-4 text-white">
+                <Link onClick={closeMenu} to={"/services/accounting"}>
+                  Accounting Services
+                </Link>
+                <Link onClick={closeMenu} to={"/services/bookkeeping"}>
+                  Bookkeeping Services
+                </Link>
+                <Link onClick={closeMenu} to={"/services/yearendaccounting"}>
+                  Year-End Accounting
+                </Link>
+                <Link onClick={closeMenu} to={"/services/taxreturn"}>
+                  Tax Return Preparation
+                </Link>
+                <Link onClick={closeMenu} to={"/services/payroll"}>
+                  {" "}
+                  Payroll Services
+                </Link>
+                <Link onClick={closeMenu} to={"/services/vat"}>
+                  VAT Return Filing Services
+                </Link>
+                <Link onClick={closeMenu} to={"/services/financialanalysis"}>
+                  Financial Analysis Services
+                </Link>
+              </div>
+            )}
+          </div>
+          <Link onClick={closeMenu} to={"/blog"}>
+            Blog
+          </Link>
+          <Link onClick={closeMenu} to={"contact"}>
+            Contact
+          </Link>
         </div>
       )}
     </nav>
