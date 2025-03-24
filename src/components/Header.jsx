@@ -75,10 +75,10 @@ const Header = () => {
 
       {/* mobile view */}
       <div className="flex items-center justify-between lg:hidden">
-        <Link to={"/"} className="text-2xl font-bold text-white">
+        <Link to={"/"} className="text-7xl font-bold text-white">
           ANPM
         </Link>
-        <button onClick={toggleMenu} className="text-white focus:outline-none">
+        <button onClick={toggleMenu} className="text-white focus:outline-none bg-[#2a4768] p-1 rounded-md hover:cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
