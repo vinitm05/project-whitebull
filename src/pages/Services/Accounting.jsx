@@ -42,7 +42,7 @@ const Accounting = () => {
         link="Services / Accounting Services"
       />
       <ServiceList />
-      <div className="mx-auto my-8 rounded-2xl border border-[#2a4768] bg-white p-4.5">
+      <div className="mx-auto w-11/12 my-8 rounded-2xl border border-[#2a4768] bg-white p-4.5">
         <TbPhoneCalling className="text-6xl text-[#2a4768]" />
         <h2 className="text-lg font-bold">Need Help?</h2>
         <p className="pt-2 pb-5 text-gray-500">
