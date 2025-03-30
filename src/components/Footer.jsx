@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import { PiEnvelope, PiMapPin, PiPhoneFill } from "react-icons/pi";
-import Clock from "./Clock";
 import { FaLinkedin } from "react-icons/fa6";
 
 const Footer = () => {

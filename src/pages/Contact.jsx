@@ -1,28 +1,15 @@
 import React from 'react'
-import Landing from "../assets/about-landing.jpg";
-import { Link } from "react-router";
 import { FiMapPin } from "react-icons/fi";
 import { PiPhone } from "react-icons/pi";
 import { RiMailSendLine } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa6";
+import LandingImage from '../components/LandingImage';
 
 const Contact = () => {
   return (
     <>
       {/* image */}
-      <div
-        className="mb-14 flex h-[300px] flex-col items-center justify-center gap-3 bg-[url(assets/about-landing.jpg)] bg-cover bg-center bg-no-repeat text-white shadow-2xl"
-        style={{
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <p className="w-5/6 text-center text-4xl font-bold">
-          Get in Touch with White Bull - Let's talk Business!
-        </p>
-        <p className="">
-          <Link to="/">Home</Link> / Contact Us
-        </p>
-      </div>
+      <LandingImage title="Get in Touch with WHite Bull - Let's Talk Business!" link="Contact Us" />
       <div className="flex flex-col gap-6">
         {/* section 1 */}
         <div className="flex flex-col gap-7 px-6">
