@@ -5,14 +5,6 @@ import { TbPhoneCalling } from "react-icons/tb";
 import OutsourceYearEnd from "../../assets/outsourced-yearend.webp";
 import ServiceList from "../../components/ServiceList";
 
-import {
-  FaCheckCircle,
-  FaArrowRight,
-  FaCalculator,
-  FaCalendarAlt,
-  FaShieldAlt,
-  FaFileAlt,
-} from "react-icons/fa";
 
 const TaxReturn = () => {
   const faqs = [

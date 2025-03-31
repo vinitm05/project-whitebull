@@ -1,419 +1,239 @@
-import React from "react";
+import React, { useState } from "react";
 import LandingImage from "../../components/LandingImage";
 import { Link } from "react-router";
 import { TbPhoneCalling } from "react-icons/tb";
-import { FaCheckCircle, FaArrowRight, FaUserClock, FaLock, FaChartLine, FaFileInvoiceDollar } from "react-icons/fa";
+import OutsourceYearEnd from "../../assets/outsourced-yearend.webp";
+import ServiceList from "../../components/ServiceList";
+
 
 const Payroll = () => {
-  const payrollBenefits = [
+  const faqs = [
     {
-      id: 1,
-      title: "Scalable Capacity",
-      description: "Manage payroll for more clients without increasing your staff or overhead costs.",
-      icon: <FaChartLine className="text-3xl text-[#2a4768]" />
+      question: "Why should my accounting firm outsource payroll services?",
+      answer:
+        "Outsourcing payroll helps reduce administrative costs, ensures compliance with UK tax regulations, and saves valuable time, allowing you to focus on client growth.",
     },
     {
-      id: 2,
-      title: "Compliance Guaranteed",
-      description: "Stay up to date with HMRC requirements, RTI submissions, and pension regulations.",
-      icon: <FaLock className="text-3xl text-[#2a4768]" />
+      question: "What payroll services does White Bull offer for CA firms?",
+      answer:
+        "White Bull provides comprehensive payroll services, including payroll processing, tax filings, statutory deductions, and year-end reports tailored to your clients' needs.",
     },
     {
-      id: 3,
-      title: "Time Efficiency",
-      description: "Free up your team's time to focus on higher-value advisory and client services.",
-      icon: <FaUserClock className="text-3xl text-[#2a4768]" />
+      question: "How does White Bull stay compliant with UK payroll regulations?",
+      answer:
+        "We keep up-to-date with the latest HMRC regulations and use advanced payroll software to ensure accurate tax filings and timely payments.",
     },
     {
-      id: 4,
-      title: "Comprehensive Reporting",
-      description: "Detailed payroll reports, payslips, and documentation for all clients.",
-      icon: <FaFileInvoiceDollar className="text-3xl text-[#2a4768]" />
-    }
+      question: "Can White Bull handle payroll for remote teams?",
+      answer:
+        "Yes! We specialize in managing payroll for remote teams, ensuring accurate and timely payments, regardless of location.",
+    },
   ];
 
-  const serviceFeatures = [
-    "Weekly, fortnightly, and monthly payroll processing",
-    "RTI submissions to HMRC",
-    "Pension auto-enrolment management",
-    "Statutory payments calculations",
-    "P60, P45, and P11D preparation",
-    "Payslip generation and distribution",
-    "Year-end payroll returns",
-    "Payroll journal preparation"
-  ];
+  const [openIndex, setOpenIndex] = useState(null);
 
-  const testimonials = [
-    {
-      id: 1,
-      quote: "White Bull's payroll team has revolutionized our service offering. We can now offer comprehensive payroll services to all our clients without the administrative burden on our core team.",
-      author: "David Richards",
-      position: "Managing Partner, Richards & Associates",
-      image: "../../assets/testimonials/testimonial-5.webp"
-    },
-    {
-      id: 2,
-      quote: "We've been able to scale our payroll client base by over 50% with White Bull's support. Their attention to detail and compliance knowledge gives us complete confidence in the service we're delivering.",
-      author: "Rebecca Lloyd",
-      position: "Director, Lloyd Accounting Services",
-      image: "../../assets/testimonials/testimonial-6.webp"
-    }
-  ];
-
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <>
       <LandingImage
-        title="Payroll Services"
+        title="Outsourced Accounting Services for UK Accounting Firms"
         link="Services / Payroll Services"
       />
 
-      {/* Help Section */}
-      <div className="mx-auto w-11/12 my-8 rounded-2xl border border-[#2a4768] bg-white p-4.5">
+      <ServiceList />
+
+      <div className="mx-auto my-8 w-11/12 rounded-2xl border border-[#2a4768] bg-white p-4.5">
         <TbPhoneCalling className="text-6xl text-[#2a4768]" />
         <h2 className="text-lg font-bold">Need Help?</h2>
         <p className="pt-2 pb-5 text-gray-500">
-          Get in touch and let us know how we can help. We'll be in touch as soon as possible.
+          Get in touch and let us know how we can help touch as soon as
+          possible.
         </p>
         <Link
-          to="/contact"
-          className="rounded-md bg-gradient-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
+          to={"/contact"}
+          className="rounded-md bg-linear-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
         >
           Contact Us
         </Link>
       </div>
+      <img
+        src={OutsourceYearEnd}
+        className="mx-auto h-auto w-11/12 rounded-2xl"
+      />
 
-      {/* Payroll Services Header */}
-      <div className="my-12 px-4.5">
-        <div className="text-center">
-          <h3 className="text-4xl font-bold">
-            Payroll <span className="text-[#2a4768]">Services</span>
+      <div className="bg-[#eceef6] px-33 py-30">
+        <div>
+          <h2 className="text-left text-4xl font-bold">
+            <span className="text-[#2a4768]">Expert Payroll Solutions </span>for Your Clients’ Needs
+          </h2>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">Managing payroll is a bit like juggling—except the balls are<span className="font-bold"> employee wages, tax filings, and compliance laws. </span>Miss one, and it could cost you<span className="font-bold"> a lot more than just a bruised ego.</span></p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">That’s where White Bull steps in. We specialize in<span className="font-bold"> outsourced payroll services for UK CA and accounting firms, </span>taking the burden off your hands while ensuring compliance, accuracy, and efficiency. Whether it’s<span className="font-bold"> statutory deductions, pension contributions, or HMRC filings, </span>we handle it all<span className="font-bold"> —so you don’t have to.</span></p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">Partnering with White Bull means your firm can focus on what really matters—helping your clients grow—while we make sure their employees get paid accurately and on time. With our team staying ahead of the curve on UK payroll laws and tax regulations, you can rest easy knowing that compliance is never a concern.</p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500"><span className="font-bold">Pain Point: </span>Payroll can be a headache, especially when it involves tax filings and tricky deductions. White Bull helps eliminate these headaches with reliable, efficient payroll services, ensuring accuracy and compliance every time.</p>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold text-[#2a4768]">Why Outsource Payroll Services?</h2>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+          Let’s be honest—handling payroll internally is like
+            <span className="font-bold"> doing your own tax return without coffee or Wi-Fi. </span>It’s<span className="font-bold"> tedious, time-consuming, and one small mistake could lead to penalties. </span>
+            Here’s why firms like yours<span className="font-bold"> trust White Bull </span>for payroll outsourcing:
+          </p>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li className="list-disc"><span className="font-bold">✅ Accuracy & Compliance: </span>No more last-minute tax panic—we ensure error-free payroll processing and HMRC compliance.</li>
+            <li className="list-disc"><span className="font-bold">💰 Cost-Effective: </span>No need for an in-house payroll department—save time, money, and headaches.</li>
+            <li className="list-disc"><span className="font-bold">📈 Scalable Solutions: </span>Whether you manage payroll for <span className="font-bold"> 5 clients or 500 </span>our services grow with you.</li>
+            <li className="list-disc"><span className="font-bold">🎯 Expert Handling: </span>We stay ahead of UK payroll laws,<span className="font-bold"> so you don’t have to sit through another HMRC webinar.</span></li>
+          </ul>
+          <p className="mb-10 rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">Looking for more support? Check out our<span className="font-bold"> Tax Preparation Services </span>to help your clients stay compliant and optimize their tax strategies.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold text-[#2a4768]">What We Offer</h2>
+          <h3 className="text-left text-3xl font-bold">Comprehensive Payroll Services Tailored for UK CA Firms</h3>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Outsourcing payroll means you get<span className="font-bold"> reliable, professional support </span>with:</p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            <span className="font-bold">✔ Payroll processing </span>& wage calculations.<br></br>
+            <span className="font-bold">✔ Statutory deductions </span>(National Insurance, pensions, student loans).<br></br>
+            <span className="font-bold">✔ HMRC compliance </span>& tax filing.<br></br>
+            <span className="font-bold">✔ Payslip generation </span>& payroll reports.<br></br>
+            <span className="font-bold">✔ Auto-enrolment pension contributions </span>& RTI submissions.<br></br>
+          </p>
+        </div>
+
+        <div>
+        <h2 className="text-left text-4xl font-bold">
+            <span className="text-[#2a4768]">The Real Pain Point: </span>Payroll Errors = Fines & Unhappy Clients
+        </h2>
+          <h3 className="text-left text-3xl font-bold">
+            MWhy Payroll Compliance Matters for UK CA Firms
           </h3>
-          <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-            Comprehensive payroll processing support tailored for UK accounting firms and their clients.
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+          Getting payroll wrong isn’t just embarrassing—it can be<span className="font-bold"> costly and legally risky. </span>Late filings? Incorrect deductions?<span className="font-bold"> HMRC won’t be sending you a Christmas card.</span>
+          </p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+          White Bull ensures that:
+          </p>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li className="list-disc"><span className="font-bold">No miscalculations— </span>so clients don’t come knocking.</li>
+            <li className="list-disc"><span className="font-bold">No missed deadlines—</span>because HMRC penalties aren’t fun.</li>
+            <li className="list-disc"><span className="font-bold">No compliance headaches—</span>we handle tax changes<span className="font-bold"> so you don’t have to Google them at 11 PM.</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold text-[#2a4768]">Why Choose White Bull?</h2>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+          We’re not just a payroll provider—we’re<span className="font-bold"> your firm’s secret weapon </span>for streamlined, stress-free payroll services. Here’s why<span className="font-bold"> UK CA and accounting firms </span>partner with us:</p>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li><span className="font-bold">📌 Industry Expertise: </span>From small businesses to large enterprises,<span className="font-bold"> we tailor payroll solutions to fit.</span></li>
+            <li><span className="font-bold">📌 Cost-Effective: </span>Save on overhead while getting<span className="font-bold"> top-tier payroll services.</span></li>
+            <li><span className="font-bold">📌 Fully Scalable: </span>Whether you have<span className="font-bold"> a handful of clients or a hundred, </span>we scale with you.</li>
+            <li><span className="font-bold">📌 End-to-End Payroll Support: </span>From tax filing to employee payslips<span className="font-bold"> —we handle it all.</span></li>
+          </ul>
+
+          <p className="mb-10 rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">For further financial management support, explore our<span className="font-bold"> Payable Services and Accounts Receivable Services.</span></p>
+        </div>
+
+        <div>
+          <h2 className="text-4xl font-bold text-[#2a4768]">
+          Simplifying Payroll for UK Accounting Firms</h2>
+          <h3 className="text-3xl font-bold">Say Goodbye to Payroll Stress & Compliance Worries</h3>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+          Handling payroll in-house is like doing<span className="font-bold"> manual bookkeeping in the era of cloud accounting—it’s slow, risky, and unnecessary. </span>White Bull’s<span className="font-bold"> outsourced payroll services </span>ensure:
+          </p>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li><span className="font-bold">🚀 100% Payroll Accuracy – </span>No miscalculations, no delays.</li>
+            <li><span className="font-bold">🚀 Timely Payments – </span>Employees paid on time, every time.</li>
+            <li><span className="font-bold">🚀 HMRC Compliance – </span>Every tax, deduction, and filing done<span className="font-bold"> correctly.</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-4xl font-bold text-[#2a4768]">
+          Trusted Payroll Services for UK CA & Accounting Firms
+          </h2>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+          White Bull has built a solid reputation for providing<span className="font-bold"> reliable, scalable, and fully compliant payroll services </span>for UK accountants. Whether your clients are<span className="font-bold"> small businesses or large enterprises, </span>we ensure their payroll runs smoothly, keeping<span className="font-bold"> HMRC penalties at bay</span>.
           </p>
         </div>
-      </div>
 
-      {/* Main Service Description */}
-      <div className="bg-gray-50 py-12 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Expand Your <span className="text-[#2a4768]">Payroll Services</span> with Expert Support
-              </h3>
-              <p className="text-gray-600 mb-6">
-                White Bull provides reliable, accurate payroll processing services that enable UK accounting firms to offer comprehensive payroll solutions to their clients without the administrative burden.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Our payroll specialists work as an extension of your practice, managing all aspects of payroll processing while ensuring compliance with the latest HMRC and pension regulations.
-              </p>
-              <div className="flex gap-4 mt-8">
-                <Link
-                  to="/contact"
-                  className="rounded-md bg-[#2a4768] px-6 py-3 font-semibold text-white hover:bg-[#1a3758] transition-all"
-                >
-                  Get Started
-                </Link>
-                <Link
-                  to="/case-studies"
-                  className="rounded-md border border-[#2a4768] px-6 py-3 font-semibold text-[#2a4768] hover:bg-gray-50 transition-all"
-                >
-                  View Case Studies
-                </Link>
-              </div>
-            </div>
-            <div>
-              <img
-                src="../../assets/services/payroll-main.webp"
-                alt="Payroll Services"
-                className="rounded-2xl shadow-md w-full h-auto"
-              />
-            </div>
-          </div>
+        <div>
+          <h2 className="text-4xl font-bold text-[#2a4768]">
+          Conclusion: Let’s Handle Payroll—You Handle Growth
+          </h2>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">Outsourcing payroll to White Bull means:</p>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li><span className="font-bold">✔ Fewer payroll headaches</span></li>
+            <li><span className="font-bold">✔ More time for client relationships</span></li>
+            <li><span className="font-bold">✔ No compliance nightmares</span></li>
+          </ul>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500"><span className="font-bold">📢 Ready to simplify payroll for your clients? Let’s talk. Contact White Bull today</span>and leave payroll processing to the experts. 🎯</p>
+
+          <p className="mb-10 rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">Interested in other services to support your firm? Learn more about our<span className="font-bold"> Outsourced Accounting Services </span>designed to streamline your clients’ financial operations.</p>
         </div>
+
       </div>
 
-      {/* Benefits Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Benefits of Our <span className="text-[#2a4768]">Payroll Services</span>
-            </h3>
-            <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-              Discover how our payroll support can enhance your practice offerings and client satisfaction.
-            </p>
-          </div>
+      {/* FAQs */}
+      <div className="px-33 py-30">
+        <div className="px-20 text-center">
+          <p className="text-xl font-bold text-[#2a4768]">FAQs</p>
+          <h2 className="mt-5 mb-5 text-5xl font-bold">
+            Everything You Need to Know About
+            <span className="text-[#2a4768]"> Outsourced Accounting </span>
+          </h2>
+          <p className="py-2 pl-30 text-justify text-gray-500">
+            Discover helpful answers to your most pressing financial questions.
+            We’re here to assist you every step of the way!
+          </p>
+        </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {payrollBenefits.map((benefit) => (
-              <div key={benefit.id} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                <div className="mb-4">
-                  {benefit.icon}
-                </div>
-                <h4 className="text-xl font-bold mb-3">{benefit.title}</h4>
-                <p className="text-gray-600">{benefit.description}</p>
+        <div>
+          <div className="px-40 text-xl">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="border-grey-200 border-b last:border-none"
+              >
+                <button
+                  className="flex w-full items-center justify-between py-4 text-left font-bold hover:cursor-pointer"
+                  onClick={() => toggleFAQ(index)}
+                >
+                  {faq.question}
+                  <span className="text-3xl">
+                    {openIndex === index ? "−" : "+"}
+                  </span>
+                </button>
+                {openIndex === index && (
+                  <p className="pb-4 text-gray-400">{faq.answer}</p>
+                )}
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Features Section */}
-      <div className="bg-[#f8fafc] py-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <img
-                src="../../assets/services/payroll-features.webp"
-                alt="Comprehensive Payroll Services"
-                className="rounded-2xl shadow-md w-full h-auto"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-6">
-                Comprehensive <span className="text-[#2a4768]">Payroll Solutions</span>
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Our payroll services cover all aspects of payroll processing, ensuring accurate calculations, timely submissions, and full compliance with UK regulations.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                {serviceFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-start">
-                    <FaCheckCircle className="text-[#2a4768] mt-1 mr-2 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Process Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Our <span className="text-[#2a4768]">Process</span>
-            </h3>
-            <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-              A structured, efficient approach to payroll processing.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">1</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Data Collection</h4>
-              <p className="text-gray-600 text-sm">We gather all necessary payroll information and employee details.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">2</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Processing</h4>
-              <p className="text-gray-600 text-sm">We calculate pay, deductions, and prepare necessary documentation.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">3</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Submissions</h4>
-              <p className="text-gray-600 text-sm">We handle RTI submissions to HMRC and pension providers.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">4</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Reporting</h4>
-              <p className="text-gray-600 text-sm">We provide detailed reports and documentation for your clients.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Testimonials */}
-      <div className="bg-[#2a4768] py-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white">
-              What Our <span className="text-[#7cb5be]">Clients Say</span>
-            </h3>
-            <p className="mt-4 text-gray-300 max-w-3xl mx-auto">
-              Hear from accounting firms that have expanded their payroll services with our support.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white p-6 rounded-2xl shadow-md">
-                <p className="text-gray-700 italic mb-6">"{testimonial.quote}"</p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full mr-4 object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold">{testimonial.author}</h4>
-                    <p className="text-gray-500 text-sm">{testimonial.position}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* FAQ Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Frequently Asked <span className="text-[#2a4768]">Questions</span>
-            </h3>
-          </div>
-
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">How do you ensure payroll compliance?</h4>
-              <p className="text-gray-600">
-                Our payroll specialists undergo continuous training on UK payroll legislation and HMRC requirements. We maintain subscriptions to professional payroll resources and use HMRC-recognized software to ensure all calculations and submissions comply with current regulations.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Which payroll software do you use?</h4>
-              <p className="text-gray-600">
-                We're experienced with all major UK payroll software including Sage, Xero, QuickBooks, Iris, BrightPay, and others. We can work within your existing software environment or recommend solutions that best suit your clients' needs.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">How do you handle client communication?</h4>
-              <p className="text-gray-600">
-                We can operate under your firm's brand, with communication flowing through your practice. Alternatively, we can provide direct support to your clients while keeping you informed. The service model is flexible to suit your firm's preferences.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">What happens if there are payroll queries or issues?</h4>
-              <p className="text-gray-600">
-                We provide dedicated support to resolve any payroll queries or issues promptly. Our team is available to address questions from both your practice and your clients, ensuring seamless payroll processing regardless of complexities that may arise.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Call to Action */}
-      <div className="py-16 px-4.5 text-center bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to <span className="text-[#2a4768]">Expand</span> Your Payroll Offering?
-          </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto mb-8">
-            Discover how White Bull's payroll services can help your firm offer comprehensive payroll solutions without the administrative burden.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="rounded-md bg-[#2a4768] px-6 py-3 font-semibold text-white hover:bg-[#1a3758] transition-all"
-            >
-              Schedule a Consultation
-            </Link>
-            <Link
-              to="/services"
-              className="rounded-md border border-[#2a4768] px-6 py-3 font-semibold text-[#2a4768] hover:bg-gray-50 transition-all"
-            >
-              Explore Our Services
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Related Services */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Related <span className="text-[#2a4768]">Services</span>
-            </h3>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Bookkeeping Services</h4>
-              <p className="text-gray-600 mb-4">
-                Comprehensive bookkeeping that integrates seamlessly with payroll processing for complete financial management.
-              </p>
-              <Link
-                to="/services/bookkeeping"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Tax Return Preparation</h4>
-              <p className="text-gray-600 mb-4">
-                Expert preparation of personal and business tax returns including payroll-related tax submissions.
-              </p>
-              <Link
-                to="/services/tax-return-preparation"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Management Accounts</h4>
-              <p className="text-gray-600 mb-4">
-                Regular management reporting that incorporates payroll data for comprehensive business performance analysis.
-              </p>
-              <Link
-                to="/services/management-accounts"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Newsletter Section */}
-      <div className="bg-[#2a4768] py-16 px-4.5 my-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Stay Updated with the Latest Payroll Insights
-          </h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter to receive payroll updates, compliance news, and practical strategies for UK accounting firms.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
-            <input
-              type="email"
-              placeholder="Your Email Address"
-              className="px-4 py-3 rounded-md w-full"
-            />
-            <button className="bg-white text-[#2a4768] font-semibold px-6 py-3 rounded-md hover:bg-gray-100 transition-all whitespace-nowrap">
-              Subscribe Now
-            </button>
-          </div>
-          <p className="text-gray-400 text-sm mt-4">
-            We respect your privacy. Unsubscribe at any time.
-          </p>
         </div>
       </div>
     </>
