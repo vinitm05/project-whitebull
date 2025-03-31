@@ -207,7 +207,7 @@ const About = () => {
       </div>
 
 
-      {/* Our Team */}
+      {/* Working Process */}
       <div className=" px-33 py-30">
         <div className="text-center px-75">
         <p className="font-bold text-[#2a4768] text-xl">Working Process</p>
