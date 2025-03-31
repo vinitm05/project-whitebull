@@ -1,419 +1,257 @@
-import React from "react";
+import React, { useState } from "react";
 import LandingImage from "../../components/LandingImage";
 import { Link } from "react-router";
 import { TbPhoneCalling } from "react-icons/tb";
-import { FaCheckCircle, FaArrowRight, FaFileAlt, FaChartPie, FaShieldAlt, FaClock } from "react-icons/fa";
+import OutsourceYearEnd from "../../assets/outsourced-yearend.webp";
+import ServiceList from "../../components/ServiceList";
 
 const YearEndAccounting = () => {
-  const yearEndBenefits = [
+  const faqs = [
     {
-      id: 1,
-      title: "Increased Capacity",
-      description: "Handle more year-end accounts without adding to your headcount or overhead costs.",
-      icon: <FaChartPie className="text-3xl text-[#2a4768]" />
+      question:
+        "What are the benefits of outsourcing year-end accounting for CA and accounting firms?",
+      answer:
+        "Outsourcing year-end accounting allows your firm to minimize the internal workload while ensuring accurate financial reporting. It helps you meet compliance requirements on time and avoids the need to maintain a full in-house team during the busy year-end period.",
     },
     {
-      id: 2,
-      title: "Accelerated Turnaround",
-      description: "Reduce preparation time and meet filing deadlines with our efficient processes.",
-      icon: <FaClock className="text-3xl text-[#2a4768]" />
+      question:
+        "How can White Bull’s year-end accounting services support my firm’s clients?",
+      answer:
+        "White Bull ensures that your clients’ financial statements are accurately prepared and compliant with UK regulations. This support gives your clients a clear view of their financial health and allows them to make informed decisions as they enter the new year.",
     },
     {
-      id: 3,
-      title: "Compliance Assurance",
-      description: "Ensure all accounts comply with UK GAAP, FRS, and Companies House requirements.",
-      icon: <FaShieldAlt className="text-3xl text-[#2a4768]" />
+      question: "Why choose White Bull for year-end accounting services?",
+      answer:
+        "White Bull specializes in the unique requirements of UK year-end accounting, offering timely, accurate services that reduce the burden on your firm and provide your clients with the reports they need to stay compliant and financially sound.",
     },
     {
-      id: 4,
-      title: "Detailed Documentation",
-      description: "Receive fully documented work with clear audit trails and explanatory notes.",
-      icon: <FaFileAlt className="text-3xl text-[#2a4768]" />
-    }
+      question:
+        "How does outsourcing year-end accounting help with compliance?",
+      answer:
+        "By outsourcing to White Bull, you ensure that all year-end accounting tasks are completed according to UK financial regulations. Our team keeps your firm compliant and reduces the risk of errors or missed deadlines that could lead to costly penalties.",
+    },
   ];
 
-  const serviceFeatures = [
-    "Trial balance conversion and verification",
-    "Fixed asset register preparation and depreciation calculations",
-    "Balance sheet reconciliations",
-    "Accruals and prepayments",
-    "Debtors and creditors analysis",
-    "Stock valuation adjustments",
-    "Statutory accounts preparation",
-    "Companies House iXBRL tagging"
-  ];
+  const [openIndex, setOpenIndex] = useState(null);
 
-  const testimonials = [
-    {
-      id: 1,
-      quote: "White Bull's year-end accounting support has been invaluable during our busy season. We've been able to take on 30% more clients while maintaining quality and meeting all deadlines.",
-      author: "Michael Bennett",
-      position: "Director, Bennett & Co Accountants",
-      image: "../../assets/testimonials/testimonial-3.webp"
-    },
-    {
-      id: 2,
-      quote: "The attention to detail from White Bull's team is exceptional. Their accounts preparation work is thorough, well-documented, and consistently meets our firm's standards.",
-      author: "Emily Parker",
-      position: "Partner, Parker Financial Services",
-      image: "../../assets/testimonials/testimonial-4.webp"
-    }
-  ];
-
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <>
       <LandingImage
-        title="Year-End Accounting Services"
-        link="Services / Year-End Accounting"
+        title="Outsourced Accounting Services for UK Accounting Firms"
+        link="Services / Accounting Services"
       />
 
-      {/* Help Section */}
-      <div className="mx-auto w-11/12 my-8 rounded-2xl border border-[#2a4768] bg-white p-4.5">
+      <ServiceList />
+
+      <div className="mx-auto my-8 w-11/12 rounded-2xl border border-[#2a4768] bg-white p-4.5">
         <TbPhoneCalling className="text-6xl text-[#2a4768]" />
         <h2 className="text-lg font-bold">Need Help?</h2>
         <p className="pt-2 pb-5 text-gray-500">
-          Get in touch and let us know how we can help. We'll be in touch as soon as possible.
+          Get in touch and let us know how we can help touch as soon as
+          possible.
         </p>
         <Link
-          to="/contact"
-          className="rounded-md bg-gradient-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
+          to={"/contact"}
+          className="rounded-md bg-linear-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
         >
           Contact Us
         </Link>
       </div>
+      <img
+        src={OutsourceYearEnd}
+        className="mx-auto h-auto w-11/12 rounded-2xl"
+      />
 
-      {/* Year-End Accounting Header */}
-      <div className="my-12 px-4.5">
-        <div className="text-center">
+      <div className="my-8 px-4.5">
+        <div>
           <h3 className="text-4xl font-bold">
-            Year-End <span className="text-[#2a4768]">Accounting Services</span>
+            Seamless Year-End Accounting for CA and Accounting Firms in the UK
           </h3>
-          <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-            Expert year-end accounts preparation support designed specifically for UK accounting firms.
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            Year-end accounting season—also known as the time when accountants
+            survive on coffee and tight deadlines. At White Bull, we take the
+            stress off your shoulders by providing outsourced year-end
+            accounting services tailored specifically for CA and accounting
+            firms in the UK. From financial statement preparation to compliance
+            checks and reconciliations, our experts ensure your client’s
+            financials are accurate, compliant, and delivered on time.
           </p>
-        </div>
-      </div>
 
-      {/* Main Service Description */}
-      <div className="bg-gray-50 py-12 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Streamline Your <span className="text-[#2a4768]">Year-End Process</span> with Expert Support
-              </h3>
-              <p className="text-gray-600 mb-6">
-                White Bull provides high-quality year-end accounting services that enable UK accounting firms to handle peak workloads, meet filing deadlines, and maintain exceptional quality standards.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Our qualified team works as an extension of your practice, preparing accurate, compliant year-end accounts while adhering to your firm's quality standards and review processes.
-              </p>
-              <div className="flex gap-4 mt-8">
-                <Link
-                  to="/contact"
-                  className="rounded-md bg-[#2a4768] px-6 py-3 font-semibold text-white hover:bg-[#1a3758] transition-all"
-                >
-                  Get Started
-                </Link>
-                <Link
-                  to="/case-studies"
-                  className="rounded-md border border-[#2a4768] px-6 py-3 font-semibold text-[#2a4768] hover:bg-gray-50 transition-all"
-                >
-                  View Case Studies
-                </Link>
-              </div>
-            </div>
-            <div>
-              <img
-                src="../../assets/services/year-end-main.webp"
-                alt="Year-End Accounting Services"
-                className="rounded-2xl shadow-md w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Benefits Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Benefits of Our <span className="text-[#2a4768]">Year-End Accounting Services</span>
-            </h3>
-            <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-              Discover how our year-end support can transform your practice efficiency and capacity.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {yearEndBenefits.map((benefit) => (
-              <div key={benefit.id} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                <div className="mb-4">
-                  {benefit.icon}
-                </div>
-                <h4 className="text-xl font-bold mb-3">{benefit.title}</h4>
-                <p className="text-gray-600">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Features Section */}
-      <div className="bg-[#f8fafc] py-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <img
-                src="../../assets/services/year-end-features.webp"
-                alt="Comprehensive Year-End Accounting Services"
-                className="rounded-2xl shadow-md w-full h-auto"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-6">
-                Comprehensive <span className="text-[#2a4768]">Year-End Solutions</span>
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Our year-end accounting services cover all aspects of accounts preparation, ensuring accurate, compliant financial statements that meet UK regulatory requirements.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                {serviceFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-start">
-                    <FaCheckCircle className="text-[#2a4768] mt-1 mr-2 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Process Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Our <span className="text-[#2a4768]">Process</span>
-            </h3>
-            <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-              A structured, efficient approach to year-end accounts preparation.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">1</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Information Collection</h4>
-              <p className="text-gray-600 text-sm">We gather all required financial data and supporting documentation.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">2</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Preparation & Analysis</h4>
-              <p className="text-gray-600 text-sm">We prepare the accounts with detailed workings and reconciliations.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">3</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Quality Review</h4>
-              <p className="text-gray-600 text-sm">All accounts undergo thorough internal quality checks before delivery.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">4</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Partner Review & Filing</h4>
-              <p className="text-gray-600 text-sm">Your firm reviews, finalizes, and files the completed accounts.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Testimonials */}
-      <div className="bg-[#2a4768] py-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white">
-              What Our <span className="text-[#7cb5be]">Clients Say</span>
-            </h3>
-            <p className="mt-4 text-gray-300 max-w-3xl mx-auto">
-              Hear from accounting firms that have enhanced their year-end capacity with our services.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white p-6 rounded-2xl shadow-md">
-                <p className="text-gray-700 italic mb-6">"{testimonial.quote}"</p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full mr-4 object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold">{testimonial.author}</h4>
-                    <p className="text-gray-500 text-sm">{testimonial.position}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* FAQ Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Frequently Asked <span className="text-[#2a4768]">Questions</span>
-            </h3>
-          </div>
-
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Which accounting standards do you follow?</h4>
-              <p className="text-gray-600">
-                Our team is experienced in UK GAAP, FRS 102, FRS 105, and IFRS. We adapt to the specific accounting framework required for each client based on your instructions.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">What software do you use for accounts preparation?</h4>
-              <p className="text-gray-600">
-                We're proficient in all major UK accounts production software including CCH, Iris, BTC, Digita, TaxCalc, and others. We can work within your existing software environment.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">How do you handle client-specific accounting policies?</h4>
-              <p className="text-gray-600">
-                We document your firm's accounting policies and procedures at the outset, ensuring all accounts are prepared consistently with your established practices and client-specific requirements.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Who has final review responsibility?</h4>
-              <p className="text-gray-600">
-                While we conduct thorough internal quality reviews, the final review and sign-off remain with your firm's partners or qualified accountants, maintaining your control and professional responsibility.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Call to Action */}
-      <div className="py-16 px-4.5 text-center bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to <span className="text-[#2a4768]">Enhance</span> Your Year-End Capacity?
-          </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto mb-8">
-            Discover how White Bull's year-end accounting services can help your firm handle more clients, meet deadlines, and maintain quality during busy periods.
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            <span className="font-semibold text-gray-600">Pan Point:</span> The
+            year-end rush is no joke. With deadlines looming, tax adjustments to
+            finalize, and compliance requirements to meet, accountants are often
+            left juggling too many tasks at once. Any small error can lead to
+            reporting issues, regulatory penalties, or frustrated clients.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="rounded-md bg-[#2a4768] px-6 py-3 font-semibold text-white hover:bg-[#1a3758] transition-all"
-            >
-              Schedule a Consultation
+
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            The solution? Outsource your year-end accounting to White Bull. We
+            take care of the meticulous financial reviews, reconciliations, and
+            reporting—so you don’t have to.
+          </p>
+          <p className="my-6 rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
+            Streamline account reconciliation with our{" "}
+            <Link to={"/services/accounting"} className="font-bold">
+              Bank Reconciliation Services
             </Link>
-            <Link
-              to="/services"
-              className="rounded-md border border-[#2a4768] px-6 py-3 font-semibold text-[#2a4768] hover:bg-gray-50 transition-all"
-            >
-              Explore Our Services
-            </Link>
-          </div>
+            , offering detailed support for accurate financial data year-round.
+          </p>
         </div>
-      </div>
 
-      {/* Related Services */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Related <span className="text-[#2a4768]">Services</span>
-            </h3>
-          </div>
+        <div>
+          <h3 className="text-4xl font-bold text-[#2a4768]">
+            Why Choose White Bull for Year-End Accounting?
+          </h3>
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            We understand that year-end accounting isn’t just about crunching
+            numbers—it’s about accuracy, compliance, and peace of mind. Here’s
+            how we help:
+          </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Bookkeeping Services</h4>
-              <p className="text-gray-600 mb-4">
-                Comprehensive bookkeeping solutions to ensure accurate financial records throughout the year.
-              </p>
-              <Link
-                to="/services/bookkeeping"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Corporation Tax Returns</h4>
-              <p className="text-gray-600 mb-4">
-                Expert preparation of corporation tax computations and returns to complement year-end accounts.
-              </p>
-              <Link
-                to="/services/tax-returns"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Management Accounts</h4>
-              <p className="text-gray-600 mb-4">
-                Regular management reporting to provide clients with timely financial insights throughout the year.
-              </p>
-              <Link
-                to="/services/management-accounts"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-          </div>
+          <ul className="list-disc text-gray-500 ml-10">
+            <li><span className="font-bold">Precise Financial Reports:</span> We ensure every number adds up, reducing discrepancies and potential red flags.</li>
+            <li><span className="font-bold">Regulatory Compliance:</span> Our team stays up-to-date with UK accounting standards and HMRC guidelines, ensuring all reports are audit-ready.</li>
+            <li><span className="font-bold">Time-Saving Efficiency:</span> No more last-minute scrambling—we streamline the process so you can meet deadlines with ease.</li>
+            <li><span className="font-bold">Expert Reconciliations:</span> We reconcile accounts thoroughly to ensure your clients’ financial records are accurate and up to date.</li>
+          </ul>
+
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            With White Bull, you can focus on advising your clients and growing
+            your firm while we handle the time-consuming year-end accounting
+            process.
+          </p>
+
+          <p className="my-6 rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
+            Explore our{" "}
+            <Link to={"/services/bookkeeping"} className="font-bold">
+              Bookkeeping Services
+            </Link>{" "}
+            to ensure your firm’s financial records are maintained year-round
+            with accuracy and efficiency.
+          </p>
         </div>
-      </div>
 
-      {/* Newsletter Section */}
-      <div className="bg-[#2a4768] py-16 px-4.5 my-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Stay Updated with the Latest Insights
+        <div>
+          <h3 className="text-4xl font-bold text-[#2a4768]">
+            Our Year-End Accounting Services for UK CA & Accounting Firms
+          </h3>
+
+          <h2 className="my-3.5 text-2xl font-bold">
+            Financial Statement Preparation & Review
           </h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter to receive expert advice, industry updates, and practical strategies for UK accounting firms.
+          <p className="leading-6.5 text-gray-500">
+            We prepare comprehensive year-end financial statements, ensuring
+            they meet UK GAAP and other regulatory requirements. From balance
+            sheets to profit & loss reports, we’ve got it covered.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
-            <input
-              type="email"
-              placeholder="Your Email Address"
-              className="px-4 py-3 rounded-md w-full"
-            />
-            <button className="bg-white text-[#2a4768] font-semibold px-6 py-3 rounded-md hover:bg-gray-100 transition-all whitespace-nowrap">
-              Subscribe Now
-            </button>
-          </div>
-          <p className="text-gray-400 text-sm mt-4">
-            We respect your privacy. Unsubscribe at any time.
+
+          <h2 className="my-3.5 text-2xl font-bold">
+            Bank & Ledger Reconciliation
+          </h2>
+          <p className="leading-6.5 text-gray-500">
+            Say goodbye to mismatched records! Our reconciliation services
+            ensure that all bank transactions and ledgers align, eliminating
+            inconsistencies.
           </p>
+
+          <h2 className="my-3.5 text-2xl font-bold">
+            Tax Adjustments & Compliance Checks
+          </h2>
+          <p className="leading-6.5 text-gray-500">
+            We handle tax provisions, deferred tax calculations, and ensure all
+            necessary adjustments are made in compliance with HMRC regulations.
+          </p>
+
+          <h2 className="my-3.5 text-2xl font-bold">
+            Accounts Finalization & Reporting
+          </h2>
+          <p className="leading-6.5 text-gray-500">
+            We ensure that accounts are finalized accurately, making your firm’s
+            year-end reporting process seamless.
+          </p>
+
+          <p className="mt-6 rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
+            Looking to improve tax compliance? Discover our{" "}
+            <Link to={"/services/taxreturn"} className="font-bold">
+              Tax Preparation Service
+            </Link>{" "}
+            to ensure smooth, accurate tax filings for your clients.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="my-5 text-4xl font-bold text-[#2a4768]">
+            White Bull’s Year-End Accounting: A Game Changer for Your Firm
+          </h2>
+
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            <span className="font-semibold text-gray-600">Pan Point:</span> The
+            Many firms struggle with last-minute reconciliations, reporting
+            errors, and compliance risks, leading to unnecessary stress.
+          </p>
+
+          <ul className="text-gray-500">
+            <p className="font-bold">With White Bull, you gain:</p>
+            <li>✔ A dedicated team of accounting experts</li>
+            <li>✔ Reduced workload and increased efficiency</li>
+            <li>✔ Accurate, audit-ready reports</li>
+            <li>✔ Confidence in meeting regulatory deadlines</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="my-5 text-4xl font-bold text-[#2a4768]">
+            Partner with White Bull for a Smooth Year-End Process
+          </h2>
+
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            Year-end accounting doesn’t have to be a headache. Let White Bull
+            handle the nitty-gritty details while you focus on serving your
+            clients and scaling your firm.
+          </p>
+
+          <p className="mt-6 mb-16 font-bold text-gray-500">
+            📞 Ready to streamline your year-end accounting? Get in touch today
+            and let’s make this season stress-free! 🚀
+          </p>
+        </div>
+      </div>
+
+      {/* FAQs */}
+      <div className="flex flex-col items-center bg-white px-4.5 py-10">
+        <p className="font-semibold text-[#2a4768]">FAQs</p>
+        <h2 className="text-center text-3xl font-bold">
+          Everything You Need to Know About{" "}
+          <span className="text-[#2a4768]">Outsourced Accounting</span>
+        </h2>
+        <p className="text-center text-gray-500">
+          Discover helpful answers to your most pressing financial questions.
+          We’re here to assist you every step of the way!{" "}
+        </p>
+        <div className="mx-auto max-w-lg p-4">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border-b border-gray-200 last:border-none"
+            >
+              <button
+                className="flex w-full items-center justify-between py-4 text-left font-semibold hover:cursor-pointer"
+                onClick={() => toggleFAQ(index)}
+              >
+                {faq.question}
+                <span className="text-xl">
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </button>
+              {openIndex === index && (
+                <p className="pb-4 text-gray-400">{faq.answer}</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </>

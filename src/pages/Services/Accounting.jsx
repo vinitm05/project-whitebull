@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LandingImage from "../../components/LandingImage";
 import ServiceList from "../../components/ServiceList";
-import { Link, Links } from "react-router";
+import { Link } from "react-router";
 import OutsourceAccounting from "../../assets/outsourced-accounting.webp";
 import { TbPhoneCalling } from "react-icons/tb";
 import { FaCheckCircle } from "react-icons/fa";
@@ -90,7 +90,7 @@ const Accounting = () => {
             costs, and enhance service quality—without hiring in-house staff.
           </p>
           <p className="my-5 text-justify leading-7 text-gray-500">
-            <span className="font-semibold text-gray-600">Pain Point:</span>{" "}
+            <span className="font-semibold text-gray-600">Pan Point:</span>{" "}
             Growing your client base and meeting increasing demands doesn’t have
             to come at the expense of quality. With White Bull, you can scale
             effortlessly, focusing on building stronger client relationships and
@@ -165,7 +165,7 @@ const Accounting = () => {
             while freeing up time for you to focus on business growth.
           </p>
           <p className="my-5 text-justify leading-7 text-gray-500">
-            <span className="font-bold">Pain Point: </span>The pressure to stay
+            <span className="font-bold">Pan Point: </span>The pressure to stay
             organized, compliant, and profitable can feel overwhelming. Let
             White Bull take care of the financial details, so you can keep your
             focus on delivering value to your clients, confidently and

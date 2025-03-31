@@ -71,7 +71,7 @@ const Header = () => {
             <Link to={"career"}>Career</Link>
           </li>
           <li>
-            <Link to={"contact"}>Contact</Link>
+            <Link to={"contact"}>Contact Us</Link>
           </li>
         </ul>
       </div>
@@ -81,7 +81,10 @@ const Header = () => {
         <Link to={"/"} className="text-7xl font-bold text-white">
           ANPM
         </Link>
-        <button onClick={toggleMenu} className="text-white focus:outline-none bg-[#2a4768] p-1 rounded-md hover:cursor-pointer">
+        <button
+          onClick={toggleMenu}
+          className="rounded-md bg-[#2a4768] p-1 text-white hover:cursor-pointer focus:outline-none"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -159,8 +162,11 @@ const Header = () => {
           <Link onClick={closeMenu} to={"/blog"}>
             Blog
           </Link>
+          <Link onClick={closeMenu} to={"/career"}>
+            Career
+          </Link>
           <Link onClick={closeMenu} to={"contact"}>
-            Contact
+            Contact Us
           </Link>
         </div>
       )}
