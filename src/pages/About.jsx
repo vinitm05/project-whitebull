@@ -5,58 +5,132 @@ import { Link, Links } from "react-router";
 
 import AboutHeroImage from "../assets/home-hero.webp";
 import TeamPhoto from "../assets/team.webp";
-import ValuesImage from "../assets/about-img1.png"
-import OfficeImage from "../assets/about-img2.jpg"
+import iris from '../assets/iris.png'
+import freeagent from '../assets/freeagent.png'
+import intuit from '../assets/intuit.png'
+import taxcalc from '../assets/taxcalc.png'
+import kashflow from '../assets/kashflow.png'
+
+import OfficeImage from "../assets/about-img2.jpg";
 import { TbPhoneCalling } from "react-icons/tb";
-import { FaCheckCircle, FaUsers, FaLightbulb, FaHandshake, FaAward } from "react-icons/fa";
+import { FaQuestion } from "react-icons/fa";
 
 const About = () => {
-  const teamMembers = [
+  const workingProcess = [
     {
-      name: "James Wilson",
-      position: "Founder & CEO",
-      bio: "With over 15 years of experience in accounting and financial services, James founded White Bull to help UK accounting firms scale efficiently without sacrificing quality.",
-      image: "../../assets/team/james.webp"
+      name: "01. Outsourcing That Works",
+      desc: "Outsourcing your accounting tasks to White Bull means gaining a dedicated partner focused on delivering results. From managing payroll processing, tax return preparation, and VAT filings to handling comprehensive bookkeeping, we ensure your firm’s back-office functions run smoothly. Our expertise helps reduce operational costs, improve efficiency, and allow you to focus on high-value client advisory services and scaling your business.",
+      image: "../assets/whyChoose1.svg",
     },
     {
-      name: "Sarah Thompson",
-      position: "Head of Operations",
-      bio: "Sarah ensures White Bull delivers exceptional service to every client by overseeing our operational processes and maintaining our high standards.",
-      image: "../../assets/team/sarah.webp"
+      name: "02. Reliable, Secure, and Efficient",
+      desc: "We prioritize data security and compliance, ensuring your clients’ financial information remains protected at all times. Our ISO 27001-certified security framework enforces strict data protection protocols, encryption, and multi-layered security measures. Whether it’s payroll, tax filing, or accounts reconciliation, we handle every aspect with professional integrity, GDPR compliance, and complete confidentiality.",
+      image: "../assets/whyChoose2.svg",
     },
     {
-      name: "Michael Bennett",
-      position: "Technical Director",
-      bio: "Michael specializes in UK tax regulations and accounting standards, leading our team to deliver compliant and accurate services for all client work.",
-      image: "../../assets/team/michael.webp"
+      name: "03. Empowering Your Firm to Grow",
+      desc: "With White Bull, you gain the ability to scale your firm effortlessly while keeping overhead costs low. Our outsourced accounting solutions allow you to expand your service offerings, improve workflow efficiency, and manage growing client demands without the need for in-house hires. By outsourcing complex financial tasks to us, your firm can focus on business growth, strategic planning, and delivering expert financial advice.",
+      image: "../assets/whyChoose3.svg",
     },
     {
-      name: "Emily Parker",
-      position: "Client Success Manager",
-      bio: "Emily works directly with our accounting firm clients to ensure their specific needs are met and that our services align perfectly with their requirements.",
-      image: "../../assets/team/emily.webp"
-    }
+      name: "04. A Long-Term Partnership for Success",
+      desc: "When you choose White Bull, you’re not just hiring an outsourcing provider—you’re forming a long-term partnership built on trust, expertise, and results. Our dedicated offshore accounting professionals integrate seamlessly with your team, ensuring consistent service quality and operational excellence. We help increase your firm’s profitability, maintain compliance with UK accounting regulations.",
+      image: "../assets/whyChoose4.svg",
+    },
+  ];
+
+  const mission1 = [
+    {
+      name: "Integrity",
+      desc: "We uphold honesty, transparency, and ethical practices in everything we do.",
+      image: "../assets/whyChoose2.svg",
+    },
+    {
+      name: "Client-Centric",
+      desc: "We focus on understanding your firm’s unique needs, providing tailored solutions that drive success.",
+      image: "../assets/whyChoose3.svg",
+    },
+    {
+      name: "Excellence",
+      desc: "We go beyond expectations, providing high-quality services that create real impact.",
+      image: "../assets/whyChoose4.svg",
+    },
+  ];
+
+  const mission2 = [
+    {
+      name: "Innovation",
+      desc: "We leverage cutting-edge technology and modern strategies to ensure efficiency and effectiveness.",
+      image: "../assets/whyChoose2.svg",
+    },
+    {
+      name: "Collaboration",
+      desc: "We operate as an extension of your firm, aligning with your goals to help you thrive.",
+      image: "../assets/whyChoose3.svg",
+    },
+    {
+      name: "Continuous Learning",
+      desc: "We invest in ongoing training and industry insights to stay ahead of market trends.",
+      image: "../assets/whyChoose4.svg",
+    },
   ];
 
   const faqs = [
     {
-      question: "What is White Bull's mission?",
-      answer: "White Bull exists to empower UK accounting firms to scale their practices efficiently by providing high-quality, white-label outsourced accounting services that reduce costs while maintaining excellence in client service."
+      question:
+        "What is the difference between in-house and outsourced accounting?",
+      answer:
+        "Yes, at White Bull, we employ an experienced team of certified financial professionals who stay on top of industry regulations to ensure accuracy and compliance.",
     },
     {
-      question: "How experienced is the White Bull team?",
-      answer: "Our leadership team brings over 45 combined years of experience in UK accounting, tax regulations, and practice management. Every team member is thoroughly trained in UK accounting standards to ensure compliance and accuracy."
+      question: "Which software do you use?",
+      answer:
+        "We work with a wide range of accounting software, including QuickBooks, Sage, Xero, and more. Our team ensures seamless integration with your current tools.",
     },
     {
-      question: "Does White Bull work with firms of all sizes?",
-      answer: "Yes, we support accounting practices of all sizes, from solo practitioners to large multi-partner firms. Our scalable solutions are tailored to match your specific requirements and can grow alongside your practice."
+      question: "Why should we outsource to White Bull?",
+      answer:
+        "Outsourcing with White Bull means lower overhead, expert knowledge, and the flexibility to scale as your firm grows. We ensure compliance, reduce costs, and help you focus on your core business.",
     },
     {
-      question: "How does White Bull maintain quality and confidentiality?",
-      answer: "We implement rigorous quality control procedures, regular training, and strict confidentiality protocols. All our work adheres to UK accounting standards, and we maintain complete client confidentiality through secure systems and strict data protection measures."
-    }
+      question:
+        "What is the difference between in-house and outsourced accounting?",
+      answer:
+        "Yes, at White Bull, we employ an experienced team of certified financial professionals who stay on top of industry regulations to ensure accuracy and compliance.",
+    },
   ];
-  
+
+  const whyChoose = [
+    {
+      question:
+        "1. Results That Matter",
+      answer:
+        "We don’t just promise efficiency—we deliver measurable results. Our outsourced accounting services are designed to enhance your firm’s profitability. From managing day-to-day accounting tasks to ensuring accurate tax filings, we help you free up valuable time and resources, so you can focus on scaling your business.",
+    },
+    {
+      question: "2. Trusted Expertise",
+      answer:
+        "With decades of expertise, White Bull UK is a trusted leader in outsourced accounting services. Our team stays ahead of industry changes, ensuring full compliance with the latest tax and financial regulations. You can rely on us to manage your clients' financials with precision and care, helping your firm maintain its stellar reputation and drive long-term success.",
+    },
+    {
+      question: "3. A silent Partner for Your Firm's Success",
+      answer:
+        "Your clients don’t need to know we’re working behind the scenes—but you’ll see the difference. At White Bull, we work efficiently and accurately to ensure their financials are always in order. As your trusted, invisible ally, we handle the heavy lifting so you can focus on strengthening client relationships and growing your firm.",
+    },
+    {
+      question:
+        "4. Trnasparent, Actionalble Reporting",
+      answer:
+        "We believe in full transparency, providing you with clear, actionable financial reports to support informed decision-making. With White Bull, you’ll always have complete visibility into your clients’ financials, while they benefit from accurate, timely data that enhances trust and confidence.",
+    },
+    {
+      question:
+        "5. Continuously Evolving for Greater Impact",
+      answer:
+        "At White Bull, we never settle—we continuously refine our processes and embrace cutting-edge technologies to deliver exceptional service. Partnering with us means more than just outsourcing; it means gaining a dedicated, long-term ally committed to your firm’s growth and success.",
+    },
+  ];
+
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -65,294 +139,204 @@ const About = () => {
 
   return (
     <>
-      <LandingImage
-        title="About White Bull"
-        link="About Us"
-      />
+      <LandingImage title="About White Bull" link="About Us" />
 
-      {/* Help Section */}
-      <div className="mx-auto w-11/12 my-8 rounded-2xl border border-[#2a4768] bg-white p-4.5">
-        <TbPhoneCalling className="text-6xl text-[#2a4768]" />
-        <h2 className="text-lg font-bold">Need Help?</h2>
-        <p className="pt-2 pb-5 text-gray-500">
-          Get in touch and let us know how we can help. We'll be in touch as soon as possible.
+      {/* About Us Section */}
+      <div className="px-33 py-30 bg-[#eceef6]">
+      <div className="grid grid-cols-2">
+        <div className="items-left">Img</div>
+        <div className="items-right">
+        <p className="font-semibold text-[#2a4768]">About Us</p>
+        <h2 className="text-left text-3xl font-bold">
+          Expert Outsourced
+          <span className="text-[#2a4768]"> Accounting Services </span>
+          for UK Accounting & CA Firms – Save Time & Cut Costs
+        </h2>
+        <p className="mb-4 mt-4 max-w-2xl text-justify
+        text-gray-500">
+          We provide expert<span className="font-bold"> outsourced accounting services </span>to help UK accounting and CA firms<span className="font-bold"> streamline operations and boost efficiency. </span>Our team handles<span className="font-bold"> back-office tasks </span>such as<span className="font-bold"> bookkeeping, payroll, tax preparation, VAT filings, and more, </span>allowing you to<span className="font-bold"> focus on client service and business growth. </span>With White Bull UK as your outsourcing partner, you can<span className="font-bold"> save time, cut costs, and enhance profitability.</span>
+          <br></br><br></br>
+          For decades, accounting firms have<span className="font-bold"> trusted White Bull UK </span>to seamlessly manage their clients’ finances. With<span className="font-bold"> extensive experience and a commitment to excellence, </span>we help you<span className="font-bold"> reduce overhead, boost efficiency, and enhance client satisfaction—</span>all while ensuring full compliance with the latest<span className="font-bold"> UK regulations.</span>
         </p>
-        <Link
-          to="/contact"
-          className="rounded-md bg-gradient-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
-        >
-          Contact Us
-        </Link>
+        </div>
+        <br />
       </div>
-
-      {/* Our Story Section */}
-      <div className="my-8 px-4.5">
-        <div>
-          <h3 className="text-4xl font-bold">
-            Our <span className="text-[#2a4768]">Story</span>
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8 mt-6">
-            <div>
-              <p className="text-justify leading-7 text-gray-500">
-                White Bull was founded in 2018 with a clear mission: to help UK accounting firms grow efficiently by providing exceptional outsourced accounting services. We recognized that many accounting practices faced significant challenges when trying to scale—hiring costs, training expenses, office space limitations, and management overhead were holding firms back from their true potential.
-              </p>
-              <p className="my-5 text-justify leading-7 text-gray-500">
-                Our founder, James Wilson, had spent over 15 years working in accounting firms across the UK and witnessed these challenges firsthand. He envisioned a solution that would allow accounting practices to focus on client relationships and strategic growth while a dedicated team handled the technical work with precision and care.
-              </p>
-              <p className="text-justify leading-7 text-gray-500">
-                <span className="font-semibold text-gray-600">White Bull was born from this vision</span>—a specialized service provider exclusively focused on supporting UK accounting firms with high-quality, white-label solutions that integrate seamlessly with their existing operations.
-              </p>
-            </div>
-            <div>
-              <img
-                src={AboutHeroImage}
-                alt="White Bull Team"
-                className="rounded-2xl h-auto w-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Our Mission */}
-        <div className="mt-16">
-          <h3 className="text-4xl font-bold text-[#2a4768]">
-            Our Mission
-          </h3>
-          <p className="my-5 text-justify leading-7 text-gray-500">
-            At White Bull, our mission is to empower UK accounting firms to achieve sustainable growth by providing exceptional outsourced accounting services that reduce costs, increase efficiency, and maintain the highest standards of quality and compliance.
-          </p>
-          <p className="rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
-            "We believe that accounting firms should be able to scale without sacrificing quality or work-life balance. Our purpose is to be the trusted partner that makes this possible."
-          </p>
-        </div>
-
-        {/* Our Values */}
-        <div className="mt-16">
-          <h3 className="text-4xl font-bold">
-            Our <span className="text-[#2a4768]">Values</span>
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8 mt-6">
-            <div>
-              <img
-                src={ValuesImage}
-                alt="White Bull Values"
-                className="rounded-2xl h-auto w-full object-cover"
-              />
-            </div>
-            <div>
-              <ul className="space-y-6">
-                <li className="grid auto-cols-auto grid-flow-col">
-                  <FaCheckCircle className="text-2xl text-[#2a4768]" />
-                  <div className="ml-3">
-                    <h4 className="font-bold text-gray-700">Excellence</h4>
-                    <p className="text-gray-500">We are committed to delivering the highest quality of work in everything we do, from the accuracy of our accounting to the responsiveness of our service.</p>
-                  </div>
-                </li>
-                <li className="grid auto-cols-auto grid-flow-col">
-                  <FaCheckCircle className="text-2xl text-[#2a4768]" />
-                  <div className="ml-3">
-                    <h4 className="font-bold text-gray-700">Integrity</h4>
-                    <p className="text-gray-500">We operate with complete transparency and honesty, maintaining the confidentiality of client information and upholding the highest ethical standards.</p>
-                  </div>
-                </li>
-                <li className="grid auto-cols-auto grid-flow-col">
-                  <FaCheckCircle className="text-2xl text-[#2a4768]" />
-                  <div className="ml-3">
-                    <h4 className="font-bold text-gray-700">Partnership</h4>
-                    <p className="text-gray-500">We see ourselves as an extension of your team, working collaboratively to achieve your firm's goals and support your growth journey.</p>
-                  </div>
-                </li>
-                <li className="grid auto-cols-auto grid-flow-col">
-                  <FaCheckCircle className="text-2xl text-[#2a4768]" />
-                  <div className="ml-3">
-                    <h4 className="font-bold text-gray-700">Innovation</h4>
-                    <p className="text-gray-500">We continually invest in improving our processes and services to deliver ever-greater value to the accounting firms we serve.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className="grid grid-cols-6 items-center justify-center">
+        <p className="font-bold">List of Software Our Team Hands On</p>
+          <img src={freeagent} alt="Free Agent"/>
+          <img src={iris} alt="iRIS"/>
+          <img src={intuit} alt="INTUIT"/>
+          <img src={taxcalc} alt="taxcalc"/>
+          <img src={kashflow} alt="FashFlow"/>
         </div>
       </div>
 
-      {/* Our Team */}
-      <div className="bg-gray-50 py-16 px-4.5">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold">
-            Meet Our <span className="text-[#2a4768]">Team</span>
-          </h2>
-          <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-            The experienced professionals behind White Bull's exceptional service.
-          </p>
-        </div>
+      {/* Why Choose Section */}
+      <div className="px-33 py-30">
+      <div className="grid grid-cols-2">
+        <div className="items-left">Img</div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="bg-white p-6 rounded-2xl shadow-sm">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-64 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-xl font-bold">{member.name}</h3>
-              <p className="text-[#2a4768] mb-3">{member.position}</p>
-              <p className="text-gray-500">{member.bio}</p>
+        <div className="items-right">
+        <h2 className="text-left text-3xl font-bold">
+        Why Choose White Bull UK for Outsourced Accounting?
+        </h2>
+        <div className="text-l">
+          {whyChoose.map((choose, index) => (
+            <div
+              key={index}
+              className="border-grey-200 border-b last:border-none"
+            >
+              <button
+                className="flex w-full items-center justify-between py-4 text-left font-bold hover:cursor-pointer"
+                onClick={() => toggleFAQ(index)}
+              >
+                {choose.question}
+                <span className="text-3xl">
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </button>
+              {openIndex === index && (
+                <p className="pb-4 text-gray-500">{choose.answer}</p>
+              )}
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-gray-500 max-w-3xl mx-auto mb-6">
-            Beyond our leadership team, White Bull employs a dedicated group of accounting professionals, all trained in UK accounting standards and committed to delivering exceptional service.
-          </p>
-          <img
-            src={TeamPhoto}
-            alt="White Bull Team"
-            className="rounded-2xl mx-auto max-w-4xl w-full h-auto"
-          />
+        </div>
+      </div>
+      </div>
+
+
+      {/* Our Team */}
+      <div className=" px-33 py-30">
+        <div className="text-center px-75">
+        <p className="font-bold text-[#2a4768] text-xl">Working Process</p>
+        <h2 className="text-5xl font-bold mt-5 mb-20">
+        The White Bull<span className="text-[#2a4768]">  Approach: </span>Smarter Outsourcing for Accounting Firms</h2>
+        </div>
+
+        <div className="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {workingProcess.map((process, index) => (
+            <div key={index} className="rounded-2xl bg-white p-6 shadow-sm">
+              <img
+                src={process.image}
+                alt={process.name}
+                className="mb-4 h-64 w-full rounded-lg object-cover"
+              />
+              <h3 className="text-xl font-bold">{process.name}</h3>
+              <p className="text-gray-500">{process.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Why Choose Us */}
-      <div className="my-16 px-4.5">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold">
-            Why <span className="text-[#2a4768]">Choose</span> White Bull
-          </h2>
-          <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-            Discover what sets us apart as the premier outsourced accounting partner for UK firms.
-          </p>
+      {/* Our Mission */}
+      <div className="px-33 py-30">
+        <div>
+        <div className="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+
+        <div className="pr-20">
+        <p className="font-bold text-[#2a4768] text-xl">Our Mission & Core Values</p>
+        <h2 className="text-5xl font-bold mt-3 mb-20">
+        Partnering for Growth Through<span className="text-[#2a4768]">  Financial Clarity </span></h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto">
-          <div>
-            <div className="mb-8">
-              <div className="flex items-center mb-3">
-                <FaUsers className="text-3xl text-[#2a4768] mr-3" />
-                <h3 className="text-xl font-bold">UK-Focused Expertise</h3>
-              </div>
-              <p className="text-gray-500 pl-10">
-                Unlike generic outsourcing providers, we specialize exclusively in supporting UK accounting firms. Our team is thoroughly trained in UK accounting standards, tax regulations, and compliance requirements, ensuring your clients receive accurate, compliant service.
-              </p>
-            </div>
-            
-            <div className="mb-8">
-              <div className="flex items-center mb-3">
-                <FaLightbulb className="text-3xl text-[#2a4768] mr-3" />
-                <h3 className="text-xl font-bold">White-Label Integration</h3>
-              </div>
-              <p className="text-gray-500 pl-10">
-                Our services seamlessly integrate with your firm's operations and branding. We work as an invisible extension of your team, allowing you to maintain direct client relationships while we handle the technical work behind the scenes.
-              </p>
-            </div>
-          </div>
-          
-          <div>
-            <div className="mb-8">
-              <div className="flex items-center mb-3">
-                <FaHandshake className="text-3xl text-[#2a4768] mr-3" />
-                <h3 className="text-xl font-bold">Dedicated Partnership</h3>
-              </div>
-              <p className="text-gray-500 pl-10">
-                We believe in building long-term relationships with our clients. Every accounting firm we work with is assigned a dedicated account manager who understands your specific needs and ensures our services align perfectly with your requirements.
-              </p>
-            </div>
-            
-            <div className="mb-8">
-              <div className="flex items-center mb-3">
-                <FaAward className="text-3xl text-[#2a4768] mr-3" />
-                <h3 className="text-xl font-bold">Quality Assurance</h3>
-              </div>
-              <p className="text-gray-500 pl-10">
-                Our rigorous quality control processes ensure consistent excellence in every piece of work we deliver. We maintain comprehensive checklists, multiple review stages, and regular training to guarantee accuracy and compliance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Our Office */}
-      <div className="bg-gray-50 py-16 px-4.5">
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div>
-            <h2 className="text-4xl font-bold mb-6">
-              Our <span className="text-[#2a4768]">Office</span>
-            </h2>
-            <p className="text-gray-500 mb-4">
-              Located in the heart of London, our modern office is equipped with state-of-the-art technology and secure systems to ensure efficient and confidential handling of all client work.
-            </p>
-            <p className="text-gray-500 mb-6">
-              While we primarily serve as a remote extension of your team, we welcome visits from our accounting firm partners and regularly host training sessions and networking events at our headquarters.
-            </p>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="font-bold text-lg mb-2">Contact Information</h3>
-              <p className="text-gray-500 mb-1">123 Financial Street</p>
-              <p className="text-gray-500 mb-1">London, EC2V 8AN</p>
-              <p className="text-gray-500 mb-1">United Kingdom</p>
-              <p className="text-gray-500 mb-4">+44 (0)20 1234 5678</p>
-              <Link
-                to="/contact"
-                className="rounded-md bg-[#2a4768] px-4 py-2 font-semibold text-white hover:bg-[#1a3758] transition-all inline-block"
-              >
-                Get Directions
-              </Link>
-            </div>
-          </div>
-          <div>
-            <img
-              src={OfficeImage}
-              alt="White Bull Office"
-              className="rounded-2xl h-auto w-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Call to Action */}
-      <div className="py-16 px-4.5 text-center">
-        <h2 className="text-4xl font-bold mb-6">
-          Ready to <span className="text-[#2a4768]">Partner</span> with White Bull?
-        </h2>
-        <p className="text-gray-500 max-w-2xl mx-auto mb-8">
-          Discover how our outsourced accounting services can help your firm reduce costs, increase efficiency, and deliver exceptional service to your clients.
+        <div className="pl-15">
+        <p className="mb-20 mt-3 max-w-2xl text-justify
+        text-gray-500">
+          Our mission is simple: to<span className="font-bold"> empower UK accounting and CA firms </span>with<span className="font-bold"> reliable, efficient, and cost-effective outsourced accounting services. </span>With<span className="font-bold"> decades of expertise, </span>we take the burden of financial management off your shoulders—so you can<span className="font-bold"> focus on what truly matters: serving your clients and scaling your business.</span>
         </p>
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Link
-            to="/contact"
-            className="rounded-md bg-[#2a4768] px-6 py-3 font-semibold text-white hover:bg-[#1a3758] transition-all"
-          >
-            Schedule a Consultation
-          </Link>
-          <Link
-            to="/services"
-            className="rounded-md border border-[#2a4768] px-6 py-3 font-semibold text-[#2a4768] hover:bg-gray-50 transition-all"
-          >
-            Explore Our Services
-          </Link>
+        </div>
+        
+        </div>
+        </div>
+
+        <div>
+        <div className="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {mission1.map((process, index) => (
+            <div key={index} className="rounded-2xl bg-white p-6 shadow-sm">
+              <img
+                src={process.image}
+                alt={process.name}
+                className="mb-4 h-64 w-full rounded-lg object-cover"
+              />
+              <h3 className="text-xl font-bold">{process.name}</h3>
+              <p className="text-gray-500">{process.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mx-auto mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {mission2.map((process, index) => (
+            <div key={index} className="rounded-2xl bg-white p-6 shadow-sm">
+              <img
+                src={process.image}
+                alt={process.name}
+                className="mb-4 h-64 w-full rounded-lg object-cover"
+              />
+              <h3 className="text-xl font-bold">{process.name}</h3>
+              <p className="text-gray-500">{process.desc}</p>
+            </div>
+          ))}
+        </div>
+
+
         </div>
       </div>
 
       {/* FAQs */}
-      <div className="flex flex-col items-center bg-white px-4.5 py-10">
-        <p className="font-semibold text-[#2a4768]">FAQs</p>
-        <h2 className="text-center text-3xl font-bold">
-          Frequently Asked <span className="text-[#2a4768]">Questions</span>
-        </h2>
-        <p className="text-center text-gray-500 max-w-2xl mx-auto mb-8">
-          Learn more about White Bull and our approach to supporting UK accounting firms.
+      <div className="px-33 py-30 bg-[#eceef6]">
+      <div className="grid grid-cols-2">
+        <div className="items-left">
+          <div>
+            <p className="font-semibold text-[#2a4768]">FAQs</p>
+            <h2 className="text-left text-3xl font-bold">
+          Find answers to your most{" "}
+            <span className="text-[#2a4768]">common questions</span>
+            </h2>
+            <p className="mx-auto mb-7 max-w-2xl text-left text-gray-500"> We know you may have questions about our services, processes, and how we can support your firm. Here are some frequently asked questions:
+            </p>
+          </div>
+          <div className = "bg-white px-5 py-10 rounded-3xl">
+          <div className="grid grid-cols-2 mb-3">
+          <div className="items-left flex items-top justify-center">
+          <FaQuestion className="text-7xl text-[#2a4768] bg-[#eceef6] rounded-full px-3 py-3" />
+          </div>
+          <div className="items-right -ml-5">
+          <h3 className="text-left text-3xl font-bold">
+          Want to Know More?
+        </h3>
+        <p className="pr-8 py-3 text-justify
+        text-gray-500">
+          Need additional inofrmation? Have questions? We’re here to help you take your firm to the next level. let us show you how White Bull can transform your accounting processes
         </p>
-        <div className="mx-auto max-w-lg p-4">
+          </div>
+          </div>
+          <div className="flex flex-wrap justify-center">
+          <Link
+            to="/contact"
+            className="rounded-full bg-[#2a4768] px-45 py-3 font-bold text-xl text-white transition-all hover:bg-[#1a3758]"
+          >
+            We’re Here To Help!
+          </Link>
+        </div>
+
+          </div>
+        </div>
+
+        <div className="items-right">
+        <div className="ml-10 p-4 text-l">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-gray-200 last:border-none"
+              className="border-grey-200 border-b last:border-none"
             >
               <button
-                className="flex w-full items-center justify-between py-4 text-left font-semibold hover:cursor-pointer"
+                className="flex w-full items-center justify-between py-4 text-left font-bold hover:cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
                 {faq.question}
-                <span className="text-xl">
+                <span className="text-3xl">
                   {openIndex === index ? "−" : "+"}
                 </span>
               </button>
@@ -362,13 +346,10 @@ const About = () => {
             </div>
           ))}
         </div>
-        <Link
-          to="/faq"
-          className="mt-6 text-[#2a4768] font-semibold hover:underline"
-        >
-          View All FAQs
-        </Link>
+        </div>
       </div>
+      </div>
+
     </>
   );
 };

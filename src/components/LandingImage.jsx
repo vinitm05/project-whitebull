@@ -4,7 +4,7 @@ import React from "react";
 const LandingImage = ({ title, link }) => {
   return (
     <div
-      className="mb-14 flex h-60 flex-col items-center justify-center gap-3 bg-[url(assets/about-landing.jpg)] bg-cover bg-center bg-no-repeat text-white shadow-2xl"
+      className="flex h-70 flex-col items-center justify-center gap-3 bg-[url(assets/about-landing.jpg)] bg-cover bg-center bg-no-repeat text-white shadow-2xl"
       style={{
         backgroundAttachment: "fixed",
       }}
