@@ -1,423 +1,337 @@
-import React from "react";
+import React, { useState } from "react";
 import LandingImage from "../../components/LandingImage";
 import { Link } from "react-router";
 import { TbPhoneCalling } from "react-icons/tb";
-import { FaCheckCircle, FaArrowRight, FaFileInvoiceDollar, FaCalculator, FaChartLine, FaLaptop } from "react-icons/fa";
+import OutsourceBookkeeping from "../../assets/outsourced-bookkeeping.webp";
+import ServiceList from "../../components/ServiceList";
 
 const BookKeeping = () => {
-  const bookkeepingBenefits = [
+  const faqs = [
     {
-      id: 1,
-      title: "Cost-Effective Solution",
-      description: "Reduce your operational expenses by up to 50% compared to hiring in-house bookkeepers.",
-      icon: <FaCalculator className="text-3xl text-[#2a4768]" />
+      question:
+        "What benefits do outsourced bookkeeping services offer CA and accounting firms?",
+      answer:
+        "Outsourcing bookkeeping to White Bull lets your firm streamline financial management while cutting down on the need for an in-house team. This reduces overhead costs, improves accuracy, and frees up time for your team to focus on strategic growth.",
     },
     {
-      id: 2,
-      title: "Time-Saving Efficiency",
-      description: "Free up valuable time for your team to focus on client relationships and practice growth.",
-      icon: <FaChartLine className="text-3xl text-[#2a4768]" />
+      question: "How can remote bookkeeping benefit my firm?",
+      answer:
+        "Remote bookkeeping gives you 24/7 access to accurate financial data. White Bull ensures your records are up-to-date and accessible anytime, giving you a clear picture of your firm’s financial health.",
     },
     {
-      id: 3,
-      title: "Accuracy & Compliance",
-      description: "Ensure your clients' financial data is accurate and compliant with UK regulations.",
-      icon: <FaFileInvoiceDollar className="text-3xl text-[#2a4768]" />
+      question: "What sets White Bull's bookkeeping apart from other?",
+      answer:
+        "Unlike general bookkeeping services, White Bull specializes in providing solutions for CA and accounting firms. Our expertise in the unique needs of accounting professionals ensures that we offer cost-effective, accurate, and reliable bookkeeping services tailored specifically to your firm.",
     },
     {
-      id: 4,
-      title: "Advanced Technology",
-      description: "Leverage our expertise with leading accounting software platforms and digital tools.",
-      icon: <FaLaptop className="text-3xl text-[#2a4768]" />
-    }
+      question: "What accounting tools does WhiteBull use for bookkeeping?",
+      answer:
+        "We work with all major accounting software to ensure seamless integration and error-free, compliant bookkeeping for your firm.",
+    },
   ];
+  const [openIndex, setOpenIndex] = useState(null);
 
-  const serviceFeatures = [
-    "Bank reconciliation and transaction processing",
-    "Sales and purchase ledger management",
-    "VAT return preparation",
-    "Management accounts preparation",
-    "Credit control and accounts receivable",
-    "Payroll processing and reporting",
-    "Year-end accounts preparation support",
-    "Custom reporting and financial analysis"
-  ];
-
-  const testimonials = [
-    {
-      id: 1,
-      quote: "White Bull's bookkeeping services have transformed our practice. We've reduced costs by 40% while improving our service delivery to clients.",
-      author: "James Wilson",
-      position: "Managing Partner, Wilson & Associates",
-      image: "../../assets/testimonials/testimonial-1.webp"
-    },
-    {
-      id: 2,
-      quote: "The transition to White Bull's outsourced bookkeeping was seamless. Their team is professional, accurate, and responsive to our needs.",
-      author: "Sarah Thompson",
-      position: "Director, Thompson Accounting Ltd",
-      image: "../../assets/testimonials/testimonial-2.webp"
-    }
-  ];
-
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <>
       <LandingImage
-        title="Bookkeeping Services"
-        link="Services / Bookkeeping"
+        title="Outsourced Accounting Services for UK Accounting Firms"
+        link="Services / Accounting Services"
       />
-
-      {/* Help Section */}
-      <div className="mx-auto w-11/12 my-8 rounded-2xl border border-[#2a4768] bg-white p-4.5">
+      <ServiceList />
+      <div className="mx-auto my-8 w-11/12 rounded-2xl border border-[#2a4768] bg-white p-4.5">
         <TbPhoneCalling className="text-6xl text-[#2a4768]" />
         <h2 className="text-lg font-bold">Need Help?</h2>
         <p className="pt-2 pb-5 text-gray-500">
-          Get in touch and let us know how we can help. We'll be in touch as soon as possible.
+          Get in touch and let us know how we can help touch as soon as
+          possible.
         </p>
         <Link
-          to="/contact"
-          className="rounded-md bg-gradient-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
+          to={"/contact"}
+          className="rounded-md bg-linear-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
         >
           Contact Us
         </Link>
       </div>
+      <img
+        src={OutsourceBookkeeping}
+        className="mx-auto h-auto w-11/12 rounded-2xl"
+      />
 
-      {/* Bookkeeping Services Header */}
-      <div className="my-12 px-4.5">
-        <div className="text-center">
+      <div className="my-8 px-4.5">
+        <div>
           <h3 className="text-4xl font-bold">
-            Professional <span className="text-[#2a4768]">Bookkeeping Services</span>
+            <span className="text-[#2a4768]">Struggling with Bookkeeping?</span>{" "}
+            White Bull has you covered!
           </h3>
-          <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-            Comprehensive outsourced bookkeeping solutions designed specifically for UK accounting firms.
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            Managing bookkeeping in-house can be overwhelming, time-consuming,
+            and expensive. As your firm grows, handling increasing transactions,
+            reconciliations, and compliance requirements can lead to errors,
+            missed deadlines, and potential risks.
+          </p>
+
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            We specialize in outsourced bookkeeping services tailored for CA and
+            accounting firms in the UK. Our expert team ensures accurate
+            financial records, seamless reconciliations, and full compliance
+            with UK accounting standards—so your firm can focus on delivering
+            high-value services to clients.
+          </p>
+          <p className="my-5 text-justify font-bold text-gray-500">
+            🚀 Reduce costs, boost efficiency, and gain financial clarity with
+            White Bull’s expert bookkeeping solutions.
+          </p>
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            <span className="font-semibold text-gray-600">Pan Point:</span> As
+            your firm grows, managing bookkeeping becomes increasingly complex.
+            Delays in reconciliations or errors in financial data can expose
+            your firm to compliance risks. With White Bull handling your
+            bookkeeping, your firm avoids these pitfalls, keeping client records
+            accurate, organized, and timely.
+          </p>
+          <p className="my-6 rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
+            Looking to improve your firm’s overall financial management? Explore
+            our{" "}
+            <Link to={"/services/accounting"} className="font-bold">
+              Outsourced Accounting Services
+            </Link>{" "}
+            to see how White Bull supports your firm across all areas of
+            financial operations.
           </p>
         </div>
-      </div>
 
-      {/* Main Service Description */}
-      <div className="bg-gray-50 py-12 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Elevate Your <span className="text-[#2a4768]">Practice</span> with Expert Bookkeeping Support
-              </h3>
-              <p className="text-gray-600 mb-6">
-                White Bull provides high-quality, cost-effective bookkeeping services that enable UK accounting firms to scale their operations, reduce overhead costs, and deliver exceptional value to clients.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Our team of qualified bookkeepers works as an extension of your practice, handling day-to-day bookkeeping tasks with precision and professionalism while maintaining your firm's standards and processes.
-              </p>
-              <div className="flex gap-4 mt-8">
-                <Link
-                  to="/contact"
-                  className="rounded-md bg-[#2a4768] px-6 py-3 font-semibold text-white hover:bg-[#1a3758] transition-all"
-                >
-                  Get Started
-                </Link>
-                <Link
-                  to="/case-studies"
-                  className="rounded-md border border-[#2a4768] px-6 py-3 font-semibold text-[#2a4768] hover:bg-gray-50 transition-all"
-                >
-                  View Case Studies
-                </Link>
-              </div>
-            </div>
-            <div>
-              <img
-                src="../../assets/services/bookkeeping-main.webp"
-                alt="Professional Bookkeeping Services"
-                className="rounded-2xl shadow-md w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+        <div>
+          <h3 className="text-4xl font-bold text-[#2a4768]">
+            Why UK Accounting Firms Trust White Bull’s Outsourced Bookkeeping?
+          </h3>
 
-      {/* Benefits Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Benefits of Our <span className="text-[#2a4768]">Bookkeeping Services</span>
-            </h3>
-            <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-              Discover how our outsourced bookkeeping solutions can transform your accounting practice.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {bookkeepingBenefits.map((benefit) => (
-              <div key={benefit.id} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                <div className="mb-4">
-                  {benefit.icon}
-                </div>
-                <h4 className="text-xl font-bold mb-3">{benefit.title}</h4>
-                <p className="text-gray-600">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Features Section */}
-      <div className="bg-[#f8fafc] py-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <img
-                src="../../assets/services/bookkeeping-features.webp"
-                alt="Comprehensive Bookkeeping Services"
-                className="rounded-2xl shadow-md w-full h-auto"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-6">
-                Comprehensive <span className="text-[#2a4768]">Bookkeeping Solutions</span>
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Our bookkeeping services cover all aspects of financial record-keeping, ensuring your clients' books are accurate, up-to-date, and compliant with UK regulations.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                {serviceFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-start">
-                    <FaCheckCircle className="text-[#2a4768] mt-1 mr-2 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Process Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Our <span className="text-[#2a4768]">Process</span>
-            </h3>
-            <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-              A seamless, transparent approach to integrating our bookkeeping services with your practice.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">1</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Initial Consultation</h4>
-              <p className="text-gray-600 text-sm">We discuss your specific requirements and practice workflows.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">2</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Tailored Proposal</h4>
-              <p className="text-gray-600 text-sm">We create a customized service package aligned with your needs.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">3</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Implementation</h4>
-              <p className="text-gray-600 text-sm">We establish secure systems and integrate with your existing workflow.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">4</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Ongoing Support</h4>
-              <p className="text-gray-600 text-sm">We provide continuous service with regular reviews and adjustments.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Testimonials */}
-      <div className="bg-[#2a4768] py-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white">
-              What Our <span className="text-[#7cb5be]">Clients Say</span>
-            </h3>
-            <p className="mt-4 text-gray-300 max-w-3xl mx-auto">
-              Hear from accounting firms that have transformed their practices with our bookkeeping services.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white p-6 rounded-2xl shadow-md">
-                <p className="text-gray-700 italic mb-6">"{testimonial.quote}"</p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full mr-4 object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold">{testimonial.author}</h4>
-                    <p className="text-gray-500 text-sm">{testimonial.position}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* FAQ Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Frequently Asked <span className="text-[#2a4768]">Questions</span>
-            </h3>
-          </div>
-
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">How does the outsourcing process work?</h4>
-              <p className="text-gray-600">
-                We establish secure access to your systems and work as an extension of your team, following your processes and standards. Regular communication ensures a seamless experience for both your firm and your clients.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">What accounting software do you support?</h4>
-              <p className="text-gray-600">
-                Our team is proficient in all major UK accounting platforms including Xero, QuickBooks, Sage, FreeAgent, and many others. We adapt to your preferred software solution.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">How do you ensure data security and confidentiality?</h4>
-              <p className="text-gray-600">
-                We implement strict security protocols, encrypted communications, and secure access controls. All our staff sign comprehensive confidentiality agreements, and we're fully GDPR compliant.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Can your services be white-labeled?</h4>
-              <p className="text-gray-600">
-                Yes, our bookkeeping services can be fully white-labeled. We work behind the scenes, allowing you to maintain and strengthen your client relationships while we handle the bookkeeping tasks.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Call to Action */}
-      <div className="py-16 px-4.5 text-center bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to <span className="text-[#2a4768]">Transform</span> Your Practice?
+          <h2 className="my-3.5 text-2xl font-bold">
+            Cost-Effective & Scalable Solutions
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto mb-8">
-            Discover how White Bull's bookkeeping services can help your firm reduce costs, increase efficiency, and deliver exceptional service to your clients.
+          <p className="leading-6.5 text-gray-500">
+            Outsourcing your bookkeeping to White Bull eliminates the overhead
+            costs of hiring and managing an in-house team. Our flexible services
+            adapt to your firm’s growth, allowing you to scale operations
+            without increasing fixed costs.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="rounded-md bg-[#2a4768] px-6 py-3 font-semibold text-white hover:bg-[#1a3758] transition-all"
-            >
-              Schedule a Consultation
-            </Link>
-            <Link
-              to="/services"
-              className="rounded-md border border-[#2a4768] px-6 py-3 font-semibold text-[#2a4768] hover:bg-gray-50 transition-all"
-            >
-              Explore Our Services
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Related Services */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Related <span className="text-[#2a4768]">Services</span>
-            </h3>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Accounts Preparation</h4>
-              <p className="text-gray-600 mb-4">
-                Comprehensive accounts preparation services for year-end financial statements and management accounts.
-              </p>
-              <Link
-                to="/services/accounts-preparation"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Tax Return Preparation</h4>
-              <p className="text-gray-600 mb-4">
-                Expert preparation of personal, partnership, and corporate tax returns for your clients.
-              </p>
-              <Link
-                to="/services/tax-returns"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Payroll Services</h4>
-              <p className="text-gray-600 mb-4">
-                End-to-end payroll processing, including RTI submissions, payslips, and year-end reporting.
-              </p>
-              <Link
-                to="/services/payroll"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Newsletter Section */}
-      <div className="bg-[#2a4768] py-16 px-4.5 my-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Stay Updated with the Latest Insights
+          <h2 className="my-3.5 text-2xl font-bold">
+            {" "}
+            Expertise in UK Accounting & Compliance
           </h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter to receive expert advice, industry updates, and practical strategies for UK accounting firms.
+          <p className="leading-6.5 text-gray-500">
+            Our team is highly experienced in UK GAAP, IFRS, and HMRC
+            compliance, ensuring error-free financial records and audit
+            readiness. We keep your firm and your clients aligned with
+            regulatory requirements, minimizing compliance risks.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
-            <input
-              type="email"
-              placeholder="Your Email Address"
-              className="px-4 py-3 rounded-md w-full"
-            />
-            <button className="bg-white text-[#2a4768] font-semibold px-6 py-3 rounded-md hover:bg-gray-100 transition-all whitespace-nowrap">
-              Subscribe Now
-            </button>
-          </div>
-          <p className="text-gray-400 text-sm mt-4">
-            We respect your privacy. Unsubscribe at any time.
+          <h2 className="my-3.5 text-2xl font-bold">
+            {" "}
+            Enhanced Accuracy & Efficiency
+          </h2>
+          <p className="leading-6.5 text-gray-500">
+            With real-time data entry, automated reconciliations, and meticulous
+            financial tracking, we help your firm maintain precision in
+            bookkeeping. Our expert team ensures that all transactions are
+            accurately recorded, reducing the risk of discrepancies.
           </p>
+          <h2 className="my-3.5 text-2xl font-bold">
+            {" "}
+            Seamless Integration with Accounting Software
+          </h2>
+          <p className="leading-6.5 text-gray-500">
+            We work with leading accounting platforms, including QuickBooks,
+            Xero, Sage, and FreeAgent, ensuring a smooth and efficient
+            bookkeeping process that aligns with your firm’s workflow.
+          </p>
+          <p className="my-5 text-justify leading-7 font-bold text-gray-500">
+            💡 Partner with White Bull and experience a bookkeeping solution
+            that is efficient, accurate, and tailored to your firm’s needs.
+          </p>
+
+          <p className="rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
+            Explore our full range of{" "}
+            <Link to={"/services/financialanalysis"} className="font-bold">
+              Outsourced Financial Analysis Service
+            </Link>{" "}
+            and discover how we can help elevate your firm’s performance.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="my-5 text-4xl font-bold">
+            <span className="text-[#2a4768]">
+              Our Outsourced Bookkeeping Services
+            </span>{" "}
+            for UK CA & Accounting Firms
+          </h2>
+
+          {/* 1 */}
+          <h3 className="text-2xl font-bold">
+            Accurate Financial Transaction Recording
+          </h3>
+          <ul className="py-5 text-gray-500">
+            <li>
+              ✔ Maintain real-time, error-free transaction records for your
+              clients.
+            </li>
+            <li>✔ Ensure compliance with UK accounting standards.</li>
+          </ul>
+
+          {/* 2 */}
+          <h3 className="text-2xl font-bold">
+            Bank & Credit Card Reconciliations
+          </h3>
+          <ul className="py-5 text-gray-500">
+            <li>
+              ✔ Identify and correct discrepancies before they impact financial
+              reporting.
+            </li>
+            <li>✔ Keep financial records audit-ready and fully reconciled.</li>
+          </ul>
+
+          {/* 3 */}
+          <h3 className="text-2xl font-bold">VAT & Tax-Ready Bookkeeping</h3>
+          <ul className="py-5 text-gray-500">
+            <li>✔ Maintain organized and tax-compliant financial records.</li>
+            <li>✔ Ensure seamless VAT returns and HMRC submissions.</li>
+          </ul>
+
+          {/* 4 */}
+          <h3 className="text-2xl font-bold">
+            Month-End & Year-End Closing Support
+          </h3>
+          <ul className="py-5 text-gray-500">
+            <li>✔ Reconcile accounts for a smooth financial close.</li>
+            <li>
+              ✔ Generate detailed financial reports for strategic
+              decision-making.
+            </li>
+          </ul>
+
+          {/* 5 */}
+          <h3 className="text-2xl font-bold">
+            Accounts Payable & Receivable Management
+          </h3>
+          <ul className="py-5 text-gray-500">
+            <li>
+              ✔ Streamline invoice processing, payments, and collections.
+            </li>
+            <li>✔ Reduce late payments and improve cash flow management.</li>
+          </ul>
+
+          <p className="mb-5 leading-7 text-gray-500">
+            Over the years, we’ve helped UK accounting firms optimize their
+            bookkeeping processes, ensuring that client accounts remain accurate
+            and compliant. By choosing White Bull, your firm will have the
+            confidence of knowing all financial records are in good hands.
+          </p>
+
+          <p className="rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
+            Looking for reliable tax support? Check out our{" "}
+            <Link to={"/services/taxreturn"} className="font-bold">
+              Tax Preparation Services
+            </Link>
+            for comprehensive, accurate solutions to meet your clients’ tax
+            filing needs.
+          </p>
+
+          <h2 className="my-5 text-4xl font-bold text-[#2a4768]">
+            The White Bull Advantage – Your Reliable Bookkeeping Partner
+          </h2>
+          <p className="text-gray-500">
+            With years of experience in outsourced accounting, White Bull is the
+            trusted partner for UK CA and accounting firms. Our services enhance
+            efficiency, accuracy, and cost-effectiveness, helping firms
+            streamline their bookkeeping and focus on client advisory services.
+          </p>
+          <ul className="my-6 text-gray-500">
+            <li>
+              🔹{" "}
+              <span className="font-bold">
+                100% Data Security & Confidentiality
+              </span>{" "}
+              – Protecting your client’s financial data is our top priority.
+            </li>
+            <li>
+              🔹 <span className="font-bold">Dedicated Offshore Team</span> –
+              Get a team of skilled bookkeepers working exclusively for your
+              firm.
+            </li>
+            <li>
+              🔹 <span className="font-bold">Proven Track Record</span> – We’ve
+              helped UK firms optimize their bookkeeping processes with flawless
+              financial management.
+            </li>
+          </ul>
+
+          <p className="font-bold text-gray-500">
+            💡 Outsource your bookkeeping to White Bull and transform the way
+            your firm manages financial records!
+          </p>
+
+          <p className="my-5 text-justify leading-7 text-gray-500">
+            <span className="font-semibold text-gray-600">Pan Point:</span>{" "}
+            Without reliable bookkeeping support, firms face the risk of missed
+            deadlines, inaccurate data, and compliance issues. White Bull
+            ensures that client records are meticulously maintained,
+            safeguarding your firm’s efficiency and reputation.
+          </p>
+
+          <h2 className="my-5 text-4xl font-bold text-[#2a4768]">
+            Start Partnering with White Bull for Seamless Bookkeeping
+          </h2>
+          <p className="text-gray-500">
+            Our outsourced bookkeeping services are designed to help UK CA and
+            accounting firms improve accuracy, efficiency, and compliance.
+            Whether you need help with day-to-day bookkeeping, reconciliations,
+            or VAT-ready financial records, White Bull provides expert support
+            to keep your clients’ accounts in perfect order.
+          </p>
+          <p className="mt-6 mb-16 font-bold text-gray-500">
+            📩 Get in touch today to discover how White Bull can streamline your
+            bookkeeping and enhance your firm’s productivity!
+          </p>
+        </div>
+      </div>
+
+      {/* FAQs */}
+      <div className="flex flex-col items-center bg-white px-4.5 py-10">
+        <p className="font-semibold text-[#2a4768]">FAQs</p>
+        <h2 className="text-center text-3xl font-bold">
+          Everything You Need to Know About{" "}
+          <span className="text-[#2a4768]">Outsourced Accounting</span>
+        </h2>
+        <p className="text-center text-gray-500">
+          Discover helpful answers to your most pressing financial questions.
+          We’re here to assist you every step of the way!{" "}
+        </p>
+        <div className="mx-auto max-w-lg p-4">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border-b border-gray-200 last:border-none"
+            >
+              <button
+                className="flex w-full items-center justify-between py-4 text-left font-semibold hover:cursor-pointer"
+                onClick={() => toggleFAQ(index)}
+              >
+                {faq.question}
+                <span className="text-xl">
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </button>
+              {openIndex === index && (
+                <p className="pb-4 text-gray-400">{faq.answer}</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </>
   );
 };
 
-export default BookKeeping
+export default BookKeeping;
