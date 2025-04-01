@@ -82,12 +82,14 @@ const TaxReturn = () => {
           <p className="mt-4 mb-5 text-justify text-gray-500">
             Our outsourced tax return preparation services are designed
             exclusively for UK accounting firms and CAs who want to:
-            <span className="font-bold">
-              <br></br>✔ Meet deadlines without last-minute panic<br></br>✔
-              Ensure 100% compliance with UK tax laws<br></br>✔ Reduce the risk
-              of errors, penalties, and audits<br></br>✔ Scale services up or
-              down based on client demand
-            </span>
+            <ul>
+            <li className="font-bold">✔ Meet deadlines without last-minute panic</li>
+            <li className="font-bold">✔ Ensure 100% compliance with UK tax laws</li>
+            <li className="font-bold">✔ Reduce the risk
+            of errors, penalties, and audits</li>
+            <li className="font-bold">✔ Scale services up or
+            down based on client demand</li>
+          </ul>
           </p>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
@@ -119,12 +121,12 @@ const TaxReturn = () => {
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
             We’ve seen it all:
-            <span className="font-bold">
-              <br></br>✅ Tight deadlines turning into all-nighters<br></br>✅
-              Last-minute client uploads that make you question life choices
-              <br></br>✅ Ever-changing HMRC regulations that feel like a moving
-              goalpost
-            </span>
+            <ul>
+            <li className="font-bold">✅ Tight deadlines turning into all-nighters</li>
+            <li className="font-bold">✅
+            Last-minute client uploads that make you question life choices</li>
+            <li className="font-bold">✅ Ever-changing HMRC regulations that feel like a moving goalpost</li>
+          </ul>
           </p>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
@@ -152,18 +154,12 @@ const TaxReturn = () => {
             Here’s why firms across the UK trust White Bull:
           </p>
 
-          <p className="mt-4 mb-5 text-justify text-gray-500">
-            <span className="font-bold">📌 Cost-Effective – </span>No need for
-            extra in-house staff. Get expert tax services when you need them,
-            without the overhead.<br></br>
-            <span className="font-bold">📌 Expert Support – </span>Our tax
-            specialists stay ahead of UK tax laws, ensuring your clients’
-            filings are always spot-on.<br></br>
-            <span className="font-bold">📌 Scalability – </span>Handling 10
-            returns today? 100 next month? We scale with you.<br></br>
-            <span className="font-bold">📌 Time-Saving – </span>Spend less time
-            on tax filings and more time building client relationships.
-          </p>
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li><span className="font-bold">📌 Cost-Effective – </span>No need for extra in-house staff. Get expert tax services when you need them, without the overhead.</li>
+            <li><span className="font-bold">📌 Expert Support – </span>Our tax specialists stay ahead of UK tax laws, ensuring your clients’ filings are always spot-on.</li>
+            <li><span className="font-bold">📌 Scalability – </span>Handling 10 returns today? 100 next month? We scale with you.</li>
+            <li><span className="font-bold">📌 Time-Saving – </span>Spend less time on tax filings and more time building client relationships.</li>
+          </ul>
         </div>
 
         <div>
