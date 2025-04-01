@@ -118,7 +118,7 @@ const Payroll = () => {
             <span className="text-[#2a4768]">The Real Pain Point: </span>Payroll Errors = Fines & Unhappy Clients
         </h2>
           <h3 className="text-left text-3xl font-bold">
-            MWhy Payroll Compliance Matters for UK CA Firms
+            Why Payroll Compliance Matters for UK CA Firms
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
