@@ -175,18 +175,12 @@ const TaxReturn = () => {
             needs, and we tailor our services accordingly.
           </p>
 
-          <p className="mt-4 mb-5 text-justify text-gray-500">
-            <span className="font-bold">
-              ✅ Personalized Tax Filing Solutions –{" "}
-            </span>
-            Whether it’s an individual self-assessment or a corporate tax
-            return, we optimize for maximum tax savings.<br></br>
-            <span className="font-bold">✅ Full Compliance – </span>We stay
-            updated on HMRC’s latest regulations so you don’t have to.<br></br>
-            <span className="font-bold">✅ Proactive Tax Planning – </span>We
-            don’t just file; we help you strategize to reduce liabilities and
-            improve cash flow for your clients.
-          </p>
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li><span className="font-bold">✅ Personalized Tax Filing Solutions – </span>Whether it’s an individual self-assessment or a corporate tax
+            return, we optimize for maximum tax savings.</li>
+            <li><span className="font-bold">✅ Full Compliance – </span>We stay updated on HMRC’s latest regulations so you don’t have to.</li>
+            <li><span className="font-bold">✅ Proactive Tax Planning – </span>We don’t just file; we help you strategize to reduce liabilities and improve cash flow for your clients.</li>
+          </ul>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
             When you work with us, your clients will never know that we’re doing
@@ -213,19 +207,12 @@ const TaxReturn = () => {
             tax return preparation services that help your firm:
           </p>
 
-          <p className="mt-4 mb-5 text-justify text-gray-500">
-            <span className="font-bold">✅ Stay Ahead of Deadlines – </span>
-            No more last-minute scrambling.<br></br>
-            <span className="font-bold">✅ Ensure 100% Accuracy – </span>Every
-            return is reviewed through a rigorous quality control process.
-            <br></br>
-            <span className="font-bold">✅ Work Seamlessly – </span>We integrate
-            with your existing processes, working as an extension of your team.
-            <br></br>
-            <span className="font-bold">✅ Avoid Costly Errors – </span>Mistakes
-            can lead to penalties and client dissatisfaction. We help you get it
-            right the first time.
-          </p>
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li><span className="font-bold">✅ Stay Ahead of Deadlines – </span>No more last-minute scrambling.</li>
+            <li><span className="font-bold">✅ Ensure 100% Accuracy – </span>Every return is reviewed through a rigorous quality control process.</li>
+            <li><span className="font-bold">✅ Work Seamlessly – </span>We integrate with your existing processes, working as an extension of your team.</li>
+            <li><span className="font-bold">✅ Avoid Costly Errors – </span>Mistakes can lead to penalties and client dissatisfaction. We help you get it right the first time.</li>
+          </ul>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
             When you partner with White Bull, your clients will never know we
@@ -247,17 +234,12 @@ const TaxReturn = () => {
             White Bull provides tax return preparation for:
           </p>
 
-          <p className="mt-4 mb-5 text-justify text-gray-500">
-            <span className="font-bold">📌 Individual Tax Returns – </span>
-            Self-assessment returns done with precision, ensuring all deductions
-            are accounted for.<br></br>
-            <span className="font-bold">📌 Corporate Tax Returns – </span>
-            Complex corporate filings managed efficiently.<br></br>
-            <span className="font-bold">📌 Partnerships & LLPs – </span>
-            Hassle-free tax filings for business partnerships and LLPs.<br></br>
-            <span className="font-bold">📌 Tax Planning – </span>Strategic tax
-            advice to help clients optimize their financial position.
-          </p>
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li><span className="font-bold">📌 Individual Tax Returns – </span>Self-assessment returns done with precision, ensuring all deductions are accounted for.</li>
+            <li><span className="font-bold">📌 Corporate Tax Returns – </span>Complex corporate filings managed efficiently.</li>
+            <li><span className="font-bold">📌 Partnerships & LLPs – </span>Hassle-free tax filings for business partnerships and LLPs.</li>
+            <li><span className="font-bold">📌 Tax Planning – </span>Strategic tax advice to help clients optimize their financial position.</li>
+          </ul>
 
           <p className="rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">
             Streamline account reconciliation with our
@@ -278,8 +260,11 @@ const TaxReturn = () => {
           Managing tax returns in-house can quickly become overwhelming—especially during peak seasons. By outsourcing to White Bull, your firm can:
           </p>
 
-          <p className="mt-4 mb-5 text-justify text-gray-500">
-            <span className="font-bold">✔ Minimize Errors – </span>Reduce the risk of costly HMRC penalties.<br></br><span className="font-bold">✔ Ensure Timely Filing – </span>Never miss a deadline again.<br></br><span className="font-bold">✔ Focus on Growth – </span>Free up time to scale your business and serve clients better.</p>
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li><span className="font-bold">✔ Minimize Errors – </span>Reduce the risk of costly HMRC penalties.</li>
+            <li><span className="font-bold">✔ Ensure Timely Filing – </span>Never miss a deadline again.</li>
+            <li><span className="font-bold">✔ Focus on Growth – </span>Free up time to scale your business and serve clients better.</li>
+          </ul>
         </div>
 
         <div>
