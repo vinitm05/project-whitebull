@@ -1,419 +1,528 @@
-import React from "react";
+import React, { useState } from "react";
 import LandingImage from "../../components/LandingImage";
 import { Link } from "react-router";
 import { TbPhoneCalling } from "react-icons/tb";
-import { FaCheckCircle, FaArrowRight, FaFileAlt, FaChartPie, FaShieldAlt, FaClock } from "react-icons/fa";
+import OutsourceYearEnd from "../../assets/outsourced-yearend.webp";
+import ServiceList from "../../components/ServiceList";
 
 const VAT = () => {
-  const vatReturnBenefits = [
+  const faqs = [
     {
-      id: 1,
-      title: "Enhanced Compliance",
-      description: "Stay fully compliant with HMRC's Making Tax Digital (MTD) requirements and VAT regulations.",
-      icon: <FaShieldAlt className="text-3xl text-[#2a4768]" />
+      question: "Why should I outsource VAT return filing?",
+      answer:
+        "Outsourcing VAT return filing saves your firm time, ensures compliance, reduces the risk of errors, and gives you access to VAT experts without maintaining an in-house team.",
     },
     {
-      id: 2,
-      title: "Time Efficiency",
-      description: "Free up your team's time to focus on advisory services and client relationships.",
-      icon: <FaClock className="text-3xl text-[#2a4768]" />
+      question: "What VAT services does White Bull provide?",
+      answer:
+        "White Bull offers comprehensive VAT services, including VAT return preparation, filing, registration, and support with audits, ensuring full compliance with HMRC guidelines.",
     },
     {
-      id: 3,
-      title: "Increased Capacity",
-      description: "Handle more clients during peak VAT periods without increasing your overhead costs.",
-      icon: <FaChartPie className="text-3xl text-[#2a4768]" />
+      question: "How does White Bull ensure accurate VAT return filings?",
+      answer:
+        "We use advanced VAT software, regularly updated by our team of VAT specialists, to ensure that your clients’ VAT returns are calculated correctly and filed on time.",
     },
     {
-      id: 4,
-      title: "Complete Documentation",
-      description: "Receive thorough workpapers with clear audit trails for every VAT calculation.",
-      icon: <FaFileAlt className="text-3xl text-[#2a4768]" />
-    }
+      question: "Can White Bull help with VAT registration?",
+      answer:
+        "Yes, White Bull provides VAT registration services for businesses in the UK, ensuring that they are compliant with the latest VAT regulations.",
+    },
   ];
 
-  const serviceFeatures = [
-    "VAT return preparation from source documents",
-    "MTD-compliant submissions",
-    "VAT scheme optimization",
-    "Partial exemption calculations",
-    "EU and international VAT handling",
-    "VAT reconciliations and adjustments",
-    "Detailed checking workpapers",
-    "VAT control account reconciliations"
-  ];
+  const [openIndex, setOpenIndex] = useState(null);
 
-  const testimonials = [
-    {
-      id: 1,
-      quote: "White Bull has transformed our VAT process. Their meticulous approach has reduced errors, improved compliance, and freed our team to focus on client advisory work.",
-      author: "Sarah Johnson",
-      position: "Managing Partner, Johnson Accounting LLP",
-      image: "../../assets/testimonials/testimonial-1.webp"
-    },
-    {
-      id: 2,
-      quote: "Since outsourcing our VAT returns to White Bull, we've been able to take on 40% more clients without compromising on quality or compliance standards.",
-      author: "David Thompson",
-      position: "Director, Thompson & Associates",
-      image: "../../assets/testimonials/testimonial-2.webp"
-    }
-  ];
-
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
   return (
     <>
       <LandingImage
-        title="VAT Return Filing Services"
-        link="Services / VAT Return Filing"
+        title="Outsourced Accounting Services for UK Accounting Firms"
+        link="Services / VAT Return Filing Services"
       />
 
-      {/* Help Section */}
-      <div className="mx-auto w-11/12 my-8 rounded-2xl border border-[#2a4768] bg-white p-4.5">
+      <ServiceList />
+
+      <div className="mx-auto my-8 w-11/12 rounded-2xl border border-[#2a4768] bg-white p-4.5">
         <TbPhoneCalling className="text-6xl text-[#2a4768]" />
         <h2 className="text-lg font-bold">Need Help?</h2>
         <p className="pt-2 pb-5 text-gray-500">
-          Get in touch and let us know how we can help. We'll be in touch as soon as possible.
+          Get in touch and let us know how we can help touch as soon as
+          possible.
         </p>
         <Link
-          to="/contact"
-          className="rounded-md bg-gradient-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
+          to={"/contact"}
+          className="rounded-md bg-linear-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
         >
           Contact Us
         </Link>
       </div>
+      <img
+        src={OutsourceYearEnd}
+        className="mx-auto h-auto w-11/12 rounded-2xl"
+      />
 
-      {/* VAT Return Filing Header */}
-      <div className="my-12 px-4.5">
-        <div className="text-center">
-          <h3 className="text-4xl font-bold">
-            VAT Return <span className="text-[#2a4768]">Filing Services</span>
+      <div className="bg-[#eceef6] px-33 py-30">
+        <div>
+          <h2 className="text-left text-4xl font-bold">
+            Expert
+            <span className="text-[#2a4768]"> VAT Return Filing Services </span>
+            for Your Clients
+          </h2>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Navigating VAT regulations is like solving a never-ending puzzle—one
+            wrong move, and it could cost your clients dearly. At
+            <span className="font-bold"> White Bull, </span>we specialize in
+            <span className="font-bold">
+              {" "}
+              outsourced VAT return filing services for CA and accounting firms
+              in the UK,{" "}
+            </span>
+            ensuring that your clients’ VAT obligations are met accurately and
+            on time—without the headache.
+          </p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Why wrestle with ever-changing
+            <span className="font-bold"> HMRC regulations </span>when you can
+            have<span className="font-bold"> VAT experts </span>handle it for
+            you? By outsourcing
+            <span className="font-bold"> VAT return filing </span>to White Bull,
+            your firm can focus on
+            <span className="font-bold"> scaling your business </span>while we
+            take care of
+            <span className="font-bold">
+              {" "}
+              compliance, deadlines, and all the nitty-gritty details.
+            </span>
+          </p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            <span className="font-bold">Pain Point: </span>VAT filing errors or
+            delays can lead to hefty fines. White Bull ensures
+            <span className="font-bold"> timely, error-free submissions </span>
+            so your clients stay
+            <span className="font-bold">
+              {" "}
+              compliant, stress-free, and penalty-free.
+            </span>
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold">
+            Why
+            <span className="text-[#2a4768]">
+              {" "}
+              Outsource VAT Return Filing{" "}
+            </span>
+            to White Bull?
+          </h2>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            VAT compliance is
+            <span className="font-bold">
+              {" "}
+              complex, time-consuming, and downright tedious.{" "}
+            </span>
+            Outsourcing VAT return filing to White Bull gives your firm a
+            <span className="font-bold"> reliable partner </span>who takes care
+            of it all, leaving you free to focus on
+            <span className="font-bold"> high-value client work.</span>
+          </p>
+
+          <h3 className="text-left text-3xl font-bold">
+            The Hidden Costs of In-House VAT Filing
           </h3>
-          <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-            Professional VAT return preparation and filing services tailored for UK accounting practices.
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Managing VAT returns in-house may seem like a good idea, but it
+            comes with hidden costs—
+            <span className="font-bold">
+              {" "}
+              time, manpower, and the risk of errors.
+            </span>
+          </p>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li>
+              <span className="font-bold">
+                ❌ Missed deadlines can result in penalties.
+              </span>
+            </li>
+            <li>
+              <span className="font-bold">
+                ❌ Compliance mistakes can trigger HMRC audits.
+              </span>
+            </li>
+            <li>
+              <span className="font-bold">
+                ❌ In-house VAT teams require continuous training and resources.
+              </span>
+              we scale with you.
+            </li>
+          </ul>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            By outsourcing VAT return filing to
+            <span className="font-bold"> White Bull, </span>you eliminate these
+            risks while
+            <span className="font-bold">saving time and cutting costs.</span>
+          </p>
+
+          <h3 className="text-left text-3xl font-bold">
+            Benefits of Outsourcing VAT Filing
+          </h3>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li>
+              <span className="font-bold">✅ Accurate VAT Returns – </span>No
+              more second-guessing! We ensure error-free VAT calculations and
+              eliminate compliance risks.
+            </li>
+            <li>
+              <span className="font-bold">✅ Timely Submissions –</span>Never
+              miss a deadline! Our team ensures your clients’ VAT returns are
+              submitted on time, every time.
+            </li>
+            <li>
+              <span className="font-bold">✅ 100% HMRC Compliance – </span>Tax
+              laws change faster than fashion trends! We stay updated so you
+              don’t have to.
+            </li>
+            <li>
+              <span className="font-bold">✅ Cost-Effective Solution – </span>No
+              need for an in-house VAT team—cut costs while maintaining top-tier
+              service.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold">
+            What<span className="text-[#2a4768]"> We Offer</span>
+          </h2>
+
+          <h3 className="text-left text-3xl font-bold">
+            Comprehensive VAT Return Services
+          </h3>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            We provide
+            <span className="font-bold">
+              {" "}
+              end-to-end VAT return filing services,{" "}
+            </span>
+            tailored to
+            <span className="font-bold">
+              {" "}
+              meet the needs of CA and accounting firms in the UK.{" "}
+            </span>
+          </p>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li>
+              <span className="font-bold">📌 Preparation and filing </span>of
+              quarterly or annual VAT returns
+            </li>
+            <li>
+              <span className="font-bold">
+                📌 VAT registration and deregistration{" "}
+              </span>
+              assistance
+            </li>
+            <li>
+              <span className="font-bold">
+                📌 Support with VAT audits and corrections
+              </span>
+            </li>
+            <li>
+              <span className="font-bold">📌 Real-time tracking </span>of VAT
+              filings for<span className="font-bold"> accurate reporting</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold">
+            Reliable
+            <span className="text-[#2a4768]">
+              {" "}
+              VAT Return Filing Solutions{" "}
+            </span>
+            for CA and Accounting Firms
+          </h2>
+          <h3 className="text-left text-3xl font-bold">
+            Say Goodbye to VAT Compliance Hassles
+          </h3>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Managing VAT returns can feel like
+            <span className="font-bold"> herding cats— </span>challenging and
+            unpredictable. That’s where White Bull steps in. Our
+            <span className="font-bold">
+              {" "}
+              outsourced VAT return filing services{" "}
+            </span>
+            help CA and accounting firms eliminate
+            <span className="font-bold">
+              {" "}
+              errors, missed deadlines, and compliance worries.
+            </span>
+          </p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            <span className="font-bold">Pain Point: </span>Late filings and
+            errors can lead to
+            <span className="font-bold"> hefty fines and HMRC headaches. </span>
+            White Bull helps firms stay ahead with
+            <span className="font-bold">
+              {" "}
+              timely, precise, and fully compliant VAT return filings.
+            </span>
+          </p>
+
+          <h3 className="text-left text-3xl font-bold">
+            What You Get with White Bull
+          </h3>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li>
+              <span className="font-bold">✅ Correct VAT calculations </span>for
+              every client
+            </li>
+            <li>
+              <span className="font-bold">
+                ✅ Transparent and clear VAT reporting
+              </span>
+            </li>
+            <li>
+              <span className="font-bold">
+                ✅ Timely, compliant submissions
+              </span>
+            </li>
+          </ul>
+
+          <p className="mb-10 rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">
+            Need help with VAT and other indirect taxes? Check out our Indirect
+            <span className="font-bold"> Taxation Services </span>for additional
+            support.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold">
+            Why
+            <span className="text-[#2a4768]"> White Bull </span>is the Right
+            Choice for Outsourced VAT Return Filing
+          </h2>
+          <h3 className="text-left text-3xl font-bold">
+            Your Trusted VAT Compliance Partner
+          </h3>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Partnering with<span className="font-bold"> White Bull </span>means
+            you get a<span className="font-bold"> trusted team </span>that
+            understands the complexities of
+            <span className="font-bold"> UK VAT laws </span>and provides
+            <span className="font-bold"> tailored solutions </span>for your
+            clients—whether they’re startups or large enterprises.
+          </p>
+
+          <h3 className="text-left text-3xl font-bold">
+            Why Accounting Firms Trust White Bull
+          </h3>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Partnering with<span className="font-bold"> White Bull </span>means
+            you get a<span className="font-bold"> trusted team </span>that
+            understands the complexities of
+            <span className="font-bold"> UK VAT laws </span>and provides
+            <span className="font-bold"> tailored solutions </span>for your
+            clients—whether they’re startups or large enterprises.
+          </p>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li>
+              <span className="font-bold">🔹 Industry Expertise: </span>We
+              specialize in VAT filing across multiple industries, ensuring
+              <span className="font-bold"> flawless submissions.</span>
+            </li>
+            <li>
+              <span className="font-bold">
+                🔹 Reliable and Accurate Reporting:{" "}
+              </span>
+              Our team uses
+              <span className="font-bold"> advanced VAT software </span>to
+              eliminate errors.
+            </li>
+            <li>
+              <span className="font-bold">🔹 Dedicated VAT Experts: </span>We
+              keep up with the
+              <span className="font-bold"> latest HMRC regulations </span>so
+              your clients stay compliant.
+            </li>
+            <li>
+              <span className="font-bold">🔹 Flexible Solutions: </span>Scalable
+              VAT return filing services that
+              <span className="font-bold">
+                {" "}
+                grow with your clients’ businesses.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold">
+            Simplify
+            <span className="text-[#2a4768]"> VAT Compliance </span>with White
+            Bull’s VAT Return Filing Services
+          </h2>
+          <h3 className="text-left text-3xl font-bold">
+            The Hassle-Free Approach to VAT Filing
+          </h3>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            VAT compliance shouldn’t feel like
+            <span className="font-bold"> a constant battle. </span>With
+            <span className="font-bold"> White Bull, </span>you get:
+          </p>
+
+          <ul className="mt-4 mb-5 text-justify text-gray-500">
+            <li>
+              <span className="font-bold">✅ Accurate VAT calculations</span>
+            </li>
+            <li>
+              <span className="font-bold">
+                ✅ Complete compliance with UK tax laws
+              </span>
+            </li>
+            <li>
+              <span className="font-bold">
+                ✅ Seamless VAT-related communication with HMRC
+              </span>
+            </li>
+          </ul>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            <span className="font-bold"> Pain Point: </span>Keeping up with VAT
+            law changes is exhausting. Our experts
+            <span className="font-bold"> stay ahead of the curve, </span>so you
+            don’t have to.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold">
+            Trusted
+            <span className="text-[#2a4768]"> VAT Return Filing Services </span>
+            for CA and Accounting Firms in the UK
+          </h2>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            White Bull has earned the
+            <span className="font-bold">
+              {" "}
+              trust of CA and accounting firms across the UK{" "}
+            </span>
+            by delivering
+            <span className="font-bold">
+              {" "}
+              reliable, efficient, and hassle-free VAT return filing
+              services.{" "}
+            </span>
+            Whether your clients are
+            <span className="font-bold">
+              {" "}
+              small businesses or large enterprises,{" "}
+            </span>
+            we ensure their VAT returns are
+            <span className="font-bold">
+              {" "}
+              accurate, on time, and fully compliant.
+            </span>
+          </p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Let White Bull handle VAT compliance, so you can focus on growing
+            your firm and serving your clients.
+          </p>
+
+          <p className="mb-10 rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">
+            Explore our
+            <span className="font-bold"> Tax Preparation Services</span>for
+            additional support with other taxation needs, ensuring your clients
+            receive full financial support.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-left text-4xl font-bold">
+            The Smart Choice for
+            <span className="text-[#2a4768]">
+              {" "}
+              Outsourced VAT Return Filing
+            </span>
+          </h2>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Outsourcing VAT return filing to White Bull offers your firm an
+            <span className="font-bold">
+              efficient, accurate, and cost-effective
+            </span>
+            way to manage VAT compliance.
+            <span className="font-bold">
+              No more missed deadlines, no more fines—just expert VAT solutions.
+            </span>
+          </p>
+
+          <p className="mb-10 rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">
+            <span className="font-bold">
+              📞 Ready to simplify VAT filing for your clients? Contact White
+              Bull today!
+            </span>
           </p>
         </div>
       </div>
 
-      {/* Main Service Description */}
-      <div className="bg-gray-50 py-12 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">
-                Simplify Your <span className="text-[#2a4768]">VAT Compliance</span> with Expert Support
-              </h3>
-              <p className="text-gray-600 mb-6">
-                White Bull delivers comprehensive VAT return preparation and filing services designed to help UK accounting firms manage their compliance workload efficiently and accurately.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Our experienced team works as an extension of your practice, handling VAT calculations, reconciliations, and MTD submissions while adhering to your firm's procedures and quality standards.
-              </p>
-              <div className="flex gap-4 mt-8">
-                <Link
-                  to="/contact"
-                  className="rounded-md bg-[#2a4768] px-6 py-3 font-semibold text-white hover:bg-[#1a3758] transition-all"
-                >
-                  Get Started
-                </Link>
-                <Link
-                  to="/case-studies"
-                  className="rounded-md border border-[#2a4768] px-6 py-3 font-semibold text-[#2a4768] hover:bg-gray-50 transition-all"
-                >
-                  View Case Studies
-                </Link>
-              </div>
-            </div>
-            <div>
-              <img
-                src="../../assets/services/vat-return-main.webp"
-                alt="VAT Return Filing Services"
-                className="rounded-2xl shadow-md w-full h-auto"
-              />
-            </div>
-          </div>
+      {/* FAQs */}
+      <div className="px-33 py-30">
+        <div className="px-20 text-center">
+          <p className="text-xl font-bold text-[#2a4768]">FAQs</p>
+          <h2 className="mt-5 mb-5 text-5xl font-bold">
+            Everything You Need to Know About
+            <span className="text-[#2a4768]"> Outsourced Accounting </span>
+          </h2>
+          <p className="py-2 pl-30 text-justify text-gray-500">
+            Discover helpful answers to your most pressing financial questions.
+            We’re here to assist you every step of the way!
+          </p>
         </div>
-      </div>
 
-      {/* Benefits Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Benefits of Our <span className="text-[#2a4768]">VAT Return Filing Services</span>
-            </h3>
-            <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-              Discover how our VAT support can transform your practice efficiency and compliance.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {vatReturnBenefits.map((benefit) => (
-              <div key={benefit.id} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                <div className="mb-4">
-                  {benefit.icon}
-                </div>
-                <h4 className="text-xl font-bold mb-3">{benefit.title}</h4>
-                <p className="text-gray-600">{benefit.description}</p>
+        <div>
+          <div className="px-40 text-xl">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="border-grey-200 border-b last:border-none"
+              >
+                <button
+                  className="flex w-full items-center justify-between py-4 text-left font-bold hover:cursor-pointer"
+                  onClick={() => toggleFAQ(index)}
+                >
+                  {faq.question}
+                  <span className="text-3xl">
+                    {openIndex === index ? "−" : "+"}
+                  </span>
+                </button>
+                {openIndex === index && (
+                  <p className="pb-4 text-gray-400">{faq.answer}</p>
+                )}
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Features Section */}
-      <div className="bg-[#f8fafc] py-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <img
-                src="../../assets/services/vat-return-features.webp"
-                alt="Comprehensive VAT Return Filing Services"
-                className="rounded-2xl shadow-md w-full h-auto"
-              />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold mb-6">
-                Comprehensive <span className="text-[#2a4768]">VAT Solutions</span>
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Our VAT return services cover all aspects of preparation and filing, ensuring accurate, compliant submissions that meet HMRC requirements and deadlines.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                {serviceFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-start">
-                    <FaCheckCircle className="text-[#2a4768] mt-1 mr-2 flex-shrink-0" />
-                    <span className="text-gray-700">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Process Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Our <span className="text-[#2a4768]">Process</span>
-            </h3>
-            <p className="mt-4 text-gray-500 max-w-3xl mx-auto">
-              A structured, efficient approach to VAT return preparation and filing.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">1</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Data Collection</h4>
-              <p className="text-gray-600 text-sm">We gather all transaction data and supporting documentation for the VAT period.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">2</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Calculation & Reconciliation</h4>
-              <p className="text-gray-600 text-sm">We prepare VAT calculations, reconciliations, and workpapers with clear explanations.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">3</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Quality Review</h4>
-              <p className="text-gray-600 text-sm">All VAT returns undergo thorough internal quality checks before delivery.</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center">
-              <div className="bg-[#e6eef5] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-[#2a4768] font-bold text-xl">4</span>
-              </div>
-              <h4 className="text-lg font-bold mb-3">Partner Review & Filing</h4>
-              <p className="text-gray-600 text-sm">Your firm reviews, approves, and submits the completed VAT returns to HMRC.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Testimonials */}
-      <div className="bg-[#2a4768] py-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white">
-              What Our <span className="text-[#7cb5be]">Clients Say</span>
-            </h3>
-            <p className="mt-4 text-gray-300 max-w-3xl mx-auto">
-              Hear from accounting firms that have streamlined their VAT processes with our services.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white p-6 rounded-2xl shadow-md">
-                <p className="text-gray-700 italic mb-6">"{testimonial.quote}"</p>
-                <div className="flex items-center">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full mr-4 object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold">{testimonial.author}</h4>
-                    <p className="text-gray-500 text-sm">{testimonial.position}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* FAQ Section */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Frequently Asked <span className="text-[#2a4768]">Questions</span>
-            </h3>
-          </div>
-
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">How do you handle Making Tax Digital requirements?</h4>
-              <p className="text-gray-600">
-                Our team is fully trained in MTD compliance and can work with all major MTD-compatible software. We ensure all VAT returns meet HMRC's digital linking and submission requirements.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">What accounting software do you support for VAT returns?</h4>
-              <p className="text-gray-600">
-                We work with all major UK accounting software including Xero, QuickBooks, Sage, FreeAgent, and others. We can adapt to your firm's preferred software environment.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">How do you handle complex VAT situations?</h4>
-              <p className="text-gray-600">
-                Our team has extensive experience with complex VAT scenarios including partial exemption, margin schemes, EU transactions, reverse charges, and industry-specific VAT rules. We document all calculations thoroughly.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Who has final authorization for VAT submissions?</h4>
-              <p className="text-gray-600">
-                While we prepare all the necessary calculations and documentation, the final review and authorization for submission always remains with your firm, maintaining your control and professional responsibility.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Call to Action */}
-      <div className="py-16 px-4.5 text-center bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to <span className="text-[#2a4768]">Streamline</span> Your VAT Process?
-          </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto mb-8">
-            Discover how White Bull's VAT return filing services can help your firm handle more clients, meet deadlines, and maintain compliance during busy VAT periods.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="rounded-md bg-[#2a4768] px-6 py-3 font-semibold text-white hover:bg-[#1a3758] transition-all"
-            >
-              Schedule a Consultation
-            </Link>
-            <Link
-              to="/services"
-              className="rounded-md border border-[#2a4768] px-6 py-3 font-semibold text-[#2a4768] hover:bg-gray-50 transition-all"
-            >
-              Explore Our Services
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Related Services */}
-      <div className="my-16 px-4.5">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold">
-              Related <span className="text-[#2a4768]">Services</span>
-            </h3>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Bookkeeping Services</h4>
-              <p className="text-gray-600 mb-4">
-                Comprehensive bookkeeping solutions to ensure accurate financial records and VAT tracking.
-              </p>
-              <Link
-                to="/services/bookkeeping"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Year-End Accounting</h4>
-              <p className="text-gray-600 mb-4">
-                Expert preparation of annual accounts, ensuring consistency with VAT returns and compliance.
-              </p>
-              <Link
-                to="/services/year-end-accounting"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-              <h4 className="text-xl font-bold mb-3">Management Accounts</h4>
-              <p className="text-gray-600 mb-4">
-                Regular management reporting to provide clients with timely financial insights throughout the year.
-              </p>
-              <Link
-                to="/services/management-accounts"
-                className="text-[#2a4768] font-semibold flex items-center hover:underline"
-              >
-                Learn More <FaArrowRight className="ml-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Newsletter Section */}
-      <div className="bg-[#2a4768] py-16 px-4.5 my-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Stay Updated with the Latest Insights
-          </h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter to receive expert advice, industry updates, and practical strategies for UK accounting firms.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
-            <input
-              type="email"
-              placeholder="Your Email Address"
-              className="px-4 py-3 rounded-md w-full"
-            />
-            <button className="bg-white text-[#2a4768] font-semibold px-6 py-3 rounded-md hover:bg-gray-100 transition-all whitespace-nowrap">
-              Subscribe Now
-            </button>
-          </div>
-          <p className="text-gray-400 text-sm mt-4">
-            We respect your privacy. Unsubscribe at any time.
-          </p>
         </div>
       </div>
     </>
