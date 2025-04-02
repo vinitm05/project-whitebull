@@ -64,7 +64,7 @@ const FinancialAnalysis = () => {
         className="mx-auto h-auto w-11/12 rounded-2xl"
       />
 
-      <div className="bg-[#eceef6] px-33 py-30">
+      <div className="px-5 py-5">
         <div>
           <h2 className="text-left text-4xl font-bold">
             Struggling with Financial Data?
@@ -147,7 +147,7 @@ const FinancialAnalysis = () => {
             clients while you focus on growing your firm.
           </p>
 
-          <p className="mb-10 rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">
+          <p className="mb-10 rounded-2xl bg-[#2a4768] px-8 py-10 text-lg text-white">
             Looking for help with other accounting tasks? Explore our Outsourced
             Accounting Services to streamline your operations.
           </p>
@@ -262,7 +262,7 @@ const FinancialAnalysis = () => {
             <span className="font-bold"> trusted financial advisor.</span>
           </p>
 
-          <p className="mb-10 rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">
+          <p className="mb-10 rounded-2xl bg-[#2a4768] px-8 py-10 text-lg text-white">
             Need help with tax strategy? Explore our
             <span className="font-bold"> Tax Preparation Services </span>to
             ensure your clients are prepared and compliant.
@@ -361,7 +361,7 @@ const FinancialAnalysis = () => {
             <span className="font-bold"> you take the credit!</span>
           </p>
 
-          <p className="mb-10 rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">
+          <p className="mb-10 rounded-2xl bg-[#2a4768] px-8 py-10 text-lg text-white">
             Explore our Outsourced
             <span className="font-bold"> Accounting Services </span>for a
             complete solution to support your clients’ business operations.
@@ -403,41 +403,36 @@ const FinancialAnalysis = () => {
       </div>
 
       {/* FAQs */}
-      <div className="px-33 py-30">
-        <div className="px-20 text-center">
-          <p className="text-xl font-bold text-[#2a4768]">FAQs</p>
-          <h2 className="mt-5 mb-5 text-5xl font-bold">
-            Everything You Need to Know About
-            <span className="text-[#2a4768]"> Outsourced Accounting </span>
-          </h2>
-          <p className="py-2 pl-30 text-justify text-gray-500">
-            Discover helpful answers to your most pressing financial questions.
-            We’re here to assist you every step of the way!
-          </p>
-        </div>
-
-        <div>
-          <div className="px-40 text-xl">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="border-grey-200 border-b last:border-none"
+      <div className="flex flex-col items-center bg-white px-4.5 py-10">
+        <p className="font-semibold text-[#2a4768]">FAQs</p>
+        <h2 className="text-center text-3xl font-bold">
+          Everything You Need to Know About{" "}
+          <span className="text-[#2a4768]">Outsourced Accounting</span>
+        </h2>
+        <p className="text-center text-gray-500">
+          Discover helpful answers to your most pressing financial questions.
+          We’re here to assist you every step of the way!{" "}
+        </p>
+        <div className="mx-auto max-w-lg p-4">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border-b border-gray-200 last:border-none"
+            >
+              <button
+                className="flex w-full items-center justify-between py-4 text-left font-semibold hover:cursor-pointer"
+                onClick={() => toggleFAQ(index)}
               >
-                <button
-                  className="flex w-full items-center justify-between py-4 text-left font-bold hover:cursor-pointer"
-                  onClick={() => toggleFAQ(index)}
-                >
-                  {faq.question}
-                  <span className="text-3xl">
-                    {openIndex === index ? "−" : "+"}
-                  </span>
-                </button>
-                {openIndex === index && (
-                  <p className="pb-4 text-gray-400">{faq.answer}</p>
-                )}
-              </div>
-            ))}
-          </div>
+                {faq.question}
+                <span className="text-xl">
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </button>
+              {openIndex === index && (
+                <p className="pb-4 text-gray-400">{faq.answer}</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </>

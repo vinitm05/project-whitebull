@@ -5,7 +5,6 @@ import { TbPhoneCalling } from "react-icons/tb";
 import OutsourceYearEnd from "../../assets/outsourced-yearend.webp";
 import ServiceList from "../../components/ServiceList";
 
-
 const TaxReturn = () => {
   const faqs = [
     {
@@ -63,7 +62,7 @@ const TaxReturn = () => {
         className="mx-auto h-auto w-11/12 rounded-2xl"
       />
 
-      <div className="bg-[#eceef6] px-33 py-30">
+      <div className="px-5 py-5">
         <div>
           <h2 className="text-left text-4xl font-bold text-[#2a4768]">
             Tax Return Season Doesn’t Have to Feel Like a Never-Ending Audit
@@ -83,13 +82,19 @@ const TaxReturn = () => {
             Our outsourced tax return preparation services are designed
             exclusively for UK accounting firms and CAs who want to:
             <ul>
-            <li className="font-bold">✔ Meet deadlines without last-minute panic</li>
-            <li className="font-bold">✔ Ensure 100% compliance with UK tax laws</li>
-            <li className="font-bold">✔ Reduce the risk
-            of errors, penalties, and audits</li>
-            <li className="font-bold">✔ Scale services up or
-            down based on client demand</li>
-          </ul>
+              <li className="font-bold">
+                ✔ Meet deadlines without last-minute panic
+              </li>
+              <li className="font-bold">
+                ✔ Ensure 100% compliance with UK tax laws
+              </li>
+              <li className="font-bold">
+                ✔ Reduce the risk of errors, penalties, and audits
+              </li>
+              <li className="font-bold">
+                ✔ Scale services up or down based on client demand
+              </li>
+            </ul>
           </p>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
@@ -122,11 +127,18 @@ const TaxReturn = () => {
           <p className="mt-4 mb-5 text-justify text-gray-500">
             We’ve seen it all:
             <ul>
-            <li className="font-bold">✅ Tight deadlines turning into all-nighters</li>
-            <li className="font-bold">✅
-            Last-minute client uploads that make you question life choices</li>
-            <li className="font-bold">✅ Ever-changing HMRC regulations that feel like a moving goalpost</li>
-          </ul>
+              <li className="font-bold">
+                ✅ Tight deadlines turning into all-nighters
+              </li>
+              <li className="font-bold">
+                ✅ Last-minute client uploads that make you question life
+                choices
+              </li>
+              <li className="font-bold">
+                ✅ Ever-changing HMRC regulations that feel like a moving
+                goalpost
+              </li>
+            </ul>
           </p>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
@@ -155,10 +167,24 @@ const TaxReturn = () => {
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
-            <li><span className="font-bold">📌 Cost-Effective – </span>No need for extra in-house staff. Get expert tax services when you need them, without the overhead.</li>
-            <li><span className="font-bold">📌 Expert Support – </span>Our tax specialists stay ahead of UK tax laws, ensuring your clients’ filings are always spot-on.</li>
-            <li><span className="font-bold">📌 Scalability – </span>Handling 10 returns today? 100 next month? We scale with you.</li>
-            <li><span className="font-bold">📌 Time-Saving – </span>Spend less time on tax filings and more time building client relationships.</li>
+            <li>
+              <span className="font-bold">📌 Cost-Effective – </span>No need for
+              extra in-house staff. Get expert tax services when you need them,
+              without the overhead.
+            </li>
+            <li>
+              <span className="font-bold">📌 Expert Support – </span>Our tax
+              specialists stay ahead of UK tax laws, ensuring your clients’
+              filings are always spot-on.
+            </li>
+            <li>
+              <span className="font-bold">📌 Scalability – </span>Handling 10
+              returns today? 100 next month? We scale with you.
+            </li>
+            <li>
+              <span className="font-bold">📌 Time-Saving – </span>Spend less
+              time on tax filings and more time building client relationships.
+            </li>
           </ul>
         </div>
 
@@ -176,10 +202,22 @@ const TaxReturn = () => {
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
-            <li><span className="font-bold">✅ Personalized Tax Filing Solutions – </span>Whether it’s an individual self-assessment or a corporate tax
-            return, we optimize for maximum tax savings.</li>
-            <li><span className="font-bold">✅ Full Compliance – </span>We stay updated on HMRC’s latest regulations so you don’t have to.</li>
-            <li><span className="font-bold">✅ Proactive Tax Planning – </span>We don’t just file; we help you strategize to reduce liabilities and improve cash flow for your clients.</li>
+            <li>
+              <span className="font-bold">
+                ✅ Personalized Tax Filing Solutions –{" "}
+              </span>
+              Whether it’s an individual self-assessment or a corporate tax
+              return, we optimize for maximum tax savings.
+            </li>
+            <li>
+              <span className="font-bold">✅ Full Compliance – </span>We stay
+              updated on HMRC’s latest regulations so you don’t have to.
+            </li>
+            <li>
+              <span className="font-bold">✅ Proactive Tax Planning – </span>We
+              don’t just file; we help you strategize to reduce liabilities and
+              improve cash flow for your clients.
+            </li>
           </ul>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
@@ -208,10 +246,24 @@ const TaxReturn = () => {
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
-            <li><span className="font-bold">✅ Stay Ahead of Deadlines – </span>No more last-minute scrambling.</li>
-            <li><span className="font-bold">✅ Ensure 100% Accuracy – </span>Every return is reviewed through a rigorous quality control process.</li>
-            <li><span className="font-bold">✅ Work Seamlessly – </span>We integrate with your existing processes, working as an extension of your team.</li>
-            <li><span className="font-bold">✅ Avoid Costly Errors – </span>Mistakes can lead to penalties and client dissatisfaction. We help you get it right the first time.</li>
+            <li>
+              <span className="font-bold">✅ Stay Ahead of Deadlines – </span>No
+              more last-minute scrambling.
+            </li>
+            <li>
+              <span className="font-bold">✅ Ensure 100% Accuracy – </span>Every
+              return is reviewed through a rigorous quality control process.
+            </li>
+            <li>
+              <span className="font-bold">✅ Work Seamlessly – </span>We
+              integrate with your existing processes, working as an extension of
+              your team.
+            </li>
+            <li>
+              <span className="font-bold">✅ Avoid Costly Errors – </span>
+              Mistakes can lead to penalties and client dissatisfaction. We help
+              you get it right the first time.
+            </li>
           </ul>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
@@ -235,13 +287,26 @@ const TaxReturn = () => {
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
-            <li><span className="font-bold">📌 Individual Tax Returns – </span>Self-assessment returns done with precision, ensuring all deductions are accounted for.</li>
-            <li><span className="font-bold">📌 Corporate Tax Returns – </span>Complex corporate filings managed efficiently.</li>
-            <li><span className="font-bold">📌 Partnerships & LLPs – </span>Hassle-free tax filings for business partnerships and LLPs.</li>
-            <li><span className="font-bold">📌 Tax Planning – </span>Strategic tax advice to help clients optimize their financial position.</li>
+            <li>
+              <span className="font-bold">📌 Individual Tax Returns – </span>
+              Self-assessment returns done with precision, ensuring all
+              deductions are accounted for.
+            </li>
+            <li>
+              <span className="font-bold">📌 Corporate Tax Returns – </span>
+              Complex corporate filings managed efficiently.
+            </li>
+            <li>
+              <span className="font-bold">📌 Partnerships & LLPs – </span>
+              Hassle-free tax filings for business partnerships and LLPs.
+            </li>
+            <li>
+              <span className="font-bold">📌 Tax Planning – </span>Strategic tax
+              advice to help clients optimize their financial position.
+            </li>
           </ul>
 
-          <p className="rounded-4xl bg-[#2a4768] px-30 py-10 text-justify text-xl text-white">
+          <p className="mb-10 rounded-2xl bg-[#2a4768] px-8 py-10 text-lg text-white">
             Streamline account reconciliation with our
             <span className="font-bold"> Bank Reconciliation Services, </span>
             offering detailed support for accurate financial data year-round.
@@ -250,82 +315,114 @@ const TaxReturn = () => {
 
         <div>
           <h2 className="text-4xl font-bold text-[#2a4768]">
-          Save Time, Reduce Stress, and Stay Compliant with White Bull
+            Save Time, Reduce Stress, and Stay Compliant with White Bull
           </h2>
           <h3 className="text-3xl font-bold">
-          Tax Season Without the Chaos—Sounds Good, Right?
+            Tax Season Without the Chaos—Sounds Good, Right?
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-          Managing tax returns in-house can quickly become overwhelming—especially during peak seasons. By outsourcing to White Bull, your firm can:
+            Managing tax returns in-house can quickly become
+            overwhelming—especially during peak seasons. By outsourcing to White
+            Bull, your firm can:
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
-            <li><span className="font-bold">✔ Minimize Errors – </span>Reduce the risk of costly HMRC penalties.</li>
-            <li><span className="font-bold">✔ Ensure Timely Filing – </span>Never miss a deadline again.</li>
-            <li><span className="font-bold">✔ Focus on Growth – </span>Free up time to scale your business and serve clients better.</li>
+            <li>
+              <span className="font-bold">✔ Minimize Errors – </span>Reduce the
+              risk of costly HMRC penalties.
+            </li>
+            <li>
+              <span className="font-bold">✔ Ensure Timely Filing – </span>Never
+              miss a deadline again.
+            </li>
+            <li>
+              <span className="font-bold">✔ Focus on Growth – </span>Free up
+              time to scale your business and serve clients better.
+            </li>
           </ul>
         </div>
 
         <div>
           <h2 className="text-4xl font-bold text-[#2a4768]">
-          Trusted by Accounting Firms Across the UK
+            Trusted by Accounting Firms Across the UK
           </h2>
           <h3 className="text-3xl font-bold">
-          Join the Growing List of Firms Who Trust White Bull
+            Join the Growing List of Firms Who Trust White Bull
           </h3>
 
-          <p className="mt-4 mb-5 text-justify text-gray-500">We’ve built our reputation on<span className="font-bold"> accuracy, efficiency, and compliance, </span>helping UK accounting firms</p>
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            We’ve built our reputation on
+            <span className="font-bold">
+              {" "}
+              accuracy, efficiency, and compliance,{" "}
+            </span>
+            helping UK accounting firms
+          </p>
 
-          <p className="mt-4 mb-5 text-justify text-gray-500">Don’t let tax season drain your firm’s time and resources.<span className="font-bold"> Let White Bull handle the numbers while you focus on your clients.</span></p>
-        </div>
-
-        <div>
-          <h2 className="text-4xl font-bold text-[#2a4768]">
-          Start Outsourcing Your Tax Return Preparation Today
-          </h2>
-          <p className="mt-4 mb-5 text-justify text-gray-500">Why struggle with tax return preparation when you can<span className="font-bold"> outsource it with confidence</span>? White Bull’s team of tax experts is ready to streamline your workload, ensuring<span className="font-bold"> timely, accurate, and compliant tax filings </span>for your firm.</p>
-
-          <p className="mt-4 mb-5 text-justify text-gray-500"><span className="font-bold">📞 Contact us today </span>to learn more about how we can support your firm through tax season and beyond.</p>
-        </div>
-      </div>
-
-      {/* FAQs */}
-      <div className="px-33 py-30">
-        <div className="px-20 text-center">
-          <p className="text-xl font-bold text-[#2a4768]">FAQs</p>
-          <h2 className="mt-5 mb-5 text-5xl font-bold">
-            Everything You Need to Know About
-            <span className="text-[#2a4768]"> Outsourced Accounting </span>
-          </h2>
-          <p className="py-2 pl-30 text-justify text-gray-500">
-            Discover helpful answers to your most pressing financial questions.
-            We’re here to assist you every step of the way!
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Don’t let tax season drain your firm’s time and resources.
+            <span className="font-bold">
+              {" "}
+              Let White Bull handle the numbers while you focus on your clients.
+            </span>
           </p>
         </div>
 
         <div>
-          <div className="px-40 text-xl">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="border-grey-200 border-b last:border-none"
+          <h2 className="text-4xl font-bold text-[#2a4768]">
+            Start Outsourcing Your Tax Return Preparation Today
+          </h2>
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            Why struggle with tax return preparation when you can
+            <span className="font-bold"> outsource it with confidence</span>?
+            White Bull’s team of tax experts is ready to streamline your
+            workload, ensuring
+            <span className="font-bold">
+              {" "}
+              timely, accurate, and compliant tax filings{" "}
+            </span>
+            for your firm.
+          </p>
+
+          <p className="mt-4 mb-5 text-justify text-gray-500">
+            <span className="font-bold">📞 Contact us today </span>to learn more
+            about how we can support your firm through tax season and beyond.
+          </p>
+        </div>
+      </div>
+
+      {/* FAQs */}
+      <div className="flex flex-col items-center bg-white px-4.5 py-10">
+        <p className="font-semibold text-[#2a4768]">FAQs</p>
+        <h2 className="text-center text-3xl font-bold">
+          Everything You Need to Know About{" "}
+          <span className="text-[#2a4768]">Outsourced Accounting</span>
+        </h2>
+        <p className="text-center text-gray-500">
+          Discover helpful answers to your most pressing financial questions.
+          We’re here to assist you every step of the way!{" "}
+        </p>
+        <div className="mx-auto max-w-lg p-4">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border-b border-gray-200 last:border-none"
+            >
+              <button
+                className="flex w-full items-center justify-between py-4 text-left font-semibold hover:cursor-pointer"
+                onClick={() => toggleFAQ(index)}
               >
-                <button
-                  className="flex w-full items-center justify-between py-4 text-left font-bold hover:cursor-pointer"
-                  onClick={() => toggleFAQ(index)}
-                >
-                  {faq.question}
-                  <span className="text-3xl">
-                    {openIndex === index ? "−" : "+"}
-                  </span>
-                </button>
-                {openIndex === index && (
-                  <p className="pb-4 text-gray-400">{faq.answer}</p>
-                )}
-              </div>
-            ))}
-          </div>
+                {faq.question}
+                <span className="text-xl">
+                  {openIndex === index ? "−" : "+"}
+                </span>
+              </button>
+              {openIndex === index && (
+                <p className="pb-4 text-gray-400">{faq.answer}</p>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </>
