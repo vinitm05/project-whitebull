@@ -4,13 +4,13 @@ import React from "react";
 const LandingImage = ({ title, link }) => {
   return (
     <div
-      className="flex h-70 flex-col items-center justify-center gap-3 bg-[url(assets/about-landing.jpg)] bg-cover bg-center bg-no-repeat text-white shadow-2xl"
+      className="flex h-70 flex-col items-center justify-center gap-3 bg-[url(assets/about-landing.jpg)] bg-cover bg-center bg-no-repeat text-white shadow-2xl lg:h-[520px] inset-shadow-3xl"
       style={{
         backgroundAttachment: "fixed",
       }}
     >
-      <p className="w-5/6 text-center text-4xl font-bold">{title}</p>
-      <p className="">
+      <p className="w-4/6 text-center text-4xl font-bold lg:text-6xl">{title}</p>
+      <p className="text-xl">
         <Link to="/">Home </Link> / {link}
       </p>
     </div>

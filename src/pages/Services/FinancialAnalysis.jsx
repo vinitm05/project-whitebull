@@ -14,17 +14,17 @@ const FinancialAnalysis = () => {
     },
     {
       question:
-        "What makes White Bull’s financial analysis services different?",
+        "What makes Wisely Yours’s financial analysis services different?",
       answer:
-        "White Bull offers tailored financial reports that are easy to understand and relevant to your clients’ needs. Our team provides actionable insights that help clients make better business decisions.",
+        "Wisely Yours offers tailored financial reports that are easy to understand and relevant to your clients’ needs. Our team provides actionable insights that help clients make better business decisions.",
     },
     {
-      question: "Can White Bull work with businesses of any size?",
+      question: "Can Wisely Yours work with businesses of any size?",
       answer:
         "Yes, we work with businesses of all sizes, from startups to large enterprises. Our services scale to meet the unique needs of each client.",
     },
     {
-      question: "How can I be sure that White Bull’s reports are accurate?",
+      question: "How can I be sure that Wisely Yours’s reports are accurate?",
       answer:
         "Our team of experienced financial analysts uses reliable methods and tools to ensure that all reports are accurate and reflect your clients' true financial position.",
     },
@@ -38,7 +38,7 @@ const FinancialAnalysis = () => {
   return (
     <>
       <LandingImage
-        title="Outsourced Accounting Services for UK Accounting Firms"
+        title="Outsourced Accounting Services for India Accounting Firms"
         link="Services / Financial Analysis Services"
       />
 
@@ -93,15 +93,16 @@ const FinancialAnalysis = () => {
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            That’s where<span className="font-bold"> White Bull </span>comes in!
+            That’s where<span className="font-bold"> Wisely Yours </span>comes
+            in!
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
             <span className="font-bold">Pain Point: </span>Many businesses
             struggle to interpret their financial data, leaving them unsure of
-            their next move. White Bull provides the clarity needed to help your
-            clients understand their financial position and take the necessary
-            steps toward growth.
+            their next move. Wisely Yours provides the clarity needed to help
+            your clients understand their financial position and take the
+            necessary steps toward growth.
           </p>
         </div>
 
@@ -111,7 +112,7 @@ const FinancialAnalysis = () => {
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Accounting firms across the UK are
+            Accounting firms across the India are
             <span className="font-bold"> outsourcing financial analysis </span>
             to save time, cut costs, and improve the quality of insights they
             deliver to clients.
@@ -271,7 +272,7 @@ const FinancialAnalysis = () => {
 
         <div>
           <h2 className="text-left text-4xl font-bold text-[#2a4768]">
-            Why UK Accounting Firms Trust White Bull
+            Why India Accounting Firms Trust Wisely Yours
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
@@ -329,7 +330,7 @@ const FinancialAnalysis = () => {
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            With White Bull’s
+            With Wisely Yours’s
             <span className="font-bold">
               {" "}
               outsourced financial analysis services,{" "}
@@ -370,12 +371,14 @@ const FinancialAnalysis = () => {
 
         <div>
           <h2 className="text-left text-4xl font-bold text-[#2a4768]">
-            Ready to Elevate Your Financial Analysis Services?
+            Ready to EleGSTe Your Financial Analysis Services?
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            <span className="font-bold">Accounting firms across the UK </span>
-            are choosing White Bull to deliver
+            <span className="font-bold">
+              Accounting firms across the India{" "}
+            </span>
+            are choosing Wisely Yours to deliver
             <span className="font-bold"> expert financial analysis </span>
             without the overhead costs of an in-house team.
           </p>
@@ -397,7 +400,7 @@ const FinancialAnalysis = () => {
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
             <span className="font-bold">💡 Let’s Talk! </span>Contact us today
-            to see how White Bull can support your firm’s growth! 🚀
+            to see how Wisely Yours can support your firm’s growth! 🚀
           </p>
         </div>
       </div>

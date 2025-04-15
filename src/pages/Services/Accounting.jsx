@@ -15,19 +15,19 @@ const Accounting = () => {
         "Outsourcing accounting – So you don’t need to manage an internal team, allowing you to reduce costs, increase accuracy, and focus on growing your business.",
     },
     {
-      question: "Why is WhiteBull a trusted partner for accounting firms?",
+      question: "Why is Wisely Yours a trusted partner for accounting firms?",
       answer:
-        "WhiteBull offers reliable, white-label solutions customized to meet the unique needs of accounting firms. With a focus on precision and efficiency, we help firms deliver exceptional service to their",
+        "Wisely Yours offers reliable, white-label solutions customized to meet the unique needs of accounting firms. With a focus on precision and efficiency, we help firms deliver exceptional service to their",
     },
     {
-      question: "What sets White Bull apart from other outsourced providers?",
+      question: "What sets Wisely Yours apart from other outsourced providers?",
       answer:
         "Our white-label services are designed to integrate seamlessly into your firm’s operations, giving you the flexibility and precision you need, with the expertise you can rely on.",
     },
     {
-      question: "Can White Bull help with regulatory compliance?",
+      question: "Can Wisely Yours help with regulatory compliance?",
       answer:
-        "Absolutely. White Bull ensures that your clients’ financial accounts are accurate and compliant with UK standards, reducing risks and keeping everything in line with the latest regulations.",
+        "Absolutely. Wisely Yours ensures that your clients’ financial accounts are accurate and compliant with India standards, reducing risks and keeping everything in line with the latest regulations.",
     },
   ];
   const [openIndex, setOpenIndex] = useState(null);
@@ -38,11 +38,11 @@ const Accounting = () => {
   return (
     <>
       <LandingImage
-        title="Outsourced Accounting Services for UK Accounting Firms"
+        title="Outsourced Accounting Services for India Accounting Firms"
         link="Services / Accounting Services"
       />
       <ServiceList />
-      <div className="mx-auto w-11/12 my-8 rounded-2xl border border-[#2a4768] bg-white p-4.5">
+      <div className="mx-auto my-8 w-11/12 rounded-2xl border border-[#2a4768] bg-white p-4.5">
         <TbPhoneCalling className="text-6xl text-[#2a4768]" />
         <h2 className="text-lg font-bold">Need Help?</h2>
         <p className="pt-2 pb-5 text-gray-500">
@@ -65,13 +65,14 @@ const Accounting = () => {
         <div>
           <h3 className="text-4xl font-bold">
             Expert <span className="text-[#2a4768]">Accounting Solutions</span>{" "}
-            for CA & Accounting Firms in the UK – Boost Efficiency & Compliance
+            for CA & Accounting Firms in the India – Boost Efficiency &
+            Compliance
           </h3>
           <p className="my-5 text-justify leading-7 text-gray-500">
             As your accounting firm grows, so do the complexities of managing
             financial operations.{" "}
             <span className="font-semibold text-gray-600">
-              Outsourcing your accounting to White Bull{" "}
+              Outsourcing your accounting to Wisely Yours{" "}
             </span>
             allows you to focus on expanding your client base while ensuring
             <span className="font-semibold text-gray-600">
@@ -92,7 +93,7 @@ const Accounting = () => {
           <p className="my-5 text-justify leading-7 text-gray-500">
             <span className="font-semibold text-gray-600">Pan Point:</span>{" "}
             Growing your client base and meeting increasing demands doesn’t have
-            to come at the expense of quality. With White Bull, you can scale
+            to come at the expense of quality. With Wisely Yours, you can scale
             effortlessly, focusing on building stronger client relationships and
             growing your practice. Our team handles the complexities, ensuring
             your firm stays efficient, accurate, and ahead of the game.
@@ -101,10 +102,10 @@ const Accounting = () => {
 
         <div>
           <h3 className="text-4xl font-bold text-[#2a4768]">
-            Why Accounting Firms Trust White Bull
+            Why Accounting Firms Trust Wisely Yours
           </h3>
           <p className="my-5 text-justify leading-7 text-gray-500">
-            When you outsource to White Bull, you’re not just outsourcing
+            When you outsource to Wisely Yours, you’re not just outsourcing
             accounting—you’re gaining a trusted partner that supports your
             firm’s success. From everyday financial tasks to intricate tax
             filings, we take the load off your team and ensure your clients get
@@ -131,14 +132,14 @@ const Accounting = () => {
               <span className="font-bold text-gray-600">Experience:</span> Gain
               access to{" "}
               <span className="font-bold">
-                UK-trained accounting professionals
+                India-trained accounting professionals
               </span>
             </li>
             <li>
               <span className="font-bold text-gray-600">
                 Compliance & Accuracy:
               </span>{" "}
-              Meet UK tax and regulatory requirements without hassle
+              Meet India tax and regulatory requirements without hassle
             </li>
           </ul>
 
@@ -167,8 +168,8 @@ const Accounting = () => {
           <p className="my-5 text-justify leading-7 text-gray-500">
             <span className="font-bold">Pan Point: </span>The pressure to stay
             organized, compliant, and profitable can feel overwhelming. Let
-            White Bull take care of the financial details, so you can keep your
-            focus on delivering value to your clients, confidently and
+            Wisely Yours take care of the financial details, so you can keep
+            your focus on delivering value to your clients, confidently and
             efficiently.
           </p>
           <p className="rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
@@ -182,12 +183,12 @@ const Accounting = () => {
 
         <div>
           <h2 className="my-5 text-4xl font-bold">
-            <span className="text-[#2a4768]">Why White Bull?</span> Outsourced
+            <span className="text-[#2a4768]">Why Wisely Yours?</span> Outsourced
             Accounting for{" "}
             <span className="text-[#2a4768]">Efficiency & Savings!</span>
           </h2>
           <p className="my-5 text-justify leading-7 text-gray-500">
-            Choosing White Bull means more than just outsourcing—it’s about
+            Choosing Wisely Yours means more than just outsourcing—it’s about
             having a reliable partner that strengthens your firm’s foundation.
             Whether you’re a small CA practice or an established accounting
             firm, we adapt our solutions to meet your needs.
@@ -224,11 +225,13 @@ const Accounting = () => {
             <li>✔ Avoid costly hiring & training expenses</li>
           </ul>
 
-          <h3 className="my-5 text-2xl font-bold">The White Bull Advantage</h3>
+          <h3 className="my-5 text-2xl font-bold">
+            The Wisely Yours Advantage
+          </h3>
           <p className="leading-7 text-gray-500">
             Unlike generic outsourcing providers, we specialize in supporting{" "}
             <span className="font-bold text-gray-600">
-              UK-based CA and accounting firms.
+              India-based CA and accounting firms.
             </span>{" "}
             We ensure that:
             <ul className="list-disc pl-7 text-gray-500">
@@ -241,7 +244,7 @@ const Accounting = () => {
               <li>
                 You meet{" "}
                 <span className="font-bold text-gray-600">
-                  UK tax deadlines without last-minute rushes
+                  India tax deadlines without last-minute rushes
                 </span>
               </li>
               <li>
@@ -259,7 +262,7 @@ const Accounting = () => {
                     Cost-Efficient:{" "}
                   </span>
                   Avoid the high costs of maintaining an in-house accounting
-                  team. White Bull provides fully flexible services at
+                  team. Wisely Yours provides fully flexible services at
                   affordable rates.
                 </p>
               </li>
@@ -280,7 +283,7 @@ const Accounting = () => {
                   <span className="font-bold text-gray-600">
                     Scalable Support:{" "}
                   </span>
-                  As your firm grows, so do we. White Bull scales its services
+                  As your firm grows, so do we. Wisely Yours scales its services
                   to meet the demands of your expanding client base, ensuring
                   consistent quality and efficiency.
                 </p>
@@ -296,14 +299,14 @@ const Accounting = () => {
             deserve.
           </p>
           <h2 className="my-5 text-4xl font-bold">
-            Why Choose White Bull for Your{" "}
+            Why Choose Wisely Yours for Your{" "}
             <span className="text-[#2a4768]">Outsourced Accounting Needs?</span>
           </h2>
           <h3 className="text-2xl font-bold">
             1. Cost-Effective Accounting Solutions
           </h3>
           <p className="my-5 leading-7 text-gray-500">
-            Hiring an in-house team is expensive. White Bull offers a{" "}
+            Hiring an in-house team is expensive. Wisely Yours offers a{" "}
             <span className="font-bold text-gray-600">
               cost-efficient alternative
             </span>{" "}
@@ -326,7 +329,7 @@ const Accounting = () => {
             </li>
           </ul>
           <p className="my-5 text-gray-500">
-            <span className="font-bold text-gray-600">White Bull</span> isn’t
+            <span className="font-bold text-gray-600">Wisely Yours</span> isn’t
             just another outsourced provider—we’re a trusted extension of your
             firm. Our services are discreet, high-quality, and built to improve
             client satisfaction, ensure compliance, and streamline your
@@ -339,11 +342,11 @@ const Accounting = () => {
           <p className="my-5 leading-7 text-gray-500">
             With years of experience supporting{" "}
             <span className="font-bold text-gray-600">
-              UK CA and accounting firms,
+              India CA and accounting firms,
             </span>{" "}
             we ensure full compliance with{" "}
             <span className="font-bold text-gray-600">
-              UK GAAP, IFRS, and HMRC regulations.
+              India GAAP, IFRS, and HMRC regulations.
             </span>
           </p>
           <ul className="text-gray-500">
@@ -354,7 +357,7 @@ const Accounting = () => {
             <li>
               🔹{" "}
               <span className="font-bold text-gray-600">
-                Tailored for UK firms
+                Tailored for India firms
               </span>{" "}
               – We understand your unique challenges
             </li>
@@ -377,7 +380,7 @@ const Accounting = () => {
             </li>
           </ul>
           <h2 className="my-5 text-4xl font-bold text-[#2a4768]">
-            Trusted by CA & Accounting Firms Across the UK
+            Trusted by CA & Accounting Firms Across the India
           </h2>
           <p className="leading-7 text-gray-500">
             we don’t just work for you—we work with you as an extension of your
@@ -409,7 +412,7 @@ const Accounting = () => {
             to see how we can help your firm meet strategic goals and grow.
           </p>
           <h3 className="mt-5 font-bold text-gray-500">
-            Ready to Elevate Your Firm? Let’s Talk! 🚀
+            Ready to EleGSTe Your Firm? Let’s Talk! 🚀
           </h3>
           <ul className="text-gray-500">
             <li>

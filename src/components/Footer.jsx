@@ -1,129 +1,139 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png";
-import { PiEnvelope, PiMapPin, PiPhoneFill } from "react-icons/pi";
-import { FaLinkedin } from "react-icons/fa6";
+import "../index.css";
+import { IoIosCall, IoMdMail } from "react-icons/io";
+import { RiMapPin2Fill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className="w-screen bg-[#2a4768] py-6 text-white">
-      {/* desktop view */}
-      <div className="hidden items-center justify-between lg:flex">
-        <Link to={"/"} className="text-4xl">
-          ANPM
-        </Link>
-        <ul className="flex space-x-6">
-          <li>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link to={"/about"}>About</Link>
-          </li>
-          <li className="group relative">
-            <div className="flex flex-row items-center justify-center gap-1 hover:cursor-pointer">
-              <a>Services</a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className={`h-4 w-4 transition-transform duration-300`}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+    <footer className="bg-[#294466] px-6 py-10 text-white md:px-10">
+      {/* Main Footer Content */}
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+          {/* Logo and Tagline Column */}
+          <div className="md:col-span-1">
+            <div className="mb-4">
+              <h1 className="text-3xl font-bold">Yours Wisely</h1>
             </div>
-            <div className="absolute left-0 hidden space-y-2 bg-green-300 p-4 text-white group-hover:block">
-              <Link to={"/services/accounting"}>Accounting Services</Link>
-              <Link to={"/services/bookkeeping"}>Bookkeeping Services</Link>
-              <Link to={"/services/yearendaccounting"}>
-                Year-End Accounting
-              </Link>
-              <Link to={"/services/taxreturn"}>Tax Return Preparation</Link>
-              <Link to={"/services/payroll"}> Payroll Services</Link>
-              <Link to={"/services/vat"}>VAT Return Filing Services</Link>
-              <Link to={"/services/financialanalysis"}>
-                Financial Analysis Services
-              </Link>
-            </div>
-          </li>
-          <li>
-            <Link to={"/blog"}>Blog</Link>
-          </li>
-          <li>
-            <Link to={"contact"}>Contact</Link>
-          </li>
-        </ul>
+            <p className="mb-6 text-sm md:mb-0 md:text-base">
+              Turning complex financial data into clear, actionable insights.
+            </p>
+          </div>
+
+          {/* Company Column */}
+          <div className="md:col-span-1">
+            <h2 className="mb-4 text-xl font-medium">Company</h2>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/about" className="hover:text-gray-300">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to={"/blog"} className="hover:text-gray-300">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to={"contact"} className="hover:text-gray-300">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services Column */}
+          <div className="md:col-span-1">
+            <h2 className="mb-4 text-xl font-medium">Our Services</h2>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  to={"/services/accounting"}
+                  className="hover:text-gray-300"
+                >
+                  Accounting Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/services/bookkeeping"}
+                  className="hover:text-gray-300"
+                >
+                  Bookkeeping Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/services/yearendaccounting"}
+                  className="hover:text-gray-300"
+                >
+                  Year-End Accounting
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/services/taxreturn"}
+                  className="hover:text-gray-300"
+                >
+                  Tax Return Preparation
+                </Link>
+              </li>
+              <li>
+                <Link to={"/services/payroll"} className="hover:text-gray-300">
+                  Payroll Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={"/services/financialanalysis"}
+                  className="hover:text-gray-300"
+                >
+                  Financial Analysis Services
+                </Link>
+              </li>
+              <li>
+                <Link to={"/services/GST"} className="hover:text-gray-300">
+                  GST Return Filing Services
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Locations Column */}
+          <div className="md:col-span-1">
+            <h2 className="mb-4 text-xl font-medium">Our Locations</h2>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <RiMapPin2Fill className="mr-2"/>
+                <a href="https://maps.google.com/" target="_blank">
+                  Mumabi - India
+                </a>
+              </li>
+              <li className="flex items-start">
+                <IoIosCall className="mr-2" />
+                <a href="tel:+022-49647976">+022 49647976</a>
+              </li>
+              <li className="flex items-start">
+                <IoMdMail className="mr-2"/>
+                <a href="mailto:partners@wiselyyours.com">
+                  partners@wiselyyours.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      {/* mobile view */}
-      <div className="mb-7 flex flex-col items-center justify-between gap-5 px-7.5 lg:hidden">
-        <img src={Logo} alt="ANPM Logo" />
-        <p className="text-justify">
-          Turning complex financial data into clear, actionable insights.
-        </p>
-      </div>
-      <div className="flex flex-col justify-between px-7.5 lg:hidden">
-        {/* Company */}
-        <div className="mb-7 flex flex-col gap-3.5">
-          <p className="text-xl font-semibold">Company</p>
-          <Link to={"/about"}>About US</Link>
-          <Link to={"/blog"}>Blog</Link>
-          <Link to={"/projects"}>Projects</Link>
-          <Link to={"/contact"}>Contact Us</Link>
-        </div>
-
-        {/* Services */}
-        <div className="mb-7 flex flex-col gap-3.5">
-          <p className="text-xl font-semibold">Our Services</p>
-          <Link to={"/services/accounting"}>Accounting Services</Link>
-          <Link to={"/services/bookkeeping"}>Bookkeeping Services</Link>
-          <Link to={"/services/yearendaccounting"}>Year-End Accounting</Link>
-          <Link to={"/services/taxreturn"}>Tax Return Preparation</Link>
-          <Link to={"/services/payroll"}>Payroll Services</Link>
-          <Link to={"/services/financialanalysis"}>
-            Financial Analysis Services
-          </Link>
-          <Link to={"/services/vat"}>VAT Return Filing Services</Link>
-        </div>
-
-        {/* Location */}
-        <div className="mb-7 flex flex-col gap-3.5">
-          <p className="text-xl font-semibold">Our Locations</p>
-          <div className="flex flex-row items-center gap-2 hover:cursor-pointer">
-            <PiMapPin />
-            <a target="_blank" href="https://maps.google.com">
-              Mumbai, India
-            </a>
-          </div>
-          <div className="flex flex-row items-center gap-2 hover:cursor-pointer">
-            <PiPhoneFill />
-            <a target="_blank" href="tel:+1234567890">
-              +123 456 7890
-            </a>
-          </div>
-          <div className="flex flex-row items-center gap-2 hover:cursor-pointer">
-            <PiEnvelope />
-            <a target="_blank" href="mailto:info@example.com">
-              info@example.com
-            </a>
-          </div>
-          {/* <Clock/> */}
-        </div>
-
-        {/* Copyright */}
-        <div className="flex flex-col items-center gap-2">
-          <p>Copyright &#169; 2025 ANPM. All rights reserved.</p>
-          <div className="flex flex-row items-center gap-2">
-            <Link to={"/careers"}>Careers</Link>
-            <span>|</span>
-            <a href="http://linkedin.com/" target="_blank">
-              <FaLinkedin />
-            </a>
+      {/* Bottom Bar / Copyright */}
+      <div className="mx-auto mt-12 max-w-7xl border-t border-gray-600 pt-6">
+        <div className="flex flex-col items-center justify-between md:flex-row">
+          <p className="mb-4 md:mb-0">
+            Copyright © 2024 Whitebull. All Rights Reserved.
+          </p>
+          <div className="flex items-center space-x-6">
+            <Link to={"career"} className="hover:text-gray-300">
+              Career
+            </Link>
           </div>
         </div>
       </div>

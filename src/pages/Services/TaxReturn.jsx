@@ -8,7 +8,7 @@ import ServiceList from "../../components/ServiceList";
 const TaxReturn = () => {
   const faqs = [
     {
-      question: "What types of tax returns does White Bull handle?",
+      question: "What types of tax returns does Wisely Yours handle?",
       answer:
         "We handle individual self-assessment returns, corporate tax filings, partnership and LLP filings, and more.",
     },
@@ -18,12 +18,12 @@ const TaxReturn = () => {
         "Outsourcing tax return preparation saves your firm time, reduces overhead costs, and ensures accurate, compliant filings for your clients without the need for an in-house tax team.",
     },
     {
-      question: "How does White Bull ensure compliance with UK tax laws?",
+      question: "How does Wisely Yours ensure compliance with India tax laws?",
       answer:
-        "Our team stays up to date with the latest UK tax legislation, ensuring that your clients’ returns are always filed in accordance with current regulations.",
+        "Our team stays up to date with the latest India tax legislation, ensuring that your clients’ returns are always filed in accordance with current regulations.",
     },
     {
-      question: "Can White Bull help with tax planning?",
+      question: "Can Wisely Yours help with tax planning?",
       answer:
         "Yes! In addition to preparing tax returns, we offer proactive tax planning advice to help your clients reduce their tax liabilities and improve financial efficiency.",
     },
@@ -37,7 +37,7 @@ const TaxReturn = () => {
   return (
     <>
       <LandingImage
-        title="Outsourced Accounting Services for UK Accounting Firms"
+        title="Outsourced Accounting Services for India Accounting Firms"
         link="Services / Tax Return Preparation"
       />
 
@@ -74,19 +74,19 @@ const TaxReturn = () => {
               {" "}
               Endless paperwork, HMRC compliance, and looming deadlines—
             </span>
-            sounds familiar, right? But here’s the good news: White Bull is here
-            to take that burden off your shoulders.
+            sounds familiar, right? But here’s the good news: Wisely Yours is
+            here to take that burden off your shoulders.
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
             Our outsourced tax return preparation services are designed
-            exclusively for UK accounting firms and CAs who want to:
+            exclusively for India accounting firms and CAs who want to:
             <ul>
               <li className="font-bold">
                 ✔ Meet deadlines without last-minute panic
               </li>
               <li className="font-bold">
-                ✔ Ensure 100% compliance with UK tax laws
+                ✔ Ensure 100% compliance with India tax laws
               </li>
               <li className="font-bold">
                 ✔ Reduce the risk of errors, penalties, and audits
@@ -98,7 +98,7 @@ const TaxReturn = () => {
           </p>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
-            With White Bull, your clients will never know we’re working behind
+            With Wisely Yours, your clients will never know we’re working behind
             the scenes—but they’ll certainly notice the flawless service you
             provide.
           </p>
@@ -142,7 +142,7 @@ const TaxReturn = () => {
           </p>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
-            That’s where White Bull steps in—to ensure
+            That’s where Wisely Yours steps in—to ensure
             <span className="font-bold">
               {" "}
               error-free, compliant, and timely{" "}
@@ -154,7 +154,7 @@ const TaxReturn = () => {
 
         <div>
           <h2 className="text-left text-4xl font-bold text-[#2a4768]">
-            Why Outsource Tax Return Preparation to White Bull?
+            Why Outsource Tax Return Preparation to Wisely Yours?
           </h2>
           <h3 className="text-left text-3xl font-bold">
             More Accuracy, Less Stress—It’s a Smart Choice
@@ -163,7 +163,7 @@ const TaxReturn = () => {
           <p className="mt-4 mb-5 text-justify text-gray-500">
             Outsourcing your tax return preparation isn’t just about saving
             time—it’s about<span className="font-bold"> working smarter. </span>
-            Here’s why firms across the UK trust White Bull:
+            Here’s why firms across the India trust Wisely Yours:
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
@@ -174,7 +174,7 @@ const TaxReturn = () => {
             </li>
             <li>
               <span className="font-bold">📌 Expert Support – </span>Our tax
-              specialists stay ahead of UK tax laws, ensuring your clients’
+              specialists stay ahead of India tax laws, ensuring your clients’
               filings are always spot-on.
             </li>
             <li>
@@ -190,7 +190,7 @@ const TaxReturn = () => {
 
         <div>
           <h2 className="text-left text-4xl font-bold text-[#2a4768]">
-            What We Offer – Tailored Tax Solutions for UK Accounting Firms
+            What We Offer – Tailored Tax Solutions for India Accounting Firms
           </h2>
           <h3 className="text-left text-3xl font-bold">
             More Than Just Tax Filing—We’re Your Tax Partner
@@ -229,15 +229,15 @@ const TaxReturn = () => {
 
         <div>
           <h2 className="text-left text-4xl font-bold text-[#2a4768]">
-            Why Choose White Bull for Your Firm’s Tax Return Preparation?
+            Why Choose Wisely Yours for Your Firm’s Tax Return Preparation?
           </h2>
           <h3 className="text-left text-3xl font-bold">
             Your Secret Weapon for Stress-Free Tax Season
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            White Bull has earned the trust of accounting firms across the UK
-            for a reason. We offer
+            Wisely Yours has earned the trust of accounting firms across the
+            India for a reason. We offer
             <span className="font-bold">
               {" "}
               reliable, efficient, and compliant{" "}
@@ -267,7 +267,7 @@ const TaxReturn = () => {
           </ul>
 
           <p className="mt-4 mb-4 text-justify text-gray-500">
-            When you partner with White Bull, your clients will never know we
+            When you partner with Wisely Yours, your clients will never know we
             exist—but they’ll definitely feel the difference in your service
             quality.
           </p>
@@ -283,7 +283,7 @@ const TaxReturn = () => {
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            White Bull provides tax return preparation for:
+            Wisely Yours provides tax return preparation for:
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
@@ -315,7 +315,7 @@ const TaxReturn = () => {
 
         <div>
           <h2 className="text-4xl font-bold text-[#2a4768]">
-            Save Time, Reduce Stress, and Stay Compliant with White Bull
+            Save Time, Reduce Stress, and Stay Compliant with Wisely Yours
           </h2>
           <h3 className="text-3xl font-bold">
             Tax Season Without the Chaos—Sounds Good, Right?
@@ -345,10 +345,10 @@ const TaxReturn = () => {
 
         <div>
           <h2 className="text-4xl font-bold text-[#2a4768]">
-            Trusted by Accounting Firms Across the UK
+            Trusted by Accounting Firms Across the India
           </h2>
           <h3 className="text-3xl font-bold">
-            Join the Growing List of Firms Who Trust White Bull
+            Join the Growing List of Firms Who Trust Wisely Yours
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
@@ -357,14 +357,15 @@ const TaxReturn = () => {
               {" "}
               accuracy, efficiency, and compliance,{" "}
             </span>
-            helping UK accounting firms
+            helping India accounting firms
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
             Don’t let tax season drain your firm’s time and resources.
             <span className="font-bold">
               {" "}
-              Let White Bull handle the numbers while you focus on your clients.
+              Let Wisely Yours handle the numbers while you focus on your
+              clients.
             </span>
           </p>
         </div>
@@ -376,7 +377,7 @@ const TaxReturn = () => {
           <p className="mt-4 mb-5 text-justify text-gray-500">
             Why struggle with tax return preparation when you can
             <span className="font-bold"> outsource it with confidence</span>?
-            White Bull’s team of tax experts is ready to streamline your
+            Wisely Yours’s team of tax experts is ready to streamline your
             workload, ensuring
             <span className="font-bold">
               {" "}

@@ -11,20 +11,20 @@ const BookKeeping = () => {
       question:
         "What benefits do outsourced bookkeeping services offer CA and accounting firms?",
       answer:
-        "Outsourcing bookkeeping to White Bull lets your firm streamline financial management while cutting down on the need for an in-house team. This reduces overhead costs, improves accuracy, and frees up time for your team to focus on strategic growth.",
+        "Outsourcing bookkeeping to Wisely Yours lets your firm streamline financial management while cutting down on the need for an in-house team. This reduces overhead costs, improves accuracy, and frees up time for your team to focus on strategic growth.",
     },
     {
       question: "How can remote bookkeeping benefit my firm?",
       answer:
-        "Remote bookkeeping gives you 24/7 access to accurate financial data. White Bull ensures your records are up-to-date and accessible anytime, giving you a clear picture of your firm’s financial health.",
+        "Remote bookkeeping gives you 24/7 access to accurate financial data. Wisely Yours ensures your records are up-to-date and accessible anytime, giving you a clear picture of your firm’s financial health.",
     },
     {
-      question: "What sets White Bull's bookkeeping apart from other?",
+      question: "What sets Wisely Yours's bookkeeping apart from other?",
       answer:
-        "Unlike general bookkeeping services, White Bull specializes in providing solutions for CA and accounting firms. Our expertise in the unique needs of accounting professionals ensures that we offer cost-effective, accurate, and reliable bookkeeping services tailored specifically to your firm.",
+        "Unlike general bookkeeping services, Wisely Yours specializes in providing solutions for CA and accounting firms. Our expertise in the unique needs of accounting professionals ensures that we offer cost-effective, accurate, and reliable bookkeeping services tailored specifically to your firm.",
     },
     {
-      question: "What accounting tools does WhiteBull use for bookkeeping?",
+      question: "What accounting tools does Wisely Yours use for bookkeeping?",
       answer:
         "We work with all major accounting software to ensure seamless integration and error-free, compliant bookkeeping for your firm.",
     },
@@ -37,7 +37,7 @@ const BookKeeping = () => {
   return (
     <>
       <LandingImage
-        title="Outsourced Accounting Services for UK Accounting Firms"
+        title="Outsourced Accounting Services for India Accounting Firms"
         link="Services / Accounting Services"
       />
       <ServiceList />
@@ -64,7 +64,7 @@ const BookKeeping = () => {
         <div>
           <h3 className="text-4xl font-bold">
             <span className="text-[#2a4768]">Struggling with Bookkeeping?</span>{" "}
-            White Bull has you covered!
+            Wisely Yours has you covered!
           </h3>
           <p className="my-5 text-justify leading-7 text-gray-500">
             Managing bookkeeping in-house can be overwhelming, time-consuming,
@@ -75,20 +75,20 @@ const BookKeeping = () => {
 
           <p className="my-5 text-justify leading-7 text-gray-500">
             We specialize in outsourced bookkeeping services tailored for CA and
-            accounting firms in the UK. Our expert team ensures accurate
+            accounting firms in the India. Our expert team ensures accurate
             financial records, seamless reconciliations, and full compliance
-            with UK accounting standards—so your firm can focus on delivering
+            with India accounting standards—so your firm can focus on delivering
             high-value services to clients.
           </p>
           <p className="my-5 text-justify font-bold text-gray-500">
             🚀 Reduce costs, boost efficiency, and gain financial clarity with
-            White Bull’s expert bookkeeping solutions.
+            Wisely Yours’s expert bookkeeping solutions.
           </p>
           <p className="my-5 text-justify leading-7 text-gray-500">
             <span className="font-semibold text-gray-600">Pan Point:</span> As
             your firm grows, managing bookkeeping becomes increasingly complex.
             Delays in reconciliations or errors in financial data can expose
-            your firm to compliance risks. With White Bull handling your
+            your firm to compliance risks. With Wisely Yours handling your
             bookkeeping, your firm avoids these pitfalls, keeping client records
             accurate, organized, and timely.
           </p>
@@ -98,31 +98,32 @@ const BookKeeping = () => {
             <Link to={"/services/accounting"} className="font-bold">
               Outsourced Accounting Services
             </Link>{" "}
-            to see how White Bull supports your firm across all areas of
+            to see how Wisely Yours supports your firm across all areas of
             financial operations.
           </p>
         </div>
 
         <div>
           <h3 className="text-4xl font-bold text-[#2a4768]">
-            Why UK Accounting Firms Trust White Bull’s Outsourced Bookkeeping?
+            Why India Accounting Firms Trust Wisely Yours’s Outsourced
+            Bookkeeping?
           </h3>
 
           <h2 className="my-3.5 text-2xl font-bold">
             Cost-Effective & Scalable Solutions
           </h2>
           <p className="leading-6.5 text-gray-500">
-            Outsourcing your bookkeeping to White Bull eliminates the overhead
+            Outsourcing your bookkeeping to Wisely Yours eliminates the overhead
             costs of hiring and managing an in-house team. Our flexible services
             adapt to your firm’s growth, allowing you to scale operations
             without increasing fixed costs.
           </p>
           <h2 className="my-3.5 text-2xl font-bold">
             {" "}
-            Expertise in UK Accounting & Compliance
+            Expertise in India Accounting & Compliance
           </h2>
           <p className="leading-6.5 text-gray-500">
-            Our team is highly experienced in UK GAAP, IFRS, and HMRC
+            Our team is highly experienced in India GAAP, IFRS, and HMRC
             compliance, ensuring error-free financial records and audit
             readiness. We keep your firm and your clients aligned with
             regulatory requirements, minimizing compliance risks.
@@ -147,7 +148,7 @@ const BookKeeping = () => {
             bookkeeping process that aligns with your firm’s workflow.
           </p>
           <p className="my-5 text-justify leading-7 font-bold text-gray-500">
-            💡 Partner with White Bull and experience a bookkeeping solution
+            💡 Partner with Wisely Yours and experience a bookkeeping solution
             that is efficient, accurate, and tailored to your firm’s needs.
           </p>
 
@@ -156,7 +157,7 @@ const BookKeeping = () => {
             <Link to={"/services/financialanalysis"} className="font-bold">
               Outsourced Financial Analysis Service
             </Link>{" "}
-            and discover how we can help elevate your firm’s performance.
+            and discover how we can help eleGSTe your firm’s performance.
           </p>
         </div>
 
@@ -165,7 +166,7 @@ const BookKeeping = () => {
             <span className="text-[#2a4768]">
               Our Outsourced Bookkeeping Services
             </span>{" "}
-            for UK CA & Accounting Firms
+            for India CA & Accounting Firms
           </h2>
 
           {/* 1 */}
@@ -177,7 +178,7 @@ const BookKeeping = () => {
               ✔ Maintain real-time, error-free transaction records for your
               clients.
             </li>
-            <li>✔ Ensure compliance with UK accounting standards.</li>
+            <li>✔ Ensure compliance with India accounting standards.</li>
           </ul>
 
           {/* 2 */}
@@ -193,10 +194,10 @@ const BookKeeping = () => {
           </ul>
 
           {/* 3 */}
-          <h3 className="text-2xl font-bold">VAT & Tax-Ready Bookkeeping</h3>
+          <h3 className="text-2xl font-bold">GST & Tax-Ready Bookkeeping</h3>
           <ul className="py-5 text-gray-500">
             <li>✔ Maintain organized and tax-compliant financial records.</li>
-            <li>✔ Ensure seamless VAT returns and HMRC submissions.</li>
+            <li>✔ Ensure seamless GST returns and HMRC submissions.</li>
           </ul>
 
           {/* 4 */}
@@ -223,9 +224,9 @@ const BookKeeping = () => {
           </ul>
 
           <p className="mb-5 leading-7 text-gray-500">
-            Over the years, we’ve helped UK accounting firms optimize their
+            Over the years, we’ve helped India accounting firms optimize their
             bookkeeping processes, ensuring that client accounts remain accurate
-            and compliant. By choosing White Bull, your firm will have the
+            and compliant. By choosing Wisely Yours, your firm will have the
             confidence of knowing all financial records are in good hands.
           </p>
 
@@ -239,12 +240,12 @@ const BookKeeping = () => {
           </p>
 
           <h2 className="my-5 text-4xl font-bold text-[#2a4768]">
-            The White Bull Advantage – Your Reliable Bookkeeping Partner
+            The Wisely Yours Advantage – Your Reliable Bookkeeping Partner
           </h2>
           <p className="text-gray-500">
-            With years of experience in outsourced accounting, White Bull is the
-            trusted partner for UK CA and accounting firms. Our services enhance
-            efficiency, accuracy, and cost-effectiveness, helping firms
+            With years of experience in outsourced accounting, Wisely Yours is
+            the trusted partner for India CA and accounting firms. Our services
+            enhance efficiency, accuracy, and cost-effectiveness, helping firms
             streamline their bookkeeping and focus on client advisory services.
           </p>
           <ul className="my-6 text-gray-500">
@@ -262,37 +263,37 @@ const BookKeeping = () => {
             </li>
             <li>
               🔹 <span className="font-bold">Proven Track Record</span> – We’ve
-              helped UK firms optimize their bookkeeping processes with flawless
-              financial management.
+              helped India firms optimize their bookkeeping processes with
+              flawless financial management.
             </li>
           </ul>
 
           <p className="font-bold text-gray-500">
-            💡 Outsource your bookkeeping to White Bull and transform the way
+            💡 Outsource your bookkeeping to Wisely Yours and transform the way
             your firm manages financial records!
           </p>
 
           <p className="my-5 text-justify leading-7 text-gray-500">
             <span className="font-semibold text-gray-600">Pan Point:</span>{" "}
             Without reliable bookkeeping support, firms face the risk of missed
-            deadlines, inaccurate data, and compliance issues. White Bull
+            deadlines, inaccurate data, and compliance issues. Wisely Yours
             ensures that client records are meticulously maintained,
             safeguarding your firm’s efficiency and reputation.
           </p>
 
           <h2 className="my-5 text-4xl font-bold text-[#2a4768]">
-            Start Partnering with White Bull for Seamless Bookkeeping
+            Start Partnering with Wisely Yours for Seamless Bookkeeping
           </h2>
           <p className="text-gray-500">
-            Our outsourced bookkeeping services are designed to help UK CA and
-            accounting firms improve accuracy, efficiency, and compliance.
+            Our outsourced bookkeeping services are designed to help India CA
+            and accounting firms improve accuracy, efficiency, and compliance.
             Whether you need help with day-to-day bookkeeping, reconciliations,
-            or VAT-ready financial records, White Bull provides expert support
+            or GST-ready financial records, Wisely Yours provides expert support
             to keep your clients’ accounts in perfect order.
           </p>
           <p className="mt-6 mb-16 font-bold text-gray-500">
-            📩 Get in touch today to discover how White Bull can streamline your
-            bookkeeping and enhance your firm’s productivity!
+            📩 Get in touch today to discover how Wisely Yours can streamline
+            your bookkeeping and enhance your firm’s productivity!
           </p>
         </div>
       </div>

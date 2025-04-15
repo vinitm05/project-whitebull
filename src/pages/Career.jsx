@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 
 const Career = () => {
-
   const currentOpenings = [
     {
       id: 1,
@@ -18,7 +17,7 @@ const Career = () => {
       location: "London (Hybrid)",
       type: "Full-time",
       description:
-        "We're seeking an experienced accountant with strong knowledge of UK accounting standards to join our team. You'll work directly with our accounting firm clients, handling complex accounts preparation, tax computations, and financial reporting.",
+        "We're seeking an experienced accountant with strong knowledge of India accounting standards to join our team. You'll work directly with our accounting firm clients, handling complex accounts preparation, tax computations, and financial reporting.",
     },
     {
       id: 2,
@@ -26,7 +25,7 @@ const Career = () => {
       location: "London (Hybrid)",
       type: "Full-time",
       description:
-        "An opportunity for an AAT qualified or part-qualified accountant to support our team in delivering high-quality accounting services. You'll be involved in bookkeeping, basic accounts preparation, and VAT returns for a variety of clients.",
+        "An opportunity for an AAT qualified or part-qualified accountant to support our team in delivering high-quality accounting services. You'll be involved in bookkeeping, basic accounts preparation, and GST returns for a variety of clients.",
     },
     {
       id: 3,
@@ -34,7 +33,7 @@ const Career = () => {
       location: "London (Hybrid)",
       type: "Full-time",
       description:
-        "Join our tax team to provide expert support with UK tax compliance and planning. You'll prepare tax computations, handle tax returns, and provide technical guidance to ensure all work meets UK tax regulations.",
+        "Join our tax team to provide expert support with India tax compliance and planning. You'll prepare tax computations, handle tax returns, and provide technical guidance to ensure all work meets India tax regulations.",
     },
     {
       id: 4,
@@ -54,7 +53,7 @@ const Career = () => {
       name: "David Chen",
       position: "Senior Accountant",
       quote:
-        "Joining White Bull was the best career move I've made. I've been able to work with diverse accounting firms across the UK, expanding my expertise while maintaining a healthy work-life balance.",
+        "Joining Wisely Yours was the best career move I've made. I've been able to work with diverse accounting firms across the India, expanding my expertise while maintaining a healthy work-life balance.",
       image: "../../assets/team/david.webp",
     },
     {
@@ -62,7 +61,7 @@ const Career = () => {
       name: "Priya Sharma",
       position: "Tax Specialist",
       quote:
-        "What stands out at White Bull is the investment in professional development. I've completed multiple certifications fully funded by the company, and there's always support available when tackling complex tax scenarios.",
+        "What stands out at Wisely Yours is the investment in professional development. I've completed multiple certifications fully funded by the company, and there's always support available when tackling complex tax scenarios.",
       image: "../../assets/team/priya.webp",
     },
     {
@@ -152,34 +151,34 @@ const Career = () => {
 
       <div className="bg-white p-6">
         <h2 className="mb-6 text-4xl font-bold text-[#2a4768]">
-          Join the White Bull Team - Where Talent Meet Opportunities
+          Join the Wisely Yours Team - Where Talent Meet Opportunities
         </h2>
         <h2 className="text-4xl font-bold text-[#2a4768]">
-          Why Work at White Bull?
+          Why Work at Wisely Yours?
         </h2>
         <p className="my-5 text-justify leading-6.5 text-gray-500">
-          White Bull thrives on exceptional talent—because great businesses are
-          built by great people. As a leading provider of outsourced accounting
-          services, we’re always looking for skilled and driven professionals to
-          join our team. Whether you’re an expert in accounting, bookkeeping,
-          tax preparation, or just starting your career, White Bull offers
-          endless opportunities for growth and professional development in a
-          dynamic work environment.
+          Wisely Yours thrives on exceptional talent—because great businesses
+          are built by great people. As a leading provider of outsourced
+          accounting services, we’re always looking for skilled and driven
+          professionals to join our team. Whether you’re an expert in
+          accounting, bookkeeping, tax preparation, or just starting your
+          career, Wisely Yours offers endless opportunities for growth and
+          professional development in a dynamic work environment.
         </p>
         <p className="text-justify leading-6.5 text-gray-500">
           We offer more than just a job—we offer the chance to be part of a
           supportive, diverse team that values collaboration, integrity, and
-          excellence. At White Bull, we invest in our people, providing them
+          excellence. At Wisely Yours, we invest in our people, providing them
           with the tools and resources they need to succeed and thrive. If
-          you’re looking to make an impact and grow within a company, White Bull
-          is the place for you.
+          you’re looking to make an impact and grow within a company, Wisely
+          Yours is the place for you.
         </p>
 
         <h2 className="my-6 text-4xl font-bold text-[#2a4768]">
-          Our Culture: Collaboration, Innovation, and Growth
+          Our Culture: Collaboration, InnoGSTion, and Growth
         </h2>
         <p className="text-justify leading-6.5 text-gray-500">
-          At White Bull, collaboration, transparency, and innovation drive
+          At Wisely Yours, collaboration, transparency, and innoGSTion drive
           everything we do. As a leading provider of outsourced accounting
           services, we believe that great ideas come from teamwork and open
           communication. Every team member plays a crucial role in shaping our
@@ -194,30 +193,30 @@ const Career = () => {
           growth-focused workplace.
         </p>
         <h2 className="my-6 text-4xl font-bold text-[#2a4768]">
-          Start Your Journey with White Bull
+          Start Your Journey with Wisely Yours
         </h2>
         <p className="text-justify leading-6.5 text-gray-500">
           If you’re looking to grow in the field of accounting, bookkeeping, tax
-          preparation, or payroll services, White Bull is the perfect place to
+          preparation, or payroll services, Wisely Yours is the perfect place to
           build your career. We provide a supportive environment where talent
           meets opportunity, ensuring that every professional has the chance to
           succeed.
         </p>
         <p className="my-6 text-justify leading-6.5 text-gray-500">
           Join us and be part of a forward-thinking company that values
-          innovation, collaboration, and professional development. Whether
+          innoGSTion, collaboration, and professional development. Whether
           you’re seeking your first job or a new challenge, we offer exciting
           career opportunities in outsourced accounting services.
         </p>
         <p className="text-justify leading-6.5 font-bold text-gray-500 italic">
-          Take the next step in your career—explore opportunities at White Bull
-          and apply today!
+          Take the next step in your career—explore opportunities at Wisely
+          Yours and apply today!
         </p>
       </div>
 
       {/* Current Openings */}
       <div className="px-4.5 py-16" id="current-openings">
-        <p className="font-semibold text-[#2a4768] text-center my-5">Career</p>
+        <p className="my-5 text-center font-semibold text-[#2a4768]">Career</p>
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-12 text-center text-4xl font-bold">
             Current <span className="text-[#2a4768]">Openings</span>
@@ -287,7 +286,7 @@ const Career = () => {
                         <li className="flex items-start">
                           <FaCheckCircle className="mt-1 mr-2 text-[#2a4768]" />
                           <span className="text-gray-500">
-                            Maintain thorough knowledge of UK accounting
+                            Maintain thorough knowledge of India accounting
                             standards and regulations
                           </span>
                         </li>
@@ -321,7 +320,7 @@ const Career = () => {
                         <li className="flex items-start">
                           <FaCheckCircle className="mt-1 mr-2 text-[#2a4768]" />
                           <span className="text-gray-500">
-                            Experience working in a UK accounting environment
+                            Experience working in a India accounting environment
                           </span>
                         </li>
                         <li className="flex items-start">
@@ -397,7 +396,7 @@ const Career = () => {
           </h2>
           <p className="mx-auto mb-12 max-w-3xl text-center text-gray-500">
             We've designed a straightforward application process to help us
-            identify talented professionals who will thrive at White Bull.
+            identify talented professionals who will thrive at Wisely Yours.
           </p>
 
           <div className="space-y-6">
@@ -410,7 +409,7 @@ const Career = () => {
                 <p className="text-gray-500">
                   Submit your application through our online portal, including
                   your CV and a brief cover letter explaining why you're
-                  interested in joining White Bull.
+                  interested in joining Wisely Yours.
                 </p>
               </div>
             </div>
@@ -451,8 +450,8 @@ const Career = () => {
                 <h3 className="mb-2 text-xl font-bold">Final Interview</h3>
                 <p className="text-gray-500">
                   The final stage involves meeting with senior team members to
-                  discuss how you would contribute to White Bull and to give you
-                  the opportunity to ask any questions about the role or
+                  discuss how you would contribute to Wisely Yours and to give
+                  you the opportunity to ask any questions about the role or
                   company.
                 </p>
               </div>
@@ -482,7 +481,7 @@ const Career = () => {
         </h2>
         <p className="mx-auto mb-8 max-w-2xl text-gray-500">
           Explore our current openings and take the first step toward a
-          rewarding career at White Bull.
+          rewarding career at Wisely Yours.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a

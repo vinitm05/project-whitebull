@@ -15,20 +15,20 @@ const YearEndAccounting = () => {
     },
     {
       question:
-        "How can White Bull’s year-end accounting services support my firm’s clients?",
+        "How can Wisely Yours’s year-end accounting services support my firm’s clients?",
       answer:
-        "White Bull ensures that your clients’ financial statements are accurately prepared and compliant with UK regulations. This support gives your clients a clear view of their financial health and allows them to make informed decisions as they enter the new year.",
+        "Wisely Yours ensures that your clients’ financial statements are accurately prepared and compliant with India regulations. This support gives your clients a clear view of their financial health and allows them to make informed decisions as they enter the new year.",
     },
     {
-      question: "Why choose White Bull for year-end accounting services?",
+      question: "Why choose Wisely Yours for year-end accounting services?",
       answer:
-        "White Bull specializes in the unique requirements of UK year-end accounting, offering timely, accurate services that reduce the burden on your firm and provide your clients with the reports they need to stay compliant and financially sound.",
+        "Wisely Yours specializes in the unique requirements of India year-end accounting, offering timely, accurate services that reduce the burden on your firm and provide your clients with the reports they need to stay compliant and financially sound.",
     },
     {
       question:
         "How does outsourcing year-end accounting help with compliance?",
       answer:
-        "By outsourcing to White Bull, you ensure that all year-end accounting tasks are completed according to UK financial regulations. Our team keeps your firm compliant and reduces the risk of errors or missed deadlines that could lead to costly penalties.",
+        "By outsourcing to Wisely Yours, you ensure that all year-end accounting tasks are completed according to India financial regulations. Our team keeps your firm compliant and reduces the risk of errors or missed deadlines that could lead to costly penalties.",
     },
   ];
 
@@ -40,7 +40,7 @@ const YearEndAccounting = () => {
   return (
     <>
       <LandingImage
-        title="Outsourced Accounting Services for UK Accounting Firms"
+        title="Outsourced Accounting Services for India Accounting Firms"
         link="Services / Accounting Services"
       />
 
@@ -68,16 +68,17 @@ const YearEndAccounting = () => {
       <div className="my-8 px-4.5">
         <div>
           <h3 className="text-4xl font-bold">
-            Seamless Year-End Accounting for CA and Accounting Firms in the UK
+            Seamless Year-End Accounting for CA and Accounting Firms in the
+            India
           </h3>
           <p className="my-5 text-justify leading-7 text-gray-500">
             Year-end accounting season—also known as the time when accountants
-            survive on coffee and tight deadlines. At White Bull, we take the
+            survive on coffee and tight deadlines. At Wisely Yours, we take the
             stress off your shoulders by providing outsourced year-end
             accounting services tailored specifically for CA and accounting
-            firms in the UK. From financial statement preparation to compliance
-            checks and reconciliations, our experts ensure your client’s
-            financials are accurate, compliant, and delivered on time.
+            firms in the India. From financial statement preparation to
+            compliance checks and reconciliations, our experts ensure your
+            client’s financials are accurate, compliant, and delivered on time.
           </p>
 
           <p className="my-5 text-justify leading-7 text-gray-500">
@@ -89,7 +90,7 @@ const YearEndAccounting = () => {
           </p>
 
           <p className="my-5 text-justify leading-7 text-gray-500">
-            The solution? Outsource your year-end accounting to White Bull. We
+            The solution? Outsource your year-end accounting to Wisely Yours. We
             take care of the meticulous financial reviews, reconciliations, and
             reporting—so you don’t have to.
           </p>
@@ -104,7 +105,7 @@ const YearEndAccounting = () => {
 
         <div>
           <h3 className="text-4xl font-bold text-[#2a4768]">
-            Why Choose White Bull for Year-End Accounting?
+            Why Choose Wisely Yours for Year-End Accounting?
           </h3>
           <p className="my-5 text-justify leading-7 text-gray-500">
             We understand that year-end accounting isn’t just about crunching
@@ -112,17 +113,33 @@ const YearEndAccounting = () => {
             how we help:
           </p>
 
-          <ul className="list-disc text-gray-500 ml-10">
-            <li><span className="font-bold">Precise Financial Reports:</span> We ensure every number adds up, reducing discrepancies and potential red flags.</li>
-            <li><span className="font-bold">Regulatory Compliance:</span> Our team stays up-to-date with UK accounting standards and HMRC guidelines, ensuring all reports are audit-ready.</li>
-            <li><span className="font-bold">Time-Saving Efficiency:</span> No more last-minute scrambling—we streamline the process so you can meet deadlines with ease.</li>
-            <li><span className="font-bold">Expert Reconciliations:</span> We reconcile accounts thoroughly to ensure your clients’ financial records are accurate and up to date.</li>
+          <ul className="ml-10 list-disc text-gray-500">
+            <li>
+              <span className="font-bold">Precise Financial Reports:</span> We
+              ensure every number adds up, reducing discrepancies and potential
+              red flags.
+            </li>
+            <li>
+              <span className="font-bold">Regulatory Compliance:</span> Our team
+              stays up-to-date with India accounting standards and HMRC
+              guidelines, ensuring all reports are audit-ready.
+            </li>
+            <li>
+              <span className="font-bold">Time-Saving Efficiency:</span> No more
+              last-minute scrambling—we streamline the process so you can meet
+              deadlines with ease.
+            </li>
+            <li>
+              <span className="font-bold">Expert Reconciliations:</span> We
+              reconcile accounts thoroughly to ensure your clients’ financial
+              records are accurate and up to date.
+            </li>
           </ul>
 
           <p className="my-5 text-justify leading-7 text-gray-500">
-            With White Bull, you can focus on advising your clients and growing
-            your firm while we handle the time-consuming year-end accounting
-            process.
+            With Wisely Yours, you can focus on advising your clients and
+            growing your firm while we handle the time-consuming year-end
+            accounting process.
           </p>
 
           <p className="my-6 rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
@@ -137,7 +154,7 @@ const YearEndAccounting = () => {
 
         <div>
           <h3 className="text-4xl font-bold text-[#2a4768]">
-            Our Year-End Accounting Services for UK CA & Accounting Firms
+            Our Year-End Accounting Services for India CA & Accounting Firms
           </h3>
 
           <h2 className="my-3.5 text-2xl font-bold">
@@ -145,7 +162,7 @@ const YearEndAccounting = () => {
           </h2>
           <p className="leading-6.5 text-gray-500">
             We prepare comprehensive year-end financial statements, ensuring
-            they meet UK GAAP and other regulatory requirements. From balance
+            they meet India GAAP and other regulatory requirements. From balance
             sheets to profit & loss reports, we’ve got it covered.
           </p>
 
@@ -185,7 +202,7 @@ const YearEndAccounting = () => {
 
         <div>
           <h2 className="my-5 text-4xl font-bold text-[#2a4768]">
-            White Bull’s Year-End Accounting: A Game Changer for Your Firm
+            Wisely Yours’s Year-End Accounting: A Game Changer for Your Firm
           </h2>
 
           <p className="my-5 text-justify leading-7 text-gray-500">
@@ -195,7 +212,7 @@ const YearEndAccounting = () => {
           </p>
 
           <ul className="text-gray-500">
-            <p className="font-bold">With White Bull, you gain:</p>
+            <p className="font-bold">With Wisely Yours, you gain:</p>
             <li>✔ A dedicated team of accounting experts</li>
             <li>✔ Reduced workload and increased efficiency</li>
             <li>✔ Accurate, audit-ready reports</li>
@@ -205,11 +222,11 @@ const YearEndAccounting = () => {
 
         <div>
           <h2 className="my-5 text-4xl font-bold text-[#2a4768]">
-            Partner with White Bull for a Smooth Year-End Process
+            Partner with Wisely Yours for a Smooth Year-End Process
           </h2>
 
           <p className="my-5 text-justify leading-7 text-gray-500">
-            Year-end accounting doesn’t have to be a headache. Let White Bull
+            Year-end accounting doesn’t have to be a headache. Let Wisely Yours
             handle the nitty-gritty details while you focus on serving your
             clients and scaling your firm.
           </p>

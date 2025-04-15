@@ -10,21 +10,21 @@ const Payroll = () => {
     {
       question: "Why should my accounting firm outsource payroll services?",
       answer:
-        "Outsourcing payroll helps reduce administrative costs, ensures compliance with UK tax regulations, and saves valuable time, allowing you to focus on client growth.",
+        "Outsourcing payroll helps reduce administrative costs, ensures compliance with India tax regulations, and saves valuable time, allowing you to focus on client growth.",
     },
     {
-      question: "What payroll services does White Bull offer for CA firms?",
+      question: "What payroll services does Wisely Yours offer for CA firms?",
       answer:
-        "White Bull provides comprehensive payroll services, including payroll processing, tax filings, statutory deductions, and year-end reports tailored to your clients' needs.",
+        "Wisely Yours provides comprehensive payroll services, including payroll processing, tax filings, statutory deductions, and year-end reports tailored to your clients' needs.",
     },
     {
       question:
-        "How does White Bull stay compliant with UK payroll regulations?",
+        "How does Wisely Yours stay compliant with India payroll regulations?",
       answer:
         "We keep up-to-date with the latest HMRC regulations and use advanced payroll software to ensure accurate tax filings and timely payments.",
     },
     {
-      question: "Can White Bull handle payroll for remote teams?",
+      question: "Can Wisely Yours handle payroll for remote teams?",
       answer:
         "Yes! We specialize in managing payroll for remote teams, ensuring accurate and timely payments, regardless of location.",
     },
@@ -38,7 +38,7 @@ const Payroll = () => {
   return (
     <>
       <LandingImage
-        title="Outsourced Accounting Services for UK Accounting Firms"
+        title="Outsourced Accounting Services for India Accounting Firms"
         link="Services / Payroll Services"
       />
 
@@ -84,10 +84,11 @@ const Payroll = () => {
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            That’s where White Bull steps in. We specialize in
+            That’s where Wisely Yours steps in. We specialize in
             <span className="font-bold">
               {" "}
-              outsourced payroll services for UK CA and accounting firms,{" "}
+              outsourced payroll services for India CA and accounting
+              firms,{" "}
             </span>
             taking the burden off your hands while ensuring compliance,
             accuracy, and efficiency. Whether it’s
@@ -100,17 +101,17 @@ const Payroll = () => {
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Partnering with White Bull means your firm can focus on what really
-            matters—helping your clients grow—while we make sure their employees
-            get paid accurately and on time. With our team staying ahead of the
-            curve on UK payroll laws and tax regulations, you can rest easy
-            knowing that compliance is never a concern.
+            Partnering with Wisely Yours means your firm can focus on what
+            really matters—helping your clients grow—while we make sure their
+            employees get paid accurately and on time. With our team staying
+            ahead of the curve on India payroll laws and tax regulations, you
+            can rest easy knowing that compliance is never a concern.
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
             <span className="font-bold">Pain Point: </span>Payroll can be a
             headache, especially when it involves tax filings and tricky
-            deductions. White Bull helps eliminate these headaches with
+            deductions. Wisely Yours helps eliminate these headaches with
             reliable, efficient payroll services, ensuring accuracy and
             compliance every time.
           </p>
@@ -134,7 +135,7 @@ const Payroll = () => {
               penalties.{" "}
             </span>
             Here’s why firms like yours
-            <span className="font-bold"> trust White Bull </span>for payroll
+            <span className="font-bold"> trust Wisely Yours </span>for payroll
             outsourcing:
           </p>
 
@@ -156,7 +157,7 @@ const Payroll = () => {
             </li>
             <li className="list-disc">
               <span className="font-bold">🎯 Expert Handling: </span>We stay
-              ahead of UK payroll laws,
+              ahead of India payroll laws,
               <span className="font-bold">
                 {" "}
                 so you don’t have to sit through another HMRC webinar.
@@ -175,7 +176,7 @@ const Payroll = () => {
             What We Offer
           </h2>
           <h3 className="text-left text-3xl font-bold">
-            Comprehensive Payroll Services Tailored for UK CA Firms
+            Comprehensive Payroll Services Tailored for India CA Firms
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
@@ -206,7 +207,7 @@ const Payroll = () => {
             Errors = Fines & Unhappy Clients
           </h2>
           <h3 className="text-left text-3xl font-bold">
-            Why Payroll Compliance Matters for UK CA Firms
+            Why Payroll Compliance Matters for India CA Firms
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
@@ -220,7 +221,7 @@ const Payroll = () => {
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            White Bull ensures that:
+            Wisely Yours ensures that:
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
@@ -245,14 +246,14 @@ const Payroll = () => {
 
         <div>
           <h2 className="text-left text-4xl font-bold text-[#2a4768]">
-            Why Choose White Bull?
+            Why Choose Wisely Yours?
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
             We’re not just a payroll provider—we’re
             <span className="font-bold"> your firm’s secret weapon </span>for
             streamlined, stress-free payroll services. Here’s why
-            <span className="font-bold"> UK CA and accounting firms </span>
+            <span className="font-bold"> India CA and accounting firms </span>
             partner with us:
           </p>
 
@@ -297,7 +298,7 @@ const Payroll = () => {
 
         <div>
           <h2 className="text-4xl font-bold text-[#2a4768]">
-            Simplifying Payroll for UK Accounting Firms
+            Simplifying Payroll for India Accounting Firms
           </h2>
           <h3 className="text-3xl font-bold">
             Say Goodbye to Payroll Stress & Compliance Worries
@@ -310,7 +311,7 @@ const Payroll = () => {
               manual bookkeeping in the era of cloud accounting—it’s slow,
               risky, and unnecessary.{" "}
             </span>
-            White Bull’s
+            Wisely Yours’s
             <span className="font-bold"> outsourced payroll services </span>
             ensure:
           </p>
@@ -334,16 +335,16 @@ const Payroll = () => {
 
         <div>
           <h2 className="text-4xl font-bold text-[#2a4768]">
-            Trusted Payroll Services for UK CA & Accounting Firms
+            Trusted Payroll Services for India CA & Accounting Firms
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            White Bull has built a solid reputation for providing
+            Wisely Yours has built a solid reputation for providing
             <span className="font-bold">
               {" "}
               reliable, scalable, and fully compliant payroll services{" "}
             </span>
-            for UK accountants. Whether your clients are
+            for India accountants. Whether your clients are
             <span className="font-bold">
               {" "}
               small businesses or large enterprises,{" "}
@@ -359,7 +360,7 @@ const Payroll = () => {
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Outsourcing payroll to White Bull means:
+            Outsourcing payroll to Wisely Yours means:
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
@@ -379,7 +380,7 @@ const Payroll = () => {
           <p className="mt-4 mb-5 text-justify text-gray-500">
             <span className="font-bold">
               📢 Ready to simplify payroll for your clients? Let’s talk. Contact
-              White Bull today
+              Wisely Yours today
             </span>
             and leave payroll processing to the experts. 🎯
           </p>

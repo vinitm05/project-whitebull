@@ -5,7 +5,9 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 const ServiceList = () => {
   return (
     <div className="mx-auto max-w-96 rounded-2xl border border-[#2a4768] bg-white pt-3.5">
-      <h3 className="mb-3 text-lg font-semibold pl-3.5">What Service We Provide</h3>
+      <h3 className="mb-3 pl-3.5 text-lg font-semibold">
+        What Service We Provide
+      </h3>
       <ul className="rounded-lg px-3.5">
         <li className="border-b border-gray-200 py-3.5 pr-4">
           <Link
@@ -13,7 +15,7 @@ const ServiceList = () => {
             className="flex items-center justify-between"
           >
             <p className="text-gray-400">Accounting Services</p>
-            <MdOutlineKeyboardArrowRight className="text-[#2a4768]"/>
+            <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
         <li className="border-b border-gray-200 py-3.5 pr-4">
@@ -22,7 +24,7 @@ const ServiceList = () => {
             className="flex items-center justify-between"
           >
             <p className="text-gray-400">Bookkeeping Services</p>
-            <MdOutlineKeyboardArrowRight className="text-[#2a4768]"/>
+            <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
         <li className="border-b border-gray-200 py-3.5 pr-4">
@@ -31,7 +33,7 @@ const ServiceList = () => {
             className="flex items-center justify-between"
           >
             <p className="text-gray-400">Year-End Accounting</p>
-            <MdOutlineKeyboardArrowRight className="text-[#2a4768]"/>
+            <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
         <li className="border-b border-gray-200 py-3.5 pr-4">
@@ -40,7 +42,7 @@ const ServiceList = () => {
             className="flex items-center justify-between"
           >
             <p className="text-gray-400">Tax Return Prepartion</p>
-            <MdOutlineKeyboardArrowRight className="text-[#2a4768]"/>
+            <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
         <li className="border-b border-gray-200 py-3.5 pr-4">
@@ -49,16 +51,16 @@ const ServiceList = () => {
             className="flex items-center justify-between"
           >
             <p className="text-gray-400">Payroll Services</p>
-            <MdOutlineKeyboardArrowRight className="text-[#2a4768]"/>
+            <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
         <li className="border-b border-gray-200 py-3.5 pr-4">
           <Link
-            to="/services/vat"
+            to="/services/GST"
             className="flex items-center justify-between"
           >
-            <p className="text-gray-400">VAT Return Filing Services</p>
-            <MdOutlineKeyboardArrowRight className="text-[#2a4768]"/>
+            <p className="text-gray-400">GST Return Filing Services</p>
+            <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
         <li className="py-3 pr-4">
@@ -67,7 +69,7 @@ const ServiceList = () => {
             className="flex items-center justify-between"
           >
             <p className="text-gray-400">Financial Analysis Services</p>
-            <MdOutlineKeyboardArrowRight className="text-[#2a4768]"/>
+            <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
       </ul>

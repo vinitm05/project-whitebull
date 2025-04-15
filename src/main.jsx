@@ -9,7 +9,7 @@ import BookKeeping from "./pages/Services/BookKeeping.jsx";
 import FinancialAnalysis from "./pages/Services/FinancialAnalysis.jsx";
 import Payroll from "./pages/Services/Payroll.jsx";
 import TaxReturn from "./pages/Services/TaxReturn.jsx";
-import VAT from "./pages/Services/VAT.jsx";
+import GST from "./pages/Services/GST.jsx";
 import YearEndAccounting from "./pages/Services/YearEndAccounting.jsx";
 import Blog from "./pages/Blog.jsx";
 import Career from "./pages/Career.jsx";
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       { path: "/services/yearendaccounting", element: <YearEndAccounting /> },
       { path: "/services/taxreturn", element: <TaxReturn /> },
       { path: "/services/payroll", element: <Payroll /> },
-      { path: "/services/vat", element: <VAT /> },
+      { path: "/services/GST", element: <GST /> },
       { path: "/services/financialanalysis", element: <FinancialAnalysis /> },
       { path: "/blog", element: <Blog /> },
       { path: "/career", element: <Career /> },

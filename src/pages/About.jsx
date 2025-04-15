@@ -19,7 +19,7 @@ const About = () => {
   const workingProcess = [
     {
       name: "01. Outsourcing That Works",
-      desc: "Outsourcing your accounting tasks to White Bull means gaining a dedicated partner focused on delivering results. From managing payroll processing, tax return preparation, and VAT filings to handling comprehensive bookkeeping, we ensure your firm’s back-office functions run smoothly. Our expertise helps reduce operational costs, improve efficiency, and allow you to focus on high-value client advisory services and scaling your business.",
+      desc: "Outsourcing your accounting tasks to Wisely Yours means gaining a dedicated partner focused on delivering results. From managing payroll processing, tax return preparation, and GST filings to handling comprehensive bookkeeping, we ensure your firm’s back-office functions run smoothly. Our expertise helps reduce operational costs, improve efficiency, and allow you to focus on high-value client advisory services and scaling your business.",
       image: "../assets/whyChoose1.svg",
     },
     {
@@ -29,12 +29,12 @@ const About = () => {
     },
     {
       name: "03. Empowering Your Firm to Grow",
-      desc: "With White Bull, you gain the ability to scale your firm effortlessly while keeping overhead costs low. Our outsourced accounting solutions allow you to expand your service offerings, improve workflow efficiency, and manage growing client demands without the need for in-house hires. By outsourcing complex financial tasks to us, your firm can focus on business growth, strategic planning, and delivering expert financial advice.",
+      desc: "With Wisely Yours, you gain the ability to scale your firm effortlessly while keeping overhead costs low. Our outsourced accounting solutions allow you to expand your service offerings, improve workflow efficiency, and manage growing client demands without the need for in-house hires. By outsourcing complex financial tasks to us, your firm can focus on business growth, strategic planning, and delivering expert financial advice.",
       image: "../assets/whyChoose3.svg",
     },
     {
       name: "04. A Long-Term Partnership for Success",
-      desc: "When you choose White Bull, you’re not just hiring an outsourcing provider—you’re forming a long-term partnership built on trust, expertise, and results. Our dedicated offshore accounting professionals integrate seamlessly with your team, ensuring consistent service quality and operational excellence. We help increase your firm’s profitability, maintain compliance with UK accounting regulations.",
+      desc: "When you choose Wisely Yours, you’re not just hiring an outsourcing provider—you’re forming a long-term partnership built on trust, expertise, and results. Our dedicated offshore accounting professionals integrate seamlessly with your team, ensuring consistent service quality and operational excellence. We help increase your firm’s profitability, maintain compliance with India accounting regulations.",
       image: "../assets/whyChoose4.svg",
     },
   ];
@@ -59,7 +59,7 @@ const About = () => {
 
   const mission2 = [
     {
-      name: "Innovation",
+      name: "InnoGSTion",
       desc: "We leverage cutting-edge technology and modern strategies to ensure efficiency and effectiveness.",
       image: "../assets/whyChoose2.svg",
     },
@@ -80,7 +80,7 @@ const About = () => {
       question:
         "What is the difference between in-house and outsourced accounting?",
       answer:
-        "Yes, at White Bull, we employ an experienced team of certified financial professionals who stay on top of industry regulations to ensure accuracy and compliance.",
+        "Yes, at Wisely Yours, we employ an experienced team of certified financial professionals who stay on top of industry regulations to ensure accuracy and compliance.",
     },
     {
       question: "Which software do you use?",
@@ -88,15 +88,15 @@ const About = () => {
         "We work with a wide range of accounting software, including QuickBooks, Sage, Xero, and more. Our team ensures seamless integration with your current tools.",
     },
     {
-      question: "Why should we outsource to White Bull?",
+      question: "Why should we outsource to Wisely Yours?",
       answer:
-        "Outsourcing with White Bull means lower overhead, expert knowledge, and the flexibility to scale as your firm grows. We ensure compliance, reduce costs, and help you focus on your core business.",
+        "Outsourcing with Wisely Yours means lower overhead, expert knowledge, and the flexibility to scale as your firm grows. We ensure compliance, reduce costs, and help you focus on your core business.",
     },
     {
       question:
         "What is the difference between in-house and outsourced accounting?",
       answer:
-        "Yes, at White Bull, we employ an experienced team of certified financial professionals who stay on top of industry regulations to ensure accuracy and compliance.",
+        "Yes, at Wisely Yours, we employ an experienced team of certified financial professionals who stay on top of industry regulations to ensure accuracy and compliance.",
     },
   ];
 
@@ -109,22 +109,22 @@ const About = () => {
     {
       question: "2. Trusted Expertise",
       answer:
-        "With decades of expertise, White Bull UK is a trusted leader in outsourced accounting services. Our team stays ahead of industry changes, ensuring full compliance with the latest tax and financial regulations. You can rely on us to manage your clients' financials with precision and care, helping your firm maintain its stellar reputation and drive long-term success.",
+        "With decades of expertise, Wisely Yours India is a trusted leader in outsourced accounting services. Our team stays ahead of industry changes, ensuring full compliance with the latest tax and financial regulations. You can rely on us to manage your clients' financials with precision and care, helping your firm maintain its stellar reputation and drive long-term success.",
     },
     {
       question: "3. A silent Partner for Your Firm's Success",
       answer:
-        "Your clients don’t need to know we’re working behind the scenes—but you’ll see the difference. At White Bull, we work efficiently and accurately to ensure their financials are always in order. As your trusted, invisible ally, we handle the heavy lifting so you can focus on strengthening client relationships and growing your firm.",
+        "Your clients don’t need to know we’re working behind the scenes—but you’ll see the difference. At Wisely Yours, we work efficiently and accurately to ensure their financials are always in order. As your trusted, invisible ally, we handle the heavy lifting so you can focus on strengthening client relationships and growing your firm.",
     },
     {
       question: "4. Trnasparent, Actionalble Reporting",
       answer:
-        "We believe in full transparency, providing you with clear, actionable financial reports to support informed decision-making. With White Bull, you’ll always have complete visibility into your clients’ financials, while they benefit from accurate, timely data that enhances trust and confidence.",
+        "We believe in full transparency, providing you with clear, actionable financial reports to support informed decision-making. With Wisely Yours, you’ll always have complete visibility into your clients’ financials, while they benefit from accurate, timely data that enhances trust and confidence.",
     },
     {
       question: "5. Continuously Evolving for Greater Impact",
       answer:
-        "At White Bull, we never settle—we continuously refine our processes and embrace cutting-edge technologies to deliver exceptional service. Partnering with us means more than just outsourcing; it means gaining a dedicated, long-term ally committed to your firm’s growth and success.",
+        "At Wisely Yours, we never settle—we continuously refine our processes and embrace cutting-edge technologies to deliver exceptional service. Partnering with us means more than just outsourcing; it means gaining a dedicated, long-term ally committed to your firm’s growth and success.",
     },
   ];
 
@@ -136,7 +136,7 @@ const About = () => {
 
   return (
     <>
-      <LandingImage title="About White Bull" link="About Us" />
+      <LandingImage title="About Wisely Yours" link="About Us" />
 
       {/* About Us Section */}
       <div className="bg-[#eceef6] px-5 py-5">
@@ -147,7 +147,7 @@ const About = () => {
             <h2 className="text-left text-3xl font-bold">
               Expert Outsourced
               <span className="text-[#2a4768]"> Accounting Services </span>
-              for UK Accounting & CA Firms – Save Time & Cut Costs
+              for India Accounting & CA Firms – Save Time & Cut Costs
             </h2>
             <p className="mt-4 mb-4 max-w-2xl text-justify text-gray-500">
               We provide expert
@@ -155,7 +155,7 @@ const About = () => {
                 {" "}
                 outsourced accounting services{" "}
               </span>
-              to help UK accounting and CA firms
+              to help India accounting and CA firms
               <span className="font-bold">
                 {" "}
                 streamline operations and boost efficiency.{" "}
@@ -164,7 +164,7 @@ const About = () => {
               <span className="font-bold"> back-office tasks </span>such as
               <span className="font-bold">
                 {" "}
-                bookkeeping, payroll, tax preparation, VAT filings, and
+                bookkeeping, payroll, tax preparation, GST filings, and
                 more,{" "}
               </span>
               allowing you to
@@ -172,7 +172,7 @@ const About = () => {
                 {" "}
                 focus on client service and business growth.{" "}
               </span>
-              With White Bull UK as your outsourcing partner, you can
+              With Wisely Yours India as your outsourcing partner, you can
               <span className="font-bold">
                 {" "}
                 save time, cut costs, and enhance profitability.
@@ -180,7 +180,7 @@ const About = () => {
               <br></br>
               <br></br>
               For decades, accounting firms have
-              <span className="font-bold"> trusted White Bull UK </span>to
+              <span className="font-bold"> trusted Wisely Yours India </span>to
               seamlessly manage their clients’ finances. With
               <span className="font-bold">
                 {" "}
@@ -193,7 +193,7 @@ const About = () => {
                 satisfaction—
               </span>
               all while ensuring full compliance with the latest
-              <span className="font-bold"> UK regulations.</span>
+              <span className="font-bold"> India regulations.</span>
             </p>
           </div>
           <br />
@@ -215,7 +215,7 @@ const About = () => {
 
           <div className="items-right">
             <h2 className="text-left text-3xl font-bold">
-              Why Choose White Bull UK for Outsourced Accounting?
+              Why Choose Wisely Yours India for Outsourced Accounting?
             </h2>
             <div className="text-l">
               {whyChoose.map((choose, index) => (
@@ -247,7 +247,7 @@ const About = () => {
         <div className="px-75 text-center">
           <p className="text-xl font-bold text-[#2a4768]">Working Process</p>
           <h2 className="mt-5 mb-20 text-5xl font-bold">
-            The White Bull<span className="text-[#2a4768]"> Approach: </span>
+            The Wisely Yours<span className="text-[#2a4768]"> Approach: </span>
             Smarter Outsourcing for Accounting Firms
           </h2>
         </div>
@@ -286,7 +286,7 @@ const About = () => {
                 Our mission is simple: to
                 <span className="font-bold">
                   {" "}
-                  empower UK accounting and CA firms{" "}
+                  empower India accounting and CA firms{" "}
                 </span>
                 with
                 <span className="font-bold">
@@ -367,7 +367,7 @@ const About = () => {
                   <p className="py-3 pr-8 text-justify text-gray-500">
                     Need additional inofrmation? Have questions? We’re here to
                     help you take your firm to the next level. let us show you
-                    how White Bull can transform your accounting processes
+                    how Wisely Yours can transform your accounting processes
                   </p>
                 </div>
               </div>

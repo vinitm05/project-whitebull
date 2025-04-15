@@ -5,27 +5,27 @@ import { TbPhoneCalling } from "react-icons/tb";
 import OutsourceYearEnd from "../../assets/outsourced-yearend.webp";
 import ServiceList from "../../components/ServiceList";
 
-const VAT = () => {
+const GST = () => {
   const faqs = [
     {
-      question: "Why should I outsource VAT return filing?",
+      question: "Why should I outsource GST return filing?",
       answer:
-        "Outsourcing VAT return filing saves your firm time, ensures compliance, reduces the risk of errors, and gives you access to VAT experts without maintaining an in-house team.",
+        "Outsourcing GST return filing saves your firm time, ensures compliance, reduces the risk of errors, and gives you access to GST experts without maintaining an in-house team.",
     },
     {
-      question: "What VAT services does White Bull provide?",
+      question: "What GST services does Wisely Yours provide?",
       answer:
-        "White Bull offers comprehensive VAT services, including VAT return preparation, filing, registration, and support with audits, ensuring full compliance with HMRC guidelines.",
+        "Wisely Yours offers comprehensive GST services, including GST return preparation, filing, registration, and support with audits, ensuring full compliance with HMRC guidelines.",
     },
     {
-      question: "How does White Bull ensure accurate VAT return filings?",
+      question: "How does Wisely Yours ensure accurate GST return filings?",
       answer:
-        "We use advanced VAT software, regularly updated by our team of VAT specialists, to ensure that your clients’ VAT returns are calculated correctly and filed on time.",
+        "We use advanced GST software, regularly updated by our team of GST specialists, to ensure that your clients’ GST returns are calculated correctly and filed on time.",
     },
     {
-      question: "Can White Bull help with VAT registration?",
+      question: "Can Wisely Yours help with GST registration?",
       answer:
-        "Yes, White Bull provides VAT registration services for businesses in the UK, ensuring that they are compliant with the latest VAT regulations.",
+        "Yes, Wisely Yours provides GST registration services for businesses in the India, ensuring that they are compliant with the latest GST regulations.",
     },
   ];
 
@@ -37,8 +37,8 @@ const VAT = () => {
   return (
     <>
       <LandingImage
-        title="Outsourced Accounting Services for UK Accounting Firms"
-        link="Services / VAT Return Filing Services"
+        title="Outsourced Accounting Services for India Accounting Firms"
+        link="Services / GST Return Filing Services"
       />
 
       <ServiceList />
@@ -66,30 +66,30 @@ const VAT = () => {
         <div>
           <h2 className="text-left text-4xl font-bold">
             Expert
-            <span className="text-[#2a4768]"> VAT Return Filing Services </span>
+            <span className="text-[#2a4768]"> GST Return Filing Services </span>
             for Your Clients
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Navigating VAT regulations is like solving a never-ending puzzle—one
+            Navigating GST regulations is like solving a never-ending puzzle—one
             wrong move, and it could cost your clients dearly. At
-            <span className="font-bold"> White Bull, </span>we specialize in
+            <span className="font-bold"> Wisely Yours, </span>we specialize in
             <span className="font-bold">
               {" "}
-              outsourced VAT return filing services for CA and accounting firms
-              in the UK,{" "}
+              outsourced GST return filing services for CA and accounting firms
+              in the India,{" "}
             </span>
-            ensuring that your clients’ VAT obligations are met accurately and
+            ensuring that your clients’ GST obligations are met accurately and
             on time—without the headache.
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
             Why wrestle with ever-changing
             <span className="font-bold"> HMRC regulations </span>when you can
-            have<span className="font-bold"> VAT experts </span>handle it for
+            have<span className="font-bold"> GST experts </span>handle it for
             you? By outsourcing
-            <span className="font-bold"> VAT return filing </span>to White Bull,
-            your firm can focus on
+            <span className="font-bold"> GST return filing </span>to Wisely
+            Yours, your firm can focus on
             <span className="font-bold"> scaling your business </span>while we
             take care of
             <span className="font-bold">
@@ -99,8 +99,8 @@ const VAT = () => {
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            <span className="font-bold">Pain Point: </span>VAT filing errors or
-            delays can lead to hefty fines. White Bull ensures
+            <span className="font-bold">Pain Point: </span>GST filing errors or
+            delays can lead to hefty fines. Wisely Yours ensures
             <span className="font-bold"> timely, error-free submissions </span>
             so your clients stay
             <span className="font-bold">
@@ -115,29 +115,29 @@ const VAT = () => {
             Why
             <span className="text-[#2a4768]">
               {" "}
-              Outsource VAT Return Filing{" "}
+              Outsource GST Return Filing{" "}
             </span>
-            to White Bull?
+            to Wisely Yours?
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            VAT compliance is
+            GST compliance is
             <span className="font-bold">
               {" "}
               complex, time-consuming, and downright tedious.{" "}
             </span>
-            Outsourcing VAT return filing to White Bull gives your firm a
+            Outsourcing GST return filing to Wisely Yours gives your firm a
             <span className="font-bold"> reliable partner </span>who takes care
             of it all, leaving you free to focus on
             <span className="font-bold"> high-value client work.</span>
           </p>
 
           <h3 className="text-left text-3xl font-bold">
-            The Hidden Costs of In-House VAT Filing
+            The Hidden Costs of In-House GST Filing
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Managing VAT returns in-house may seem like a good idea, but it
+            Managing GST returns in-house may seem like a good idea, but it
             comes with hidden costs—
             <span className="font-bold">
               {" "}
@@ -158,32 +158,32 @@ const VAT = () => {
             </li>
             <li>
               <span className="font-bold">
-                ❌ In-house VAT teams require continuous training and resources.
+                ❌ In-house GST teams require continuous training and resources.
               </span>
               we scale with you.
             </li>
           </ul>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            By outsourcing VAT return filing to
-            <span className="font-bold"> White Bull, </span>you eliminate these
-            risks while
+            By outsourcing GST return filing to
+            <span className="font-bold"> Wisely Yours, </span>you eliminate
+            these risks while
             <span className="font-bold">saving time and cutting costs.</span>
           </p>
 
           <h3 className="text-left text-3xl font-bold">
-            Benefits of Outsourcing VAT Filing
+            Benefits of Outsourcing GST Filing
           </h3>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
             <li>
-              <span className="font-bold">✅ Accurate VAT Returns – </span>No
-              more second-guessing! We ensure error-free VAT calculations and
+              <span className="font-bold">✅ Accurate GST Returns – </span>No
+              more second-guessing! We ensure error-free GST calculations and
               eliminate compliance risks.
             </li>
             <li>
               <span className="font-bold">✅ Timely Submissions –</span>Never
-              miss a deadline! Our team ensures your clients’ VAT returns are
+              miss a deadline! Our team ensures your clients’ GST returns are
               submitted on time, every time.
             </li>
             <li>
@@ -193,7 +193,7 @@ const VAT = () => {
             </li>
             <li>
               <span className="font-bold">✅ Cost-Effective Solution – </span>No
-              need for an in-house VAT team—cut costs while maintaining top-tier
+              need for an in-house GST team—cut costs while maintaining top-tier
               service.
             </li>
           </ul>
@@ -205,40 +205,40 @@ const VAT = () => {
           </h2>
 
           <h3 className="text-left text-3xl font-bold">
-            Comprehensive VAT Return Services
+            Comprehensive GST Return Services
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
             We provide
             <span className="font-bold">
               {" "}
-              end-to-end VAT return filing services,{" "}
+              end-to-end GST return filing services,{" "}
             </span>
             tailored to
             <span className="font-bold">
               {" "}
-              meet the needs of CA and accounting firms in the UK.{" "}
+              meet the needs of CA and accounting firms in the India.{" "}
             </span>
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
             <li>
               <span className="font-bold">📌 Preparation and filing </span>of
-              quarterly or annual VAT returns
+              quarterly or annual GST returns
             </li>
             <li>
               <span className="font-bold">
-                📌 VAT registration and deregistration{" "}
+                📌 GST registration and deregistration{" "}
               </span>
               assistance
             </li>
             <li>
               <span className="font-bold">
-                📌 Support with VAT audits and corrections
+                📌 Support with GST audits and corrections
               </span>
             </li>
             <li>
-              <span className="font-bold">📌 Real-time tracking </span>of VAT
+              <span className="font-bold">📌 Real-time tracking </span>of GST
               filings for<span className="font-bold"> accurate reporting</span>
             </li>
           </ul>
@@ -249,21 +249,21 @@ const VAT = () => {
             Reliable
             <span className="text-[#2a4768]">
               {" "}
-              VAT Return Filing Solutions{" "}
+              GST Return Filing Solutions{" "}
             </span>
             for CA and Accounting Firms
           </h2>
           <h3 className="text-left text-3xl font-bold">
-            Say Goodbye to VAT Compliance Hassles
+            Say Goodbye to GST Compliance Hassles
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Managing VAT returns can feel like
+            Managing GST returns can feel like
             <span className="font-bold"> herding cats— </span>challenging and
-            unpredictable. That’s where White Bull steps in. Our
+            unpredictable. That’s where Wisely Yours steps in. Our
             <span className="font-bold">
               {" "}
-              outsourced VAT return filing services{" "}
+              outsourced GST return filing services{" "}
             </span>
             help CA and accounting firms eliminate
             <span className="font-bold">
@@ -276,25 +276,25 @@ const VAT = () => {
             <span className="font-bold">Pain Point: </span>Late filings and
             errors can lead to
             <span className="font-bold"> hefty fines and HMRC headaches. </span>
-            White Bull helps firms stay ahead with
+            Wisely Yours helps firms stay ahead with
             <span className="font-bold">
               {" "}
-              timely, precise, and fully compliant VAT return filings.
+              timely, precise, and fully compliant GST return filings.
             </span>
           </p>
 
           <h3 className="text-left text-3xl font-bold">
-            What You Get with White Bull
+            What You Get with Wisely Yours
           </h3>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
             <li>
-              <span className="font-bold">✅ Correct VAT calculations </span>for
+              <span className="font-bold">✅ Correct GST calculations </span>for
               every client
             </li>
             <li>
               <span className="font-bold">
-                ✅ Transparent and clear VAT reporting
+                ✅ Transparent and clear GST reporting
               </span>
             </li>
             <li>
@@ -305,7 +305,7 @@ const VAT = () => {
           </ul>
 
           <p className="mb-10 rounded-2xl bg-[#2a4768] px-8 py-10 text-lg text-white">
-            Need help with VAT and other indirect taxes? Check out our Indirect
+            Need help with GST and other indirect taxes? Check out our Indirect
             <span className="font-bold"> Taxation Services </span>for additional
             support.
           </p>
@@ -314,31 +314,31 @@ const VAT = () => {
         <div>
           <h2 className="text-left text-4xl font-bold">
             Why
-            <span className="text-[#2a4768]"> White Bull </span>is the Right
-            Choice for Outsourced VAT Return Filing
+            <span className="text-[#2a4768]"> Wisely Yours </span>is the Right
+            Choice for Outsourced GST Return Filing
           </h2>
           <h3 className="text-left text-3xl font-bold">
-            Your Trusted VAT Compliance Partner
+            Your Trusted GST Compliance Partner
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Partnering with<span className="font-bold"> White Bull </span>means
-            you get a<span className="font-bold"> trusted team </span>that
+            Partnering with<span className="font-bold"> Wisely Yours </span>
+            means you get a<span className="font-bold"> trusted team </span>that
             understands the complexities of
-            <span className="font-bold"> UK VAT laws </span>and provides
+            <span className="font-bold"> India GST laws </span>and provides
             <span className="font-bold"> tailored solutions </span>for your
             clients—whether they’re startups or large enterprises.
           </p>
 
           <h3 className="text-left text-3xl font-bold">
-            Why Accounting Firms Trust White Bull
+            Why Accounting Firms Trust Wisely Yours
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Partnering with<span className="font-bold"> White Bull </span>means
-            you get a<span className="font-bold"> trusted team </span>that
+            Partnering with<span className="font-bold"> Wisely Yours </span>
+            means you get a<span className="font-bold"> trusted team </span>that
             understands the complexities of
-            <span className="font-bold"> UK VAT laws </span>and provides
+            <span className="font-bold"> India GST laws </span>and provides
             <span className="font-bold"> tailored solutions </span>for your
             clients—whether they’re startups or large enterprises.
           </p>
@@ -346,7 +346,7 @@ const VAT = () => {
           <ul className="mt-4 mb-5 text-justify text-gray-500">
             <li>
               <span className="font-bold">🔹 Industry Expertise: </span>We
-              specialize in VAT filing across multiple industries, ensuring
+              specialize in GST filing across multiple industries, ensuring
               <span className="font-bold"> flawless submissions.</span>
             </li>
             <li>
@@ -354,18 +354,18 @@ const VAT = () => {
                 🔹 Reliable and Accurate Reporting:{" "}
               </span>
               Our team uses
-              <span className="font-bold"> advanced VAT software </span>to
+              <span className="font-bold"> advanced GST software </span>to
               eliminate errors.
             </li>
             <li>
-              <span className="font-bold">🔹 Dedicated VAT Experts: </span>We
+              <span className="font-bold">🔹 Dedicated GST Experts: </span>We
               keep up with the
               <span className="font-bold"> latest HMRC regulations </span>so
               your clients stay compliant.
             </li>
             <li>
               <span className="font-bold">🔹 Flexible Solutions: </span>Scalable
-              VAT return filing services that
+              GST return filing services that
               <span className="font-bold">
                 {" "}
                 grow with your clients’ businesses.
@@ -377,37 +377,37 @@ const VAT = () => {
         <div>
           <h2 className="text-left text-4xl font-bold">
             Simplify
-            <span className="text-[#2a4768]"> VAT Compliance </span>with White
-            Bull’s VAT Return Filing Services
+            <span className="text-[#2a4768]"> GST Compliance </span>with White
+            Bull’s GST Return Filing Services
           </h2>
           <h3 className="text-left text-3xl font-bold">
-            The Hassle-Free Approach to VAT Filing
+            The Hassle-Free Approach to GST Filing
           </h3>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            VAT compliance shouldn’t feel like
+            GST compliance shouldn’t feel like
             <span className="font-bold"> a constant battle. </span>With
-            <span className="font-bold"> White Bull, </span>you get:
+            <span className="font-bold"> Wisely Yours, </span>you get:
           </p>
 
           <ul className="mt-4 mb-5 text-justify text-gray-500">
             <li>
-              <span className="font-bold">✅ Accurate VAT calculations</span>
+              <span className="font-bold">✅ Accurate GST calculations</span>
             </li>
             <li>
               <span className="font-bold">
-                ✅ Complete compliance with UK tax laws
+                ✅ Complete compliance with India tax laws
               </span>
             </li>
             <li>
               <span className="font-bold">
-                ✅ Seamless VAT-related communication with HMRC
+                ✅ Seamless GST-related communication with HMRC
               </span>
             </li>
           </ul>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            <span className="font-bold"> Pain Point: </span>Keeping up with VAT
+            <span className="font-bold"> Pain Point: </span>Keeping up with GST
             law changes is exhausting. Our experts
             <span className="font-bold"> stay ahead of the curve, </span>so you
             don’t have to.
@@ -417,20 +417,20 @@ const VAT = () => {
         <div>
           <h2 className="text-left text-4xl font-bold">
             Trusted
-            <span className="text-[#2a4768]"> VAT Return Filing Services </span>
-            for CA and Accounting Firms in the UK
+            <span className="text-[#2a4768]"> GST Return Filing Services </span>
+            for CA and Accounting Firms in the India
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            White Bull has earned the
+            Wisely Yours has earned the
             <span className="font-bold">
               {" "}
-              trust of CA and accounting firms across the UK{" "}
+              trust of CA and accounting firms across the India{" "}
             </span>
             by delivering
             <span className="font-bold">
               {" "}
-              reliable, efficient, and hassle-free VAT return filing
+              reliable, efficient, and hassle-free GST return filing
               services.{" "}
             </span>
             Whether your clients are
@@ -438,7 +438,7 @@ const VAT = () => {
               {" "}
               small businesses or large enterprises,{" "}
             </span>
-            we ensure their VAT returns are
+            we ensure their GST returns are
             <span className="font-bold">
               {" "}
               accurate, on time, and fully compliant.
@@ -446,7 +446,7 @@ const VAT = () => {
           </p>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Let White Bull handle VAT compliance, so you can focus on growing
+            Let Wisely Yours handle GST compliance, so you can focus on growing
             your firm and serving your clients.
           </p>
 
@@ -463,24 +463,24 @@ const VAT = () => {
             The Smart Choice for
             <span className="text-[#2a4768]">
               {" "}
-              Outsourced VAT Return Filing
+              Outsourced GST Return Filing
             </span>
           </h2>
 
           <p className="mt-4 mb-5 text-justify text-gray-500">
-            Outsourcing VAT return filing to White Bull offers your firm an
+            Outsourcing GST return filing to Wisely Yours offers your firm an
             <span className="font-bold">
               efficient, accurate, and cost-effective
             </span>
-            way to manage VAT compliance.
+            way to manage GST compliance.
             <span className="font-bold">
-              No more missed deadlines, no more fines—just expert VAT solutions.
+              No more missed deadlines, no more fines—just expert GST solutions.
             </span>
           </p>
 
           <p className="mb-10 rounded-2xl bg-[#2a4768] px-8 py-10 text-lg text-white">
             <span className="font-bold">
-              📞 Ready to simplify VAT filing for your clients? Contact White
+              📞 Ready to simplify GST filing for your clients? Contact White
               Bull today!
             </span>
           </p>
@@ -524,4 +524,4 @@ const VAT = () => {
   );
 };
 
-export default VAT;
+export default GST;
