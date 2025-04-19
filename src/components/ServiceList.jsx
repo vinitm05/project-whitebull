@@ -9,12 +9,12 @@ const ServiceList = () => {
         What Service We Provide
       </h3>
       <ul className="rounded-lg px-3.5">
-        <li className="border-b border-gray-200 py-3.5 pr-4">
+        <li className="border-b border-gray-200 py-3.5 pr-4 hover:text-[#2a4768]">
           <Link
             to="/services/accounting"
             className="flex items-center justify-between"
           >
-            <p className="text-gray-400">Accounting Services</p>
+            <p className="text-gray-400 hover:text-[#2a4768]">Accounting Services</p>
             <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
@@ -23,7 +23,7 @@ const ServiceList = () => {
             to="/services/bookkeeping"
             className="flex items-center justify-between"
           >
-            <p className="text-gray-400">Bookkeeping Services</p>
+            <p className="text-gray-400 hover:text-[#2a4768]">Bookkeeping Services</p>
             <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
@@ -32,7 +32,7 @@ const ServiceList = () => {
             to="/services/yearendaccounting"
             className="flex items-center justify-between"
           >
-            <p className="text-gray-400">Year-End Accounting</p>
+            <p className="text-gray-400 hover:text-[#2a4768]">Year-End Accounting</p>
             <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
@@ -41,7 +41,7 @@ const ServiceList = () => {
             to="/services/taxreturn"
             className="flex items-center justify-between"
           >
-            <p className="text-gray-400">Tax Return Prepartion</p>
+            <p className="text-gray-400 hover:text-[#2a4768]">Tax Return Prepartion</p>
             <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
@@ -50,7 +50,7 @@ const ServiceList = () => {
             to="/services/payroll"
             className="flex items-center justify-between"
           >
-            <p className="text-gray-400">Payroll Services</p>
+            <p className="text-gray-400 hover:text-[#2a4768]">Payroll Services</p>
             <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
@@ -59,7 +59,7 @@ const ServiceList = () => {
             to="/services/GST"
             className="flex items-center justify-between"
           >
-            <p className="text-gray-400">GST Return Filing Services</p>
+            <p className="text-gray-400 hover:text-[#2a4768]">GST Return Filing Services</p>
             <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>
@@ -68,7 +68,7 @@ const ServiceList = () => {
             to="/services/financialanalysis"
             className="flex items-center justify-between"
           >
-            <p className="text-gray-400">Financial Analysis Services</p>
+            <p className="text-gray-400 hover:text-[#2a4768]">Financial Analysis Services</p>
             <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
           </Link>
         </li>

@@ -104,7 +104,7 @@ const Footer = () => {
             <h2 className="mb-4 text-xl font-medium">Our Locations</h2>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <RiMapPin2Fill className="mr-2"/>
+                <RiMapPin2Fill className="mr-2" />
                 <a href="https://maps.google.com/" target="_blank">
                   Mumabi - India
                 </a>
@@ -114,7 +114,7 @@ const Footer = () => {
                 <a href="tel:+022-49647976">+022 49647976</a>
               </li>
               <li className="flex items-start">
-                <IoMdMail className="mr-2"/>
+                <IoMdMail className="mr-2" />
                 <a href="mailto:partners@wiselyyours.com">
                   partners@wiselyyours.com
                 </a>
@@ -128,7 +128,7 @@ const Footer = () => {
       <div className="mx-auto mt-12 max-w-7xl border-t border-gray-600 pt-6">
         <div className="flex flex-col items-center justify-between md:flex-row">
           <p className="mb-4 md:mb-0">
-            Copyright © 2024 Whitebull. All Rights Reserved.
+            Copyright © 2024 Wisely Yours. All Rights Reserved.
           </p>
           <div className="flex items-center space-x-6">
             <Link to={"career"} className="hover:text-gray-300">

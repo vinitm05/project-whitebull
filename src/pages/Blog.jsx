@@ -85,7 +85,7 @@ const Blog = () => {
 
   return (
     <>
-      <LandingImage title="Wisely Yours Blog" link="Blog" />
+      <LandingImage title="Our Blog" link="Blog" />
 
       {/* Blog Header */}
       <div className="my-12 px-4.5">

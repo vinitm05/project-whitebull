@@ -86,74 +86,77 @@ const Career = () => {
           Redefining Finance, One{" "}
           <span className="text-[#2a4768]">Career at a Time</span>
         </h2>
-        <img src={Career1} alt="" className="my-11" />
       </div>
 
-      <div className="mx-5 mb-3 rounded-2xl border bg-white p-4">
-        <p className="text-gray-500">
-          Please fill out the form below, and Empower Your Future with One Smart
-          Investment at a Time
-        </p>
-        <form action="" className="my-4 flex flex-col items-start">
-          <label className="mb-1" htmlFor="name">
-            Full Name
-          </label>
-          <input
-            className="mb-5 h-12 w-full rounded-lg bg-[#eceef6]"
-            type="text"
-            name="name"
-            id="name"
-          />
-          <label className="mb-1" htmlFor="email">
-            Email Address
-          </label>
-          <input
-            className="mb-5 h-12 w-full rounded-lg bg-[#eceef6]"
-            type="email"
-            name="email"
-            id="email"
-          />
-          <label className="mb-1" htmlFor="phone">
-            Phone Number
-          </label>
-          <input
-            className="mb-5 h-12 w-full rounded-lg bg-[#eceef6]"
-            type="tel"
-            name="phone"
-            id="phone"
-          />
-          <label className="mb-1" htmlFor="resume">
-            Upload Resume
-          </label>
-          <input
-            className="mb-5 h-12 w-full rounded-lg bg-[#eceef6]"
-            type="file"
-            name="resume"
-            id="resume"
-          />
-          <label className="mb-1" htmlFor="message">
-            Message
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            rows="4"
-            className="mb-5 w-full rounded-lg bg-[#eceef6]"
-          ></textarea>
-          <button
-            type="submit"
-            className="rounded-md bg-linear-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-evenly">
+        <img src={Career1} alt="" width={500} className="my-11" />
+        <div className="rounded-xl border bg-white p-5 m-3">
+          <form
+            action=""
+            method="get"
+            className="mx-auto flex max-w-2xl flex-col gap-4"
           >
-            Submit Resume
-          </button>
-        </form>
+            <p className="mb-4 text-gray-400">
+              Please fill out the form below, and Empower Your Future with One
+              Smart Investment at a Time
+            </p>
+
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                placeholder="Full Name"
+                className="h-12 w-full rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                className="h-12 w-full rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
+              />
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Phone"
+                className="h-12 w-full rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
+              />
+              <input
+                type="file"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                className="h-12 w-full rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
+              />
+            </div>
+
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Write a Message"
+              className="h-24 w-full resize-none rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
+            ></textarea>
+
+            <button
+              type="submit"
+              className="h-12 rounded-md bg-gradient-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
 
       <div className="bg-white p-6">
         <h2 className="mb-6 text-4xl font-bold text-[#2a4768]">
           Join the Wisely Yours Team - Where Talent Meet Opportunities
         </h2>
-        <h2 className="text-4xl font-bold text-[#2a4768]">
+        <h2 className="text-3xl font-bold text-[#2a4768]">
           Why Work at Wisely Yours?
         </h2>
         <p className="my-5 text-justify leading-6.5 text-gray-500">
@@ -174,7 +177,7 @@ const Career = () => {
           Yours is the place for you.
         </p>
 
-        <h2 className="my-6 text-4xl font-bold text-[#2a4768]">
+        <h2 className="my-6 text-3xl font-bold text-[#2a4768]">
           Our Culture: Collaboration, InnoGSTion, and Growth
         </h2>
         <p className="text-justify leading-6.5 text-gray-500">
@@ -192,7 +195,7 @@ const Career = () => {
           training, and mentorship needed to help you excel in a dynamic,
           growth-focused workplace.
         </p>
-        <h2 className="my-6 text-4xl font-bold text-[#2a4768]">
+        <h2 className="my-6 text-3xl font-bold text-[#2a4768]">
           Start Your Journey with Wisely Yours
         </h2>
         <p className="text-justify leading-6.5 text-gray-500">

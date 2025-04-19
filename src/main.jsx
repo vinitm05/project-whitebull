@@ -2,7 +2,6 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./components/Layout.jsx";
-import HomePage from "./pages/HomePage.jsx";
 import About from "./pages/About.jsx";
 import Accounting from "./pages/Services/Accounting.jsx";
 import BookKeeping from "./pages/Services/BookKeeping.jsx";
@@ -16,6 +15,7 @@ import Career from "./pages/Career.jsx";
 import Contact from "./pages/Contact.jsx";
 import "./index.css";
 import NotFound from "./pages/NotFound.jsx";
+import Home from "./pages/Home.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <NotFound />,
     children: [
-      { path: "/", element: <HomePage />, errorElement: <NotFound /> },
+      { path: "/", element: <Home />, errorElement: <NotFound /> },
       { path: "/about", element: <About /> },
       { path: "/services/accounting", element: <Accounting /> },
       { path: "/services/bookkeeping", element: <BookKeeping /> },
