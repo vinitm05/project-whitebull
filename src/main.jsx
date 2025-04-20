@@ -17,6 +17,7 @@ import Contact from "./pages/Contact.jsx";
 import "./index.css";
 import NotFound from "./pages/NotFound.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
