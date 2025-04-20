@@ -9,8 +9,8 @@ const LandingImage = ({ title, link }) => {
         backgroundAttachment: "fixed",
       }}
     >
-      <p className="w-4/6 text-center text-4xl font-bold lg:text-6xl">{title}</p>
-      <p className="text-xl">
+      <p className="md:w-4/6 text-center text-4xl font-bold lg:text-6xl">{title}</p>
+      <p className="text-sm md:text-xl">
         <Link to="/">Home </Link> / {link}
       </p>
     </div>

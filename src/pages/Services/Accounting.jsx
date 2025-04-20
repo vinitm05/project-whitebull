@@ -44,7 +44,7 @@ const Accounting = () => {
 
       <div className="md:my-28 md:grid md:grid-cols-[400px_minmax(900px,_1fr)_100px] md:justify-center md:px-72">
         {/* left part */}
-        <div className="sticky top-2 h-fit">
+        <div className="md:sticky md:top-2 md:h-fit mt-10">
           <ServiceList />
 
           <div className="mx-auto my-8 max-w-96 rounded-2xl border border-[#2a4768] bg-white p-4.5">
@@ -67,7 +67,7 @@ const Accounting = () => {
         <div>
           <img
             src={OutsourceAccounting}
-            className="mx-4.5 h-auto rounded-2xl"
+            className="mx-auto h-auto w-11/12 rounded-2xl"
           />
 
           <div className="my-8 px-4.5">
@@ -454,9 +454,9 @@ const Accounting = () => {
       </div>
 
       {/* FAQs */}
-      <div className="flex flex-col items-center bg-white px-4.5 py-10 md:py-28">
-        <p className="font-semibold text-[#2a4768]">FAQs</p>
-        <h2 className="text-center text-3xl font-bold md:w-7xl md:text-5xl">
+      <div className=" items-center bg-white px-4.5 py-10 md:py-28">
+        <p className="text-center font-semibold text-[#2a4768]">FAQs</p>
+        <h2 className="text-center text-3xl font-bold md:text-5xl">
           Everything You Need to Know About{" "}
           <span className="text-[#2a4768]">Outsourced Accounting</span>
         </h2>

@@ -37,13 +37,13 @@ const TaxReturn = () => {
   return (
     <>
       <LandingImage
-        title="Outsourced Accounting Services for India Accounting Firms"
+        title="Outsourced Tax Return Preparation Services for Accounting Firms in India"
         link="Services / Tax Return Preparation"
       />
 
       <div className="md:my-28 md:grid md:grid-cols-[400px_minmax(900px,_1fr)_100px] md:justify-center md:px-72">
         {/* left side */}
-        <div className="sticky top-2 h-fit">
+        <div className="mt-10 md:sticky md:top-2 md:h-fit">
           <ServiceList />
           <div className="mx-auto my-8 w-11/12 rounded-2xl border border-[#2a4768] bg-white p-4.5">
             <TbPhoneCalling className="text-6xl text-[#2a4768]" />
@@ -345,7 +345,7 @@ const TaxReturn = () => {
               <p className="mt-4 mb-5 text-justify text-gray-500">
                 Managing tax returns in-house can quickly become
                 overwhelming—especially during peak seasons. By outsourcing to
-                White Bull, your firm can:
+                Wisely Yours, your firm can:
               </p>
 
               <ul className="mt-4 mb-5 text-justify text-gray-500">
@@ -418,9 +418,9 @@ const TaxReturn = () => {
       </div>
 
       {/* FAQs */}
-      <div className="flex flex-col items-center bg-white px-4.5 py-10 md:py-28">
-        <p className="font-semibold text-[#2a4768]">FAQs</p>
-        <h2 className="text-center text-3xl font-bold md:w-7xl md:text-5xl">
+      <div className="items-center bg-white px-4.5 py-10 md:py-28">
+        <p className="text-center font-semibold text-[#2a4768]">FAQs</p>
+        <h2 className="text-center text-3xl font-bold md:text-5xl">
           Everything You Need to Know About{" "}
           <span className="text-[#2a4768]">Outsourced Accounting</span>
         </h2>

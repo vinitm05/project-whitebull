@@ -80,7 +80,7 @@ const Career = () => {
     <>
       <LandingImage title="Career" link="Career" />
 
-      <div className="text-center">
+      <div className="text-center mt-24">
         <p className="font-semibold text-[#2a4768]">Career</p>
         <h2 className="mt-4 text-3xl font-bold">
           Redefining Finance, One{" "}
@@ -152,7 +152,7 @@ const Career = () => {
         </div>
       </div>
 
-      <div className="bg-white p-6">
+      <div className="bg-white md:py-16 md:px-44 p-6">
         <h2 className="mb-6 text-4xl font-bold text-[#2a4768]">
           Join the Wisely Yours Team - Where Talent Meet Opportunities
         </h2>
