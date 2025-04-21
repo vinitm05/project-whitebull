@@ -40,13 +40,13 @@ const YearEndAccounting = () => {
   return (
     <div>
       <LandingImage
-        title="Outsourced Accounting Services for India Accounting Firms"
-        link="Services / Accounting Services"
+        title="Outsourced Year-End Accounting Services"
+        link="Services / Year-End Accounting"
       />
 
       <div className="md:my-28 md:grid md:grid-cols-[400px_minmax(900px,_1fr)_100px] md:justify-center md:px-72">
         {/* left part */}
-        <div className="sticky top-2 h-fit">
+        <div className="mt-10 md:sticky md:top-2 md:h-fit">
           <ServiceList />
           <div className="mx-auto my-8 w-11/12 rounded-2xl border border-[#2a4768] bg-white p-4.5">
             <TbPhoneCalling className="text-6xl text-[#2a4768]" />
@@ -250,26 +250,26 @@ const YearEndAccounting = () => {
           </div>
         </div>
       </div>
-      
+
       {/* FAQs */}
-      <div className="flex flex-col items-center bg-white px-4.5 py-10">
-        <p className="font-semibold text-[#2a4768]">FAQs</p>
-        <h2 className="text-center text-3xl font-bold">
+      <div className="items-center bg-white px-4.5 py-10 md:py-28">
+        <p className="text-center font-semibold text-[#2a4768]">FAQs</p>
+        <h2 className="text-center text-3xl font-bold md:text-5xl">
           Everything You Need to Know About{" "}
           <span className="text-[#2a4768]">Outsourced Accounting</span>
         </h2>
-        <p className="text-center text-gray-500">
+        <p className="my-5 text-center text-gray-500">
           Discover helpful answers to your most pressing financial questions.
           We’re here to assist you every step of the way!{" "}
         </p>
-        <div className="mx-auto max-w-lg p-4">
+        <div className="mx-auto max-w-lg p-4 md:max-w-7xl">
           {faqs.map((faq, index) => (
             <div
               key={index}
               className="border-b border-gray-200 last:border-none"
             >
               <button
-                className="flex w-full items-center justify-between py-4 text-left font-semibold hover:cursor-pointer"
+                className="flex w-full items-center justify-between py-4 text-left font-semibold hover:cursor-pointer md:py-6 md:text-xl"
                 onClick={() => toggleFAQ(index)}
               >
                 {faq.question}
@@ -278,7 +278,7 @@ const YearEndAccounting = () => {
                 </span>
               </button>
               {openIndex === index && (
-                <p className="pb-4 text-gray-400">{faq.answer}</p>
+                <p className="pb-4 text-gray-400 md:text-xl">{faq.answer}</p>
               )}
             </div>
           ))}
