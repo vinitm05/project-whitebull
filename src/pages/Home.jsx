@@ -1,22 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiMapPin } from "react-icons/fi";
 import { PiPhone } from "react-icons/pi";
 import { RiMailSendLine } from "react-icons/ri";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import LandingImage from "../components/LandingImage";
+import { Link, Links } from "react-router";
+import { FaQuestion } from "react-icons/fa";
 
 const Home = () => {
   const faqs = [
     {
-      question:
-        "What is the difference between in-house and outsourced accounting?",
+      question: "Do you have an experienced or certified team?",
       answer:
-        "Yes, at Wisely Yours, we employ an experienced team of certified financial professionals who stay on top of industry regulations to ensure accuracy and compliance.",
-    },
-    {
-      question: "Which software do you use?",
-      answer:
-        "We work with a wide range of accounting software, including QuickBooks, Sage, Xero, and more. Our team ensures seamless integration with your current tools.",
+        "Yes, at Wisely, we employ an experienced team of certified financial professionals who stay on top of industry regulations to ensure accuracy and compliance.",
     },
     {
       question: "Why should we outsource to Wisely Yours?",
@@ -31,11 +27,70 @@ const Home = () => {
     },
   ];
 
-    const [openIndex, setOpenIndex] = useState(null);
-  
-    const toggleFAQ = (index) => {
-      setOpenIndex(openIndex === index ? null : index);
-    };
+  const blogPosts = [
+    {
+      id: 1,
+      title:
+        "Why OutSourcing Your Tax Preparation will Save You, Money, and Headaches",
+      category: "Business",
+      image: "../../assets/blog/blog-1.webp",
+    },
+    {
+      id: 2,
+      title:
+        "Why Outsourcing Your Accounting Can Be the Best Business Decision You’ll Ever Make (Seriously)",
+      category: "Business",
+      image: "../../assets/blog/blog-2.webp",
+    },
+    {
+      id: 3,
+      title: "How Outsourcing Accounting Services Can Benefit Your CA Firm",
+      category: "Business",
+      image: "../../assets/blog/blog-3.webp",
+    },
+  ];
+
+  const successStory = [
+    {
+      story:
+        "White Bull’s expertise has been essential in helping us reach our goals. Their commitment to delivering top-notch service is clear in everything they do.",
+      name: "person1",
+      designation: "designation1",
+    },
+    {
+      story:
+        "White Bull’s expertise has been essential in helping us reach our goals. Their commitment to delivering top-notch service is clear in everything they do.",
+      name: "person1",
+      designation: "designation1",
+    },
+    {
+      story:
+        "White Bull’s expertise has been essential in helping us reach our goals. Their commitment to delivering top-notch service is clear in everything they do.",
+      name: "person1",
+      designation: "designation1",
+    },
+    {
+      story:
+        "White Bull’s expertise has been essential in helping us reach our goals. Their commitment to delivering top-notch service is clear in everything they do.",
+      name: "person1",
+      designation: "designation1",
+    },
+  ];
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const toggleBlog = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const toggleStory = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <>
       {/* image */}
@@ -44,10 +99,141 @@ const Home = () => {
         link="Contact Us"
       />
 
-      
-      
-      <div className="flex flex-col gap-6 bg-[#eceef6] pt-16">
-        {/* FAQs */}
+      {/* About Us */}
+
+      {/* Services */}
+
+      {/* Company Overview */}
+
+      {/* Client Onboarding */}
+      <div className="bg-[#eceef6] px-5 py-5">
+      <div className="text-center px-70
+      mt-10">
+          <p className="mb-7 text-lg font-semibold text-[#2a4768]">Client Onboarding Process</p>
+          <h2 className="text-5xl font-bold">
+          Straightforward<span className="text-[#2a4768]"> Client Onboarding Process</span></h2>
+          <p className="m-6 mx-auto max-w-2xl text-gray-500">
+          We believe in making it easy for you. That’s why our onboarding process is designed for a seamless transition, so you can quickly start seeing the benefits of outsourcing to White Bull.
+          </p>
+        </div>
+
+          {/* inn stories koo box mee dalna hai side by side */}
+          <div className="">
+            <div className="flex">
+              <div className="box1">Consultation & Needs Assessment</div>
+              <div className="box2">Secure Document Transfer</div>
+              <div className="box4">Mutual Agreement</div>
+            
+          </div>
+          </div>
+      </div>
+
+      {/* Case Study */}
+      <div className="bg-[#eceef6] px-5 py-5">
+      <div className="text-center px-70
+      mt-10">
+          <p className="mb-7 text-lg font-semibold text-[#2a4768]">Case Study</p>
+          <h2 className="text-5xl font-bold">
+          Real Results:<span className="text-[#2a4768]"> How White Bull Drives Success for UK Accounting Firms</span></h2>
+          <p className="m-6 mx-auto max-w-2xl text-gray-500">
+          We don’t just talk the talk; we walk the walk. Our clients have experienced real, measurable improvements in efficiency, cost reduction, and client satisfaction. But don’t just take our word for it—see how White Bull has helped UK accounting firms succeed.
+          </p>
+        </div>
+
+          {/* inn stories koo box mee dalna hai side by side */}
+          <div className="">
+            <div className="flex">
+              <div className="box1">box1</div>
+              <div className="box1">box2</div>
+              <div className="box1">box3</div>
+            
+          </div>
+          </div>
+      </div>
+
+      {/* Our Success Story */}
+      <div className="bg-[#eceef6] px-5 py-5">
+        <div className="grid grid-cols-2">
+          <div className="items-left">Image</div>
+
+          {/* inn stories koo box mee dalna hai side by side */}
+          <div className="items-right">
+          <div>
+              <p className="text-lg font-semibold text-[#2a4768]">Our Success Story</p>
+              <p className="text-3xl font-bold md:text-5xl">What Our
+                <span className="text-[#2a4768]"> Clients </span>Say About Us</p>
+              <p className="pr-100 text-gray-400">
+              We take pride in the positive experiences and successful outcomes we’ve facilitated for our clients.</p>
+            </div>
+
+            <div className="grid grid-cols-4">
+            <div className="text-l">
+              {successStory.map((user, index) => (
+                <div key={index} className="">
+                  <div className="text-gray-400">
+                    {user.story}
+                  </div>
+                  <div className="text-[#2a4768]">
+                    {user.designation}
+                  </div>
+                  <div className="text-gray-400">
+                    {user.name}
+                  </div>
+                    <span className="text-lg flex gap-4" onClick={() => toggleStory(index)}>
+                      <FaArrowLeft/>
+                      <FaArrowRight/>
+                    </span>
+                </div>
+              ))}
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Blogs */}
+      <div className="bg-[#eceef6] px-5 py-5">
+        <div className="text-center">
+          <p className="text-lg font-semibold text-[#2a4768]">Our Blogs</p>
+          <h2 className="text-5xl font-bold">
+            Latest Insights from{" "}
+            <span className="text-[#2a4768]">Wisely Your's</span>
+          </h2>
+          <p className="m-7 mx-auto max-w-2xl text-gray-500">
+            Check out our blog for expert advice on everything from bookkeeping
+            to tax strategies. We share the tips, trends, and insights that help
+            accounting firms stay ahead of the curve and provide superior
+            service to their clients.
+          </p>
+        </div>
+
+{/* Yaha par inko grid mee convert karna hai aur image koo include karna hai */}
+        <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-3">
+          <div className="text-l p-4">
+            {blogPosts.map((blog, index) => (
+              <div
+                key={index}
+                className="border-grey-200 border-b last:border-none"
+              >
+                <button
+                  className="flex w-full items-center justify-between py-4 text-left font-bold hover:cursor-pointer"
+                  onClick={() => toggleFAQ(index)}
+                >
+                  {blog.category}
+                  <span className="text-3xl">
+                    {openIndex === index ? "−" : "+"}
+                  </span>
+                </button>
+                {openIndex === index && (
+                  <p className="pb-4 text-gray-400">{blog.title}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* FAQs */}
       <div className="bg-[#eceef6] px-5 py-5">
         <div className="grid grid-cols-2">
           <div className="items-left">
@@ -117,14 +303,17 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Contact Us */}
+      <div className="flex flex-col gap-6 bg-[#eceef6] pt-16">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-evenly">
-          <div className="grid grid-cols-1 px-15 gap-7.5">
+          <div className="grid grid-cols-1 gap-7.5 px-15">
             <div>
               <p className="text-lg font-semibold">Reach Out To Us</p>
               <p className="text-3xl font-bold md:text-5xl">
-                <span className="text-[#2a4768]">Get in Touch </span>with White Bull!
+                <span className="text-[#2a4768]">Get in Touch </span>with White
+                Bull!
               </p>
-              <p className="text-gray-400 pr-100">
+              <p className="pr-100 text-gray-400">
                 Reach out to our team and let’s get started. From bookkeeping to
                 payroll and tax prep, we’ve got the solutions you need to help
                 your firm grow and thrive.
@@ -132,27 +321,38 @@ const Home = () => {
             </div>
             {/* call */}
             <div className="flex gap-10 px-6">
-            <div className="items-left">img</div>
+              <div className="items-left">img</div>
 
-            <div className="items-right">
-              <p className="text-lg font-bold">Contact:</p>
-              <div className="flex flex-col">
-                <p className="text-gray-400">Email:{" "}
-                  <a href="mailto:partners@wiselyyours.com" className="text-decoration-line: none"> partners@wiselyyours.com
-                  </a>
-                </p>
+              <div className="items-right">
+                <p className="text-lg font-bold">Contact:</p>
+                <div className="flex flex-col">
+                  <p className="text-gray-400">
+                    Email:{" "}
+                    <a
+                      href="mailto:partners@wiselyyours.com"
+                      className="text-decoration-line: none"
+                    >
+                      {" "}
+                      partners@wiselyyours.com
+                    </a>
+                  </p>
 
-                <p className="text-gray-400">Phone:{" "}
-                  <a href="tel:+02249647976" className="text-decoration-line: none">+123456789
-                  </a>
-                </p>
+                  <p className="text-gray-400">
+                    Phone:{" "}
+                    <a
+                      href="tel:+02249647976"
+                      className="text-decoration-line: none"
+                    >
+                      +123456789
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
-            </div>
           </div>
-          
+
           {/* section 2 */}
-          <div className="my-8 flex flex-col gap-6 pr-10 -ml-100">
+          <div className="my-8 -ml-100 flex flex-col gap-6 pr-10">
             <div className="flex flex-col gap-6 rounded-xl border-none bg-white p-6">
               <form
                 action=""
