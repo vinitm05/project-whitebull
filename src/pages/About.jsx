@@ -4,12 +4,10 @@ import ServiceList from "../components/ServiceList";
 import { Link, Links } from "react-router";
 
 import AboutHeroImage from "../assets/home-hero.webp";
+import AboutImage from "../assets/about-img1.png";
+import AboutIcon1 from '../assets/about-icon1.png'
+import AboutIcon2 from '../assets/about-icon2.png'
 import TeamPhoto from "../assets/team.webp";
-import iris from "../assets/iris.png";
-import freeagent from "../assets/freeagent.png";
-import intuit from "../assets/intuit.png";
-import taxcalc from "../assets/taxcalc.png";
-import kashflow from "../assets/kashflow.png";
 
 import OfficeImage from "../assets/about-img2.jpg";
 import { TbPhoneCalling } from "react-icons/tb";
@@ -19,12 +17,12 @@ const About = () => {
   const workingProcess = [
     {
       name: "01. Outsourcing That Works",
-      desc: "Outsourcing your accounting tasks to Wisely Yours means gaining a dedicated partner focused on delivering results. From managing payroll processing, tax return preparation, and GST filings to handling comprehensive bookkeeping, we ensure your firm’s back-office functions run smoothly. Our expertise helps reduce operational costs, improve efficiency, and allow you to focus on high-value client advisory services and scaling your business.",
+      desc: "Outsourcing your accounting tasks to Wisely Yours means gaining a dedicated partner focused on delivering results. From managing payroll processing, tax return preparation, and GST filings to handling comprehensive bookkeeping, we ensure your firm's back-office functions run smoothly. Our expertise helps reduce operational costs, improve efficiency, and allow you to focus on high-value client advisory services and scaling your business.",
       image: "../assets/whyChoose1.svg",
     },
     {
       name: "02. Reliable, Secure, and Efficient",
-      desc: "We prioritize data security and compliance, ensuring your clients’ financial information remains protected at all times. Our ISO 27001-certified security framework enforces strict data protection protocols, encryption, and multi-layered security measures. Whether it’s payroll, tax filing, or accounts reconciliation, we handle every aspect with professional integrity, GDPR compliance, and complete confidentiality.",
+      desc: "We prioritize data security and compliance, ensuring your clients' financial information remains protected at all times. Our ISO 27001-certified security framework enforces strict data protection protocols, encryption, and multi-layered security measures. Whether it's payroll, tax filing, or accounts reconciliation, we handle every aspect with professional integrity, GDPR compliance, and complete confidentiality.",
       image: "../assets/whyChoose2.svg",
     },
     {
@@ -34,7 +32,7 @@ const About = () => {
     },
     {
       name: "04. A Long-Term Partnership for Success",
-      desc: "When you choose Wisely Yours, you’re not just hiring an outsourcing provider—you’re forming a long-term partnership built on trust, expertise, and results. Our dedicated offshore accounting professionals integrate seamlessly with your team, ensuring consistent service quality and operational excellence. We help increase your firm’s profitability, maintain compliance with India accounting regulations.",
+      desc: "When you choose Wisely Yours, you're not just hiring an outsourcing provider—you're forming a long-term partnership built on trust, expertise, and results. Our dedicated offshore accounting professionals integrate seamlessly with your team, ensuring consistent service quality and operational excellence. We help increase your firm's profitability, maintain compliance with India accounting regulations.",
       image: "../assets/whyChoose4.svg",
     },
   ];
@@ -47,7 +45,7 @@ const About = () => {
     },
     {
       name: "Client-Centric",
-      desc: "We focus on understanding your firm’s unique needs, providing tailored solutions that drive success.",
+      desc: "We focus on understanding your firm's unique needs, providing tailored solutions that drive success.",
       image: "../assets/whyChoose3.svg",
     },
     {
@@ -104,7 +102,7 @@ const About = () => {
     {
       question: "1. Results That Matter",
       answer:
-        "We don’t just promise efficiency—we deliver measurable results. Our outsourced accounting services are designed to enhance your firm’s profitability. From managing day-to-day accounting tasks to ensuring accurate tax filings, we help you free up valuable time and resources, so you can focus on scaling your business.",
+        "We don't just promise efficiency—we deliver measurable results. Our outsourced accounting services are designed to enhance your firm's profitability. From managing day-to-day accounting tasks to ensuring accurate tax filings, we help you free up valuable time and resources, so you can focus on scaling your business.",
     },
     {
       question: "2. Trusted Expertise",
@@ -114,17 +112,17 @@ const About = () => {
     {
       question: "3. A silent Partner for Your Firm's Success",
       answer:
-        "Your clients don’t need to know we’re working behind the scenes—but you’ll see the difference. At Wisely Yours, we work efficiently and accurately to ensure their financials are always in order. As your trusted, invisible ally, we handle the heavy lifting so you can focus on strengthening client relationships and growing your firm.",
+        "Your clients don't need to know we're working behind the scenes—but you'll see the difference. At Wisely Yours, we work efficiently and accurately to ensure their financials are always in order. As your trusted, invisible ally, we handle the heavy lifting so you can focus on strengthening client relationships and growing your firm.",
     },
     {
       question: "4. Trnasparent, Actionalble Reporting",
       answer:
-        "We believe in full transparency, providing you with clear, actionable financial reports to support informed decision-making. With Wisely Yours, you’ll always have complete visibility into your clients’ financials, while they benefit from accurate, timely data that enhances trust and confidence.",
+        "We believe in full transparency, providing you with clear, actionable financial reports to support informed decision-making. With Wisely Yours, you'll always have complete visibility into your clients' financials, while they benefit from accurate, timely data that enhances trust and confidence.",
     },
     {
       question: "5. Continuously Evolving for Greater Impact",
       answer:
-        "At Wisely Yours, we never settle—we continuously refine our processes and embrace cutting-edge technologies to deliver exceptional service. Partnering with us means more than just outsourcing; it means gaining a dedicated, long-term ally committed to your firm’s growth and success.",
+        "At Wisely Yours, we never settle—we continuously refine our processes and embrace cutting-edge technologies to deliver exceptional service. Partnering with us means more than just outsourcing; it means gaining a dedicated, long-term ally committed to your firm's growth and success.",
     },
   ];
 
@@ -141,7 +139,30 @@ const About = () => {
       {/* About Us Section */}
       <div className="bg-[#eceef6] px-5 py-5">
         <div className="grid grid-cols-2">
-          <div className="items-left">Img</div>
+          <div className="items-left">
+            <div className="container px-7">
+              {/* <img src={AboutImage} alt="" className="my-11 border-none rounded-4xl h-120 w-160 opacity-<1>" /> */}
+
+              <div className="content mx-auto grid md:grid-cols-2 lg:grid-cols-2 animate-slide w-65 flex items-center justify-center bg-gray-300 border-none rounded-lg px-6 py-5 opacity-<2>">
+                <img src={AboutIcon1} alt="" className="border-none rounded-4xl" />
+
+                <div className="-mx-5">
+                  <p className="text-xl text-center">10+</p>
+                  <p className="text-gray-500 text-sm">Years of experience</p>
+                </div>
+              </div>
+              <br />
+              <div className="content mx-auto grid md:grid-cols-2 lg:grid-cols-2 animate-slide w-65 flex items-center justify-center bg-gray-300 border-none rounded-lg px-6 py-5 opacity-<2>">
+                <img src={AboutIcon2} alt="" className="border-none rounded-4xl" />
+
+                <div className="-mx-6">
+                  <p className="text-xl text-center">99%</p>
+                  <p className="text-gray-500 text-sm">Customer Satisfaction</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <div className="items-right">
             <p className="font-semibold text-[#2a4768]">About Us</p>
             <h2 className="text-left text-3xl font-bold">
@@ -181,7 +202,7 @@ const About = () => {
               <br></br>
               For decades, accounting firms have
               <span className="font-bold"> trusted Wisely Yours India </span>to
-              seamlessly manage their clients’ finances. With
+              seamlessly manage their clients' finances. With
               <span className="font-bold">
                 {" "}
                 extensive experience and a commitment to excellence,{" "}
@@ -198,21 +219,25 @@ const About = () => {
           </div>
           <br />
         </div>
-        <div className="grid grid-cols-6 items-center justify-center">
-          <p className="font-bold">List of Software Our Team Hands On</p>
-          <img src={freeagent} alt="Free Agent" />
-          <img src={iris} alt="iRIS" />
-          <img src={intuit} alt="INTUIT" />
-          <img src={taxcalc} alt="taxcalc" />
-          <img src={kashflow} alt="FashFlow" />
-        </div>
       </div>
 
       {/* Why Choose Section */}
       <div className="px-5 py-5">
         <div className="grid grid-cols-2">
-          <div className="items-left">Img</div>
+          <div className="items-left">
+            <div className="container px-7">
+              <img src={AboutImage} alt="" className="my-11 border-none rounded-4xl h-120 w-160 opacity-<1>" />
 
+              <div className="content mx-auto grid md:grid-cols-3 lg:grid-cols-3 animate-slide w-100 flex items-center justify-center bg-gray-300 border-none rounded-lg px-10 py-6 opacity-<2>">
+                <p className="font-bold text-4xl text-center">5.0</p>
+                <div className="text-center">
+                  <p className="text-xs">&#11088; &#11088; &#11088; &#11088; &#11088;</p>
+                  <p className="font-bold">Client Review</p>
+                </div>
+                <p className="text-center">small imgs</p>
+              </div>
+            </div>
+          </div>
           <div className="items-right">
             <h2 className="text-left text-3xl font-bold">
               Why Choose Wisely Yours India for Outsourced Accounting?
@@ -365,7 +390,7 @@ const About = () => {
                     Want to Know More?
                   </h3>
                   <p className="py-3 pr-8 text-justify text-gray-500">
-                    Need additional inofrmation? Have questions? We’re here to
+                    Need additional inofrmation? Have questions? We're here to
                     help you take your firm to the next level. let us show you
                     how Wisely Yours can transform your accounting processes
                   </p>
@@ -376,7 +401,7 @@ const About = () => {
                   to="/contact"
                   className="rounded-full bg-[#2a4768] px-45 py-3 text-xl font-bold text-white transition-all hover:bg-[#1a3758]"
                 >
-                  We’re Here To Help!
+                  We're Here To Help!
                 </Link>
               </div>
             </div>
@@ -412,3 +437,21 @@ const About = () => {
 };
 
 export default About;
+
+<style jsx>{`
+  @keyframes slide {
+    0% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 3s ease-in-out infinite;
+  }
+`}</style>

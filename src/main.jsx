@@ -17,6 +17,7 @@ import "./index.css";
 import NotFound from "./pages/NotFound.jsx";
 import Home from "./pages/Home.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
