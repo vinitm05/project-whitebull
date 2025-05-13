@@ -14,7 +14,7 @@ const CompanyOverviewSection: React.FC = () => {
 
         <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">
           Efficiency, Accuracy, and Trust Define
-          <span className="text-navy-800 block">White Bull</span>
+          <span className="text-navy-800 block">WiselyYours</span>
         </h2>
 
         <div className="mx-auto mb-12 max-w-3xl text-center">

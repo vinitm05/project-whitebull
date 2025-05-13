@@ -18,7 +18,7 @@ const CtaSection: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Partner with White Bull and focus on growing your practice while we
+            Partner with WiselyYours and focus on growing your practice while we
             handle the back-office operations with precision and care.
           </p>
 

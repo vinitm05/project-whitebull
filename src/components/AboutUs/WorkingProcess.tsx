@@ -10,7 +10,7 @@ const WorkingProcess: React.FC = () => {
       title: "Outsourcing That Works",
       icon: <Users className="h-8 w-8 text-blue-700" />,
       content:
-        "Outsourcing your accounting tasks to White Bull means gaining a dedicated partner focused on delivering results. From managing payroll processing, tax return preparation, and VAT filings to handling comprehensive bookkeeping, we ensure your firm's back-office functions run smoothly. Our expertise helps reduce operational costs, improve efficiency, and allow you to focus on high-value client advisory services and scaling your business.",
+        "Outsourcing your accounting tasks to WiselyYours means gaining a dedicated partner focused on delivering results. From managing payroll processing, tax return preparation, and VAT filings to handling comprehensive bookkeeping, we ensure your firm's back-office functions run smoothly. Our expertise helps reduce operational costs, improve efficiency, and allow you to focus on high-value client advisory services and scaling your business.",
     },
     {
       id: 2,
@@ -24,14 +24,14 @@ const WorkingProcess: React.FC = () => {
       title: "Empowering Your Firm To Grow",
       icon: <Target className="h-8 w-8 text-blue-700" />,
       content:
-        "With White Bull, you gain the ability to scale your firm effortlessly while keeping overhead costs low. Our outsourced accounting solutions allow you to expand your service offerings, improve workflow efficiency, and manage growing client demands without the need for in-house hires. By outsourcing complex financial tasks to us, your firm can focus on business growth, strategic planning, and delivering expert financial advice.",
+        "With WiselyYours, you gain the ability to scale your firm effortlessly while keeping overhead costs low. Our outsourced accounting solutions allow you to expand your service offerings, improve workflow efficiency, and manage growing client demands without the need for in-house hires. By outsourcing complex financial tasks to us, your firm can focus on business growth, strategic planning, and delivering expert financial advice.",
     },
     {
       id: 4,
       title: "A Long-Term Partnership For Success",
       icon: <Users2 className="h-8 w-8 text-blue-700" />,
       content:
-        "When you choose White Bull, you're not just hiring an outsourcing provider—you're forming a long-term partnership built on trust, expertise, and results. Our dedicated offshore accounting professionals integrate seamlessly with your team, ensuring consistent service quality and operational excellence. We help increase your firm's profitability, maintain compliance with UK accounting regulations.",
+        "When you choose WiselyYours, you're not just hiring an outsourcing provider—you're forming a long-term partnership built on trust, expertise, and results. Our dedicated offshore accounting professionals integrate seamlessly with your team, ensuring consistent service quality and operational excellence. We help increase your firm's profitability, maintain compliance with UK accounting regulations.",
     },
   ];
 
@@ -42,7 +42,8 @@ const WorkingProcess: React.FC = () => {
           Working Process
         </p>
         <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">
-          The White Bull <span className="text-blue-700">Approach</span>: <br />
+          The WiselyYours <span className="text-blue-700">Approach</span>:{" "}
+          <br />
           Smarter Outsourcing for Accounting Firms
         </h2>
       </div>

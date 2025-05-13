@@ -21,7 +21,7 @@ const ServicesSection: React.FC = () => {
             <p className="mb-6 text-gray-600">
               Managing client accounts can be a drain on your time and
               resources.
-              <span className="font-medium"> White Bull</span> takes the load
+              <span className="font-medium"> WiselyYours</span> takes the load
               off your shoulders with a full range of outsourced accounting
               services designed to meet the unique needs of UK accounting firms.
               Let us handle the critical and time-consuming tasks while you

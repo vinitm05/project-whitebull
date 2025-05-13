@@ -6,21 +6,21 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "White Bull has exceeded our expectations with their professional approach and tailored solutions. Our clients have noticed the difference.",
+      "WiselyYours has exceeded our expectations with their professional approach and tailored solutions. Our clients have noticed the difference.",
     name: "Karen T.",
     position: "CMO",
   },
   {
     id: 2,
     quote:
-      "Since partnering with White Bull, we've been able to take on 30% more clients without increasing our core team. Their accuracy and attention to detail is outstanding.",
+      "Since partnering with WiselyYours, we've been able to take on 30% more clients without increasing our core team. Their accuracy and attention to detail is outstanding.",
     name: "David M.",
     position: "Managing Partner",
   },
   {
     id: 3,
     quote:
-      "The team at White Bull understands the unique challenges faced by UK accounting firms. Their support has been invaluable during our busiest tax seasons.",
+      "The team at WiselyYours understands the unique challenges faced by UK accounting firms. Their support has been invaluable during our busiest tax seasons.",
     name: "Sarah J.",
     position: "Finance Director",
   },

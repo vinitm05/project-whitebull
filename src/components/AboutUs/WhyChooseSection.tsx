@@ -94,7 +94,7 @@ const WhyChooseSection: React.FC = () => {
           className={`scroll-stagger ${contentInView ? "scroll-show" : ""}`}
         >
           <h2 className="mb-8 text-3xl font-bold text-gray-900 md:text-4xl">
-            Why Choose White Bull UK for Outsourced Accounting?
+            Why Choose WiselyYours UK for Outsourced Accounting?
           </h2>
 
           <div className="space-y-4">

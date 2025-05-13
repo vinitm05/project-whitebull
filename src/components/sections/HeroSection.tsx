@@ -1,17 +1,12 @@
 import React from "react";
 import Button from "../ui/Button";
-import BackgroundVideo from "../../assets/Office-Video.mp4"
+import BackgroundVideo from "../../assets/Office-Video.mp4";
 
 const HeroSection: React.FC = () => {
   return (
     <section className="relative flex min-h-screen items-center">
       {/* Background image */}
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute inset-0 h-full w-full"
-      >
+      <video autoPlay loop muted className="absolute inset-0 h-full w-full">
         <source src={BackgroundVideo} type="video/mp4" />
       </video>
 
@@ -41,7 +36,7 @@ const HeroSection: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            White Bull provides expert outsourced accounting services for UK
+            WiselyYours provides expert outsourced accounting services for UK
             accounting firms, including bookkeeping, payroll, and tax
             preparation. We streamline operations, ensure compliance, and help
             you scale efficiently—while you stay focused on growth. Your clients

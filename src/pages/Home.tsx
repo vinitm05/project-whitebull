@@ -13,7 +13,8 @@ import "aos/dist/aos.css";
 function Home() {
   useEffect(() => {
     // Update page title
-    document.title = "White Bull | Outsourced Accounting Services for UK Firms";
+    document.title =
+      "WiselyYours | Outsourced Accounting Services for UK Firms";
 
     // Initialize AOS animation library
     AOS.init({
@@ -25,7 +26,6 @@ function Home() {
 
   return (
     <div className="flex min-h-screen flex-col">
-
       <main className="flex-grow">
         <HeroSection />
         <ServicesSection />

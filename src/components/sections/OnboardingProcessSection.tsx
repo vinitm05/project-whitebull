@@ -13,7 +13,7 @@ const OnboardingProcessSection: React.FC = () => {
         </div>
 
         <h2 className="mb-6 text-center text-3xl font-bold md:text-4xl">
-          Onboarding with <span className="text-navy-800">White Bull</span> –
+          Onboarding with <span className="text-navy-800">WiselyYours</span> –
           Fast, Simple, and Efficient
         </h2>
 
@@ -21,7 +21,7 @@ const OnboardingProcessSection: React.FC = () => {
           <p className="text-gray-600">
             We believe in making it easy for you. Our onboarding process is
             designed for a seamless transition, so you can quickly start seeing
-            the benefits of outsourcing to White Bull.
+            the benefits of outsourcing to WiselyYours.
           </p>
         </div>
 

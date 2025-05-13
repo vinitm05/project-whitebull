@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
             </p>
 
             <p>
-              With White Bull UK as your outsourcing partner, you can{" "}
+              With WiselyYours UK as your outsourcing partner, you can{" "}
               <span className="font-medium">
                 save time, cut costs, and enhance profitability
               </span>
@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
 
             <p>
               For decades, accounting firms have{" "}
-              <span className="font-medium">trusted White Bull UK</span> to
+              <span className="font-medium">trusted WiselyYours UK</span> to
               seamlessly manage their clients' finances. With{" "}
               <span className="font-medium">
                 extensive experience and a commitment to excellence
