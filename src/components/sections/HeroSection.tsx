@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           >
             Expert Outsourced
             <span className="block">Accounting</span>
-            <span className="block">Solutions for UK.</span>
+            <span className="block">Solutions for India.</span>
             <span className="block">Accounting Firms</span>
           </h1>
 
@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            WiselyYours provides expert outsourced accounting services for UK
+            WiselyYours provides expert outsourced accounting services for India
             accounting firms, including bookkeeping, payroll, and tax
             preparation. We streamline operations, ensure compliance, and help
             you scale efficiently—while you stay focused on growth. Your clients

@@ -24,7 +24,7 @@ const WhyChooseSection: React.FC = () => {
       id: 2,
       title: "Trusted Expertise",
       content:
-        "With over 35 years of experience, our team of certified accounting professionals understands the unique challenges faced by UK accounting firms. We constantly stay updated with the latest regulatory changes, ensuring your clients' finances are handled with precision and in full compliance with UK regulations.",
+        "With over 35 years of experience, our team of certified accounting professionals understands the unique challenges faced by India accounting firms. We constantly stay updated with the latest regulatory changes, ensuring your clients' finances are handled with precision and in full compliance with India regulations.",
     },
     {
       id: 3,
@@ -94,7 +94,7 @@ const WhyChooseSection: React.FC = () => {
           className={`scroll-stagger ${contentInView ? "scroll-show" : ""}`}
         >
           <h2 className="mb-8 text-3xl font-bold text-gray-900 md:text-4xl">
-            Why Choose WiselyYours UK for Outsourced Accounting?
+            Why Choose WiselyYours India for Outsourced Accounting?
           </h2>
 
           <div className="space-y-4">

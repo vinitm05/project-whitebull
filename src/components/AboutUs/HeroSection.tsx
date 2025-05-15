@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
             <h2 className="mb-1 text-lg font-medium text-gray-700">About Us</h2>
             <h1 className="text-3xl leading-tight font-bold text-gray-900 md:text-4xl lg:text-5xl">
               Expert Outsourced{" "}
-              <span className="text-blue-700">Accounting Services</span> for UK
+              <span className="text-blue-700">Accounting Services</span> for India
               Accounting & CA Firms — Save Time & Cut Costs
             </h1>
           </div>
@@ -47,7 +47,7 @@ const HeroSection: React.FC = () => {
               <span className="font-medium">
                 expert outsourced accounting services
               </span>{" "}
-              to help UK accounting and CA firms{" "}
+              to help India accounting and CA firms{" "}
               <span className="font-medium">
                 streamline operations and boost efficiency
               </span>
@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
             </p>
 
             <p>
-              With WiselyYours UK as your outsourcing partner, you can{" "}
+              With WiselyYours India as your outsourcing partner, you can{" "}
               <span className="font-medium">
                 save time, cut costs, and enhance profitability
               </span>
@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
 
             <p>
               For decades, accounting firms have{" "}
-              <span className="font-medium">trusted WiselyYours UK</span> to
+              <span className="font-medium">trusted WiselyYours India</span> to
               seamlessly manage their clients' finances. With{" "}
               <span className="font-medium">
                 extensive experience and a commitment to excellence
@@ -84,7 +84,7 @@ const HeroSection: React.FC = () => {
                 satisfaction
               </span>
               —all while ensuring full compliance with the latest{" "}
-              <span className="font-medium">UK regulations</span>.
+              <span className="font-medium">India regulations</span>.
             </p>
           </div>
         </div>
