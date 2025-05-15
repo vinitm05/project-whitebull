@@ -23,7 +23,7 @@ const ServicesSection: React.FC = () => {
               resources.
               <span className="font-medium"> WiselyYours</span> takes the load
               off your shoulders with a full range of outsourced accounting
-              services designed to meet the unique needs of UK accounting firms.
+              services designed to meet the unique needs of India accounting firms.
               Let us handle the critical and time-consuming tasks while you
               focus on growing your business.
             </p>

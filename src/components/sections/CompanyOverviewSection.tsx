@@ -29,7 +29,7 @@ const CompanyOverviewSection: React.FC = () => {
         </div>
 
         <div className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-          <StatCard value="35 Years+" label="Experience" />
+          <StatCard value="10 Years+" label="Experience" />
           <StatCard value="97%" label="Customer Satisfaction" />
           <StatCard value="95%" label="Customer Retention Rate" />
           <StatCard value="79%" label="Customer Reference Rate" />

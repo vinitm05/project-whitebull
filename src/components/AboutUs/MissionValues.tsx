@@ -98,7 +98,7 @@ const MissionValues: React.FC = () => {
           <p className="text-gray-700">
             Our mission is simple: to{" "}
             <span className="font-medium">
-              empower UK accounting and CA firms
+              empower India accounting and CA firms
             </span>{" "}
             with{" "}
             <span className="font-medium">
