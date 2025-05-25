@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import HeroSection from "../components/sections/HeroSection";
+import { useEffect } from "react";
 import ServicesSection from "../components/sections/ServicesSection";
 import CompanyOverviewSection from "../components/sections/CompanyOverviewSection";
 import OnboardingProcessSection from "../components/sections/OnboardingProcessSection";
@@ -9,6 +8,8 @@ import CtaSection from "../components/sections/CtaSection";
 // AOS animation initialization
 import AOS from "aos";
 import "aos/dist/aos.css";
+import HomeVideo from "../components/sections/HomeVideo";
+import HomeImageClg from "../components/AboutUs/HomeImageClg";
 
 function Home() {
   useEffect(() => {
@@ -27,7 +28,8 @@ function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-grow">
-        <HeroSection />
+        <HomeVideo />
+        <HomeImageClg/>
         <ServicesSection />
         <CompanyOverviewSection />
         <OnboardingProcessSection />
