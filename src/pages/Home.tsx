@@ -15,7 +15,7 @@ function Home() {
   useEffect(() => {
     // Update page title
     document.title =
-      "WiselyYours | Outsourced Accounting Services for UK Firms";
+      "WiselyYours | Outsourced Accounting Services for India Firms";
 
     // Initialize AOS animation library
     AOS.init({

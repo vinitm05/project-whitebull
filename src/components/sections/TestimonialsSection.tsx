@@ -20,7 +20,7 @@ const testimonials = [
   {
     id: 3,
     quote:
-      "The team at WiselyYours understands the unique challenges faced by UK accounting firms. Their support has been invaluable during our busiest tax seasons.",
+      "The team at WiselyYours understands the unique challenges faced by India accounting firms. Their support has been invaluable during our busiest tax seasons.",
     name: "Sarah J.",
     position: "Finance Director",
   },

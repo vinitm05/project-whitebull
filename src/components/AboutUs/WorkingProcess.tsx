@@ -31,7 +31,7 @@ const WorkingProcess: React.FC = () => {
       title: "A Long-Term Partnership For Success",
       icon: <Users2 className="h-8 w-8 text-blue-700" />,
       content:
-        "When you choose WiselyYours, you're not just hiring an outsourcing provider—you're forming a long-term partnership built on trust, expertise, and results. Our dedicated offshore accounting professionals integrate seamlessly with your team, ensuring consistent service quality and operational excellence. We help increase your firm's profitability, maintain compliance with UK accounting regulations.",
+        "When you choose WiselyYours, you're not just hiring an outsourcing provider—you're forming a long-term partnership built on trust, expertise, and results. Our dedicated offshore accounting professionals integrate seamlessly with your team, ensuring consistent service quality and operational excellence. We help increase your firm's profitability, maintain compliance with India accounting regulations.",
     },
   ];
 
