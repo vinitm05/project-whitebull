@@ -8,8 +8,14 @@ import { GiTeamIdea } from "react-icons/gi";
 import { FaFolderClosed } from "react-icons/fa6";
 import { TbClockCheck } from "react-icons/tb";
 import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 const HomeImageClg: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate("/about");
+  };
   return (
     <Container>
       <div className="grid items-center gap-36 p-20 md:grid-cols-2">
@@ -72,7 +78,10 @@ const HomeImageClg: React.FC = () => {
             </li>
           </ul>
 
-          <Button text="More About Us" />
+          <Button
+            text="More About Us"
+            onClick={handleGetStarted}
+          />
         </div>
       </div>
     </Container>

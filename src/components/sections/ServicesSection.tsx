@@ -8,7 +8,7 @@ const ServicesSection: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
           <div className="sticky top-1 lg:col-span-4">
-            <h4 className="text-[#2a4768] font-semibold">Services</h4>
+            <h4 className="font-semibold text-[#2a4768]">Services</h4>
             <h2 className="text-navy-800 mb-4 text-4xl font-bold md:text-5xl">
               <span className="text-[#2a4768]">Outsourced Accounting </span>{" "}
               Services Designed for Your Firm
@@ -19,9 +19,9 @@ const ServicesSection: React.FC = () => {
               resources.
               <span className="font-medium"> WiselyYours</span> takes the load
               off your shoulders with a full range of outsourced accounting
-              services designed to meet the unique needs of India accounting firms.
-              Let us handle the critical and time-consuming tasks while you
-              focus on growing your business.
+              services designed to meet the unique needs of India accounting
+              firms. Let us handle the critical and time-consuming tasks while
+              you focus on growing your business.
             </p>
           </div>
 
@@ -31,6 +31,7 @@ const ServicesSection: React.FC = () => {
               title="Accounting Services"
               description="We manage your clients' financial records, ensuring accuracy and compliance without taking up your time."
               color="default"
+              className="flex aspect-square h-full flex-col border border-black"
             />
 
             <ServiceCard

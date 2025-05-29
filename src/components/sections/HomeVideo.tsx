@@ -1,8 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import bgVideo from "../../assets/Office-Video.mp4";
 import Button from "../Button";
 
 const HomeVideo: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate("/contact");
+  };
+
   return (
     <section
       className={`relative flex h-screen items-center justify-start overflow-hidden`}
@@ -41,7 +48,10 @@ const HomeVideo: React.FC = () => {
 
       {/* Text Content Layer */}
       <div className="animate-fade-in-up relative z-40 ml-56 max-w-4xl px-5 text-white">
-        <p className="p-2 rounded-full inline" style={{ background: "rgba(255,255,255,0.2)" }}>
+        <p
+          className="inline rounded-full p-2"
+          style={{ background: "rgba(255,255,255,0.2)" }}
+        >
           Your Trusted Partner in Accounting Solutions
         </p>
         <h1 className="mb-4 text-4xl leading-normal font-semibold tracking-tight md:text-7xl">
@@ -55,8 +65,8 @@ const HomeVideo: React.FC = () => {
               }}
             >
               {" "}
-              Accounting <br /> Solutions{" "}
-            </span>
+              Accounting <br /> Solutions
+            </span>{" "}
             for Indian Accounting Firms
           </span>
         </h1>
@@ -73,7 +83,7 @@ const HomeVideo: React.FC = () => {
           scenes.
         </p>
 
-        <Button text="Get Started" />
+        <Button text="Get Started" onClick={handleGetStarted} />
       </div>
     </section>
   );

@@ -38,7 +38,6 @@ const OnboardingProcessSection: React.FC = () => {
             title="Secure Document Transfer"
             description="We handle your clients' documents securely to make sure we understand your current financial processes and can work with your existing systems."
             icon={<FileText size={28} />}
-            isActive={true}
           />
 
           <ProcessStep

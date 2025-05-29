@@ -6,6 +6,7 @@ interface ServiceCardProps {
   title: string;
   description: string;
   color?: "blue" | "teal" | "default";
+  className?: string;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -13,6 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
   color = "default",
+  className
 }) => {
   const bgColors = {
     blue: "bg-gradient-to-br from-navy-800 to-navy-600",

@@ -30,11 +30,7 @@ const CtaSection: React.FC = () => {
             <Button variant="primary" size="lg">
               Schedule a Consultation
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white/10"
-            >
+            <Button variant="primary" size="lg">
               Learn More
             </Button>
           </div>
