@@ -74,7 +74,7 @@ const WorkingProcess: React.FC = () => {
         <p className="mt-4 leading-7 font-normal text-gray-600">
           We believe in making it easy for you. Our onboarding process is
           designed for a seamless transition, so you can quickly start seeing
-          the benefits of outsourcing to White Bull.
+          the benefits of outsourcing to Wisely Yours.
         </p>
       </div>
 

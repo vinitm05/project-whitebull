@@ -213,7 +213,7 @@ const Contact = () => {
                 Where is Wisely Yours India located?
               </p>
               <p className="mt-4 mb-6 text-gray-500">
-                We provide outsourced accounting services to CA and accounting
+                We provide outsourced accounting services to start-ups, CA's and accounting
                 firms across the India, with our operations center based in
                 Ahmedabad, India.
               </p>

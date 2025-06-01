@@ -23,14 +23,6 @@ const ServicesSection: React.FC = () => {
         path:"/services/bookkeeping"
     },
     {
-      id: 2,
-      title: "Year-End Accounting Services",
-      icon: <Landmark className="h-8 w-8 group-hover:text-white" />,
-      content:
-        "We prepare precise balance sheets and financial statements, helping you wrap up the year with clarity and assurance.",
-        path:"/services/yearendaccounting"
-    },
-    {
       id: 3,
       title: "Taxation-Self Assessment",
       icon: <FileCheck className="h-8 w-8 group-hover:text-white" />,
@@ -59,7 +51,7 @@ const ServicesSection: React.FC = () => {
       title: "GST Return Filing",
       icon: <Banknote className="h-8 w-8 group-hover:text-white" />,
       content:
-        "We handle GST returns with precision and efficiency, ensuring compliance with HMRC.",
+        "We handle GST returns with precision and efficiency, ensuring compliance with Ind-AS.",
         path:"/services/GST"
     },
     {
@@ -96,9 +88,8 @@ const ServicesSection: React.FC = () => {
           </h2>
           <p className="mt-4 max-w-[26rem] leading-7 font-normal text-gray-600">
             Managing client accounts can be a drain on your time and resources.
-            White Bull takes the load off your shoulders with a full range of
-            outsourced accounting services designed to meet the unique needs of
-            UK accounting firms. Let us handle the critical and time-consuming
+            Wisely Yours takes the load off your shoulders with a full range of
+            outsourced accounting services designed to meet the unique needs of India, US and UK startups and accounting firms. Let us handle the critical and time-consuming
             tasks while you focus on growing your business.
           </p>
         </p>

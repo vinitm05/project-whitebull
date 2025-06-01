@@ -78,7 +78,7 @@ const TaxReturn = () => {
                 like juggling numbers while walking a financial tightrope.
                 <span className="font-bold">
                   {" "}
-                  Endless paperwork, HMRC compliance, and looming deadlines—
+                  Endless paperwork, Ind-AS compliance, and looming deadlines—
                 </span>
                 sounds familiar, right? But here’s the good news: Wisely Yours
                 is here to take that burden off your shoulders.
@@ -141,7 +141,7 @@ const TaxReturn = () => {
                     choices
                   </li>
                   <li className="font-bold">
-                    ✅ Ever-changing HMRC regulations that feel like a moving
+                    ✅ Ever-changing regulations that feel like a moving
                     goalpost
                   </li>
                 </ul>
@@ -220,7 +220,7 @@ const TaxReturn = () => {
                 </li>
                 <li>
                   <span className="font-bold">✅ Full Compliance – </span>We
-                  stay updated on HMRC’s latest regulations so you don’t have
+                  stay updated on latest regulations so you don’t have
                   to.
                 </li>
                 <li>
@@ -351,7 +351,7 @@ const TaxReturn = () => {
               <ul className="mt-4 mb-5 text-justify text-gray-500">
                 <li>
                   <span className="font-bold">✔ Minimize Errors – </span>Reduce
-                  the risk of costly HMRC penalties.
+                  the risk of costly penalties.
                 </li>
                 <li>
                   <span className="font-bold">✔ Ensure Timely Filing – </span>

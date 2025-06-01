@@ -23,8 +23,7 @@ const CompanyOverviewSection: React.FC = () => {
             deadlines, growing client demands, and the constant chase to stay
             ahead. That's where we step in as your trusted outsourcing partner.
             Think of us as an extension of your team, working behind the scenes
-            to handle bookkeeping, tax return preparation, VAT returns, and
-            year-end accounting with precision and care.
+            to handle bookkeeping, tax return preparation, and GST returns with precision and care.
           </p>
         </div>
 
@@ -39,8 +38,7 @@ const CompanyOverviewSection: React.FC = () => {
           <div>
             <p className="mb-6 text-gray-600">
               As your dedicated outsourcing partner, we specialize in seamless
-              bookkeeping, accurate tax preparation, payroll management, and
-              year-end accounting. Our expertise allows you to deliver
+              bookkeeping, accurate tax preparation, and payroll management. Our expertise allows you to deliver
               exceptional results to your clients while freeing up your time.
             </p>
 

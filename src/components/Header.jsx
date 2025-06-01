@@ -106,12 +106,6 @@ const Header = () => {
                     Bookkeeping Services
                   </Link>
                   <Link
-                    to={"/services/yearendaccounting"}
-                    className="block py-1 underline-offset-8 hover:underline"
-                  >
-                    Year-End Accounting
-                  </Link>
-                  <Link
                     to={"/services/taxreturn"}
                     className="block py-1 underline-offset-8 hover:underline"
                   >
@@ -137,12 +131,6 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
-              <Link
-                to={"/blog"}
-                className={`text-medium font-bold ${isActive("/blog") ? "text-[#2a4768] underline underline-offset-8" : ""}`}
-              >
-                Blog
-              </Link>
               <Link
                 to={"/career"}
                 className={`text-medium font-bold ${isActive("/career") ? "text-[#2a4768] underline underline-offset-8" : ""}`}
@@ -257,13 +245,6 @@ const Header = () => {
                     </Link>
                     <Link
                       onClick={closeMenu}
-                      to={"/services/yearendaccounting"}
-                      className={`py-1 text-white underline-offset-8 hover:underline ${isActive("/services/yearendaccounting") ? "font-bold" : ""}`}
-                    >
-                      Year-End Accounting
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
                       to={"/services/taxreturn"}
                       className={`py-1 text-white underline-offset-8 hover:underline ${isActive("/services/taxreturn") ? "font-bold" : ""}`}
                     >
@@ -293,13 +274,6 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <Link
-                onClick={closeMenu}
-                to={"/blog"}
-                className={`block border-b border-[#3a5a7d] px-3 py-4 text-white ${isActive("/blog") ? "font-bold" : ""}`}
-              >
-                Blog
-              </Link>
               <Link
                 onClick={closeMenu}
                 to={"/career"}

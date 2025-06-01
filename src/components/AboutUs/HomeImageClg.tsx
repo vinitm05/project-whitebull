@@ -53,8 +53,8 @@ const HomeImageClg: React.FC = () => {
           <div className="stagger-animation space-y-4 text-gray-600">
             <p>
               The accounting industry is evolving quickly, and staying ahead can
-              be challenging. Partner with White Bull—your dedicated ally in
-              success. With decades of experience, we offer UK accounting firms
+              be challenging. Partner with Wisely Yours—your dedicated ally in
+              success. With decades of experience, we offer India, US and UK start-ups and accounting firms
               cost-effective, scalable outsourced accounting solutions, enabling
               you to focus on what matters most: serving your clients.
             </p>
