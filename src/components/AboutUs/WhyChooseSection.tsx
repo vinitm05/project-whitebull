@@ -24,7 +24,7 @@ const WhyChooseSection: React.FC = () => {
       id: 2,
       title: "Trusted Expertise",
       content:
-        "With over 35 years of experience, our team of certified accounting professionals understands the unique challenges faced by India accounting firms. We constantly stay updated with the latest regulatory changes, ensuring your clients' finances are handled with precision and in full compliance with India regulations.",
+        "With over 10+ years of experience, our team of certified accounting professionals understands the unique challenges faced by India accounting firms. We constantly stay updated with the latest regulatory changes, ensuring your clients' finances are handled with precision and in full compliance with India regulations.",
     },
     {
       id: 3,

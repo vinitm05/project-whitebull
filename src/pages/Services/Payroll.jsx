@@ -21,7 +21,7 @@ const Payroll = () => {
       question:
         "How does Wisely Yours stay compliant with India payroll regulations?",
       answer:
-        "We keep up-to-date with the latest HMRC regulations and use advanced payroll software to ensure accurate tax filings and timely payments.",
+        "We keep up-to-date with the latest regulations and use advanced payroll software to ensure accurate tax filings and timely payments.",
     },
     {
       question: "Can Wisely Yours handle payroll for remote teams?",
@@ -103,8 +103,7 @@ const Payroll = () => {
                 accuracy, and efficiency. Whether it’s
                 <span className="font-bold">
                   {" "}
-                  statutory deductions, pension contributions, or HMRC
-                  filings,{" "}
+                  statutory deductions or pension contributions,{" "}
                 </span>
                 we handle it all
                 <span className="font-bold"> —so you don’t have to.</span>
@@ -154,7 +153,7 @@ const Payroll = () => {
                 <li className="list-disc">
                   <span className="font-bold">✅ Accuracy & Compliance: </span>
                   No more last-minute tax panic—we ensure error-free payroll
-                  processing and HMRC compliance.
+                  processing and Ind-AS compliance.
                 </li>
                 <li className="list-disc">
                   <span className="font-bold">💰 Cost-Effective: </span>No need
@@ -172,7 +171,7 @@ const Payroll = () => {
                   ahead of India payroll laws,
                   <span className="font-bold">
                     {" "}
-                    so you don’t have to sit through another HMRC webinar.
+                    so you don’t have to sit through another Ind-AS webinar.
                   </span>
                 </li>
               </ul>
@@ -206,8 +205,7 @@ const Payroll = () => {
                 calculations.<br></br>
                 <span className="font-bold">✔ Statutory deductions </span>
                 (National Insurance, pensions, student loans).<br></br>
-                <span className="font-bold">✔ HMRC compliance </span>& tax
-                filing.
+                <span className="font-bold">✔ Tax Filing </span>
                 <br></br>
                 <span className="font-bold">✔ Payslip generation </span>&
                 payroll reports.<br></br>
@@ -233,7 +231,7 @@ const Payroll = () => {
                 Late filings? Incorrect deductions?
                 <span className="font-bold">
                   {" "}
-                  HMRC won’t be sending you a Christmas card.
+                  Ind-AS won’t be sending you a Christmas card.
                 </span>
               </p>
 
@@ -248,7 +246,7 @@ const Payroll = () => {
                 </li>
                 <li className="list-disc">
                   <span className="font-bold">No missed deadlines—</span>because
-                  HMRC penalties aren’t fun.
+                  Ind-AS penalties aren’t fun.
                 </li>
                 <li className="list-disc">
                   <span className="font-bold">No compliance headaches—</span>we
@@ -348,7 +346,7 @@ const Payroll = () => {
                   Employees paid on time, every time.
                 </li>
                 <li>
-                  <span className="font-bold">🚀 HMRC Compliance – </span>Every
+                  <span className="font-bold">🚀 Ind-AS Compliance – </span>Every
                   tax, deduction, and filing done
                   <span className="font-bold"> correctly.</span>
                 </li>
@@ -372,7 +370,7 @@ const Payroll = () => {
                   small businesses or large enterprises,{" "}
                 </span>
                 we ensure their payroll runs smoothly, keeping
-                <span className="font-bold"> HMRC penalties at bay</span>.
+                <span className="font-bold"> penalties at bay</span>.
               </p>
             </div>
 

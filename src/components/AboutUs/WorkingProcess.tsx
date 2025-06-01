@@ -10,14 +10,14 @@ const WorkingProcess: React.FC = () => {
       title: "Outsourcing That Works",
       icon: <Users className="h-8 w-8 text-blue-700" />,
       content:
-        "Outsourcing your accounting tasks to WiselyYours means gaining a dedicated partner focused on delivering results. From managing payroll processing, tax return preparation, and VAT filings to handling comprehensive bookkeeping, we ensure your firm's back-office functions run smoothly. Our expertise helps reduce operational costs, improve efficiency, and allow you to focus on high-value client advisory services and scaling your business.",
+        "Outsourcing your accounting tasks to WiselyYours means gaining a dedicated partner focused on delivering results. From managing payroll processing, tax return preparation, and GST filings to handling comprehensive bookkeeping, we ensure your firm's back-office functions run smoothly. Our expertise helps reduce operational costs, improve efficiency, and allow you to focus on high-value client advisory services and scaling your business.",
     },
     {
       id: 2,
       title: "Reliable, Secure, And Efficient",
       icon: <Shield className="h-8 w-8 text-blue-700" />,
       content:
-        "We prioritize data security and compliance, ensuring your clients' financial information remains protected at all times. Our ISO 27001-certified security framework enforces strict data protection protocols, encryption, and multi-layered security measures. Whether it's payroll, tax filing, or accounts reconciliation, we handle every aspect with professional integrity, GDPR compliance, and complete confidentiality.",
+        "We prioritize data security and compliance, ensuring your clients' financial information remains protected at all times. Our ISO 27001-certified security framework enforces strict data protection protocols, encryption, and multi-layered security measures. Whether it's payroll, tax filing, or accounts reconciliation, we handle every aspect with professional integrity, and complete confidentiality.",
     },
     {
       id: 3,

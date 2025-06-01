@@ -64,20 +64,13 @@ const FAQSection: React.FC = () => {
       id: "faq2",
       question: "Which software do you use?",
       answer:
-        "We're well-versed in all major accounting software platforms including Xero, QuickBooks, Sage, FreeAgent, and more. We adapt to your preferred software environment, ensuring seamless integration with your existing systems and workflows.",
+        "We're well-versed in all major accounting software platforms including Xero, QuickBooks, SAP, Zoho, Tally, Busy and more. We adapt to your preferred software environment, ensuring seamless integration with your existing systems and workflows.",
     },
     {
       id: "faq3",
       question: "Why should we outsource to WiselyYours?",
       answer:
         "Outsourcing to WiselyYours allows you to reduce operational costs by up to 40%, improve efficiency, and focus on growing your client relationships. Our dedicated team ensures accuracy, compliance, and exceptional service quality while you concentrate on high-value advisory work.",
-    },
-    {
-      id: "faq4",
-      question:
-        "What's the difference between in-house and outsourced accounting?",
-      answer:
-        "In-house accounting involves hiring and managing your own staff, whereas outsourced accounting transfers routine financial tasks to a specialized external provider like WiselyYours. Outsourcing eliminates recruitment costs, training expenses, and overhead while providing access to a team of experts at a fraction of the cost.",
     },
   ];
 

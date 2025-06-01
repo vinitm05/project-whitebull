@@ -67,7 +67,7 @@ const HomeVideo: React.FC = () => {
               {" "}
               Accounting <br /> Solutions
             </span>{" "}
-            for Indian Accounting Firms
+            for Indian Startups & Accounting Firms
           </span>
         </h1>
 
@@ -75,8 +75,7 @@ const HomeVideo: React.FC = () => {
           className="mb-8 max-w-2xl opacity-90"
           style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.8)" }}
         >
-          WiselyYours provides expert outsourced accounting services for Indian
-          accounting firms, including bookkeeping, payroll, and tax preparation.
+          WiselyYours provides expert outsourced accounting services for Indian Startups and accounting firms, including bookkeeping, payroll, and tax preparation.
           We streamline operations, ensure compliance, and help you scale
           efficiently—while you stay focused on growth. Your clients won't see
           us, but you'll experience the accuracy and reliability behind the

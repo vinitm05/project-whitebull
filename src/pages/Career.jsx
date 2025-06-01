@@ -14,7 +14,6 @@ const Career = () => {
     {
       id: 1,
       title: "Senior Accountant",
-      location: "London (Hybrid)",
       type: "Full-time",
       description:
         "We're seeking an experienced accountant with strong knowledge of India accounting standards to join our team. You'll work directly with our accounting firm clients, handling complex accounts preparation, tax computations, and financial reporting.",
@@ -22,7 +21,6 @@ const Career = () => {
     {
       id: 2,
       title: "Accounts Assistant",
-      location: "London (Hybrid)",
       type: "Full-time",
       description:
         "An opportunity for an AAT qualified or part-qualified accountant to support our team in delivering high-quality accounting services. You'll be involved in bookkeeping, basic accounts preparation, and GST returns for a variety of clients.",
@@ -30,7 +28,6 @@ const Career = () => {
     {
       id: 3,
       title: "Tax Specialist",
-      location: "London (Hybrid)",
       type: "Full-time",
       description:
         "Join our tax team to provide expert support with India tax compliance and planning. You'll prepare tax computations, handle tax returns, and provide technical guidance to ensure all work meets India tax regulations.",
@@ -38,7 +35,6 @@ const Career = () => {
     {
       id: 4,
       title: "Client Relationship Manager",
-      location: "London (Hybrid)",
       type: "Full-time",
       description:
         "A key role connecting our accounting expertise with the firms we support. You'll be the primary point of contact for our accounting firm clients, understanding their needs and ensuring our services exceed their expectations.",
@@ -50,26 +46,30 @@ const Career = () => {
   const testimonials = [
     {
       id: 1,
-      name: "David Chen",
-      position: "Senior Accountant",
+      name: "MAYUR KHAMBETE",
       quote:
-        "Joining Wisely Yours was the best career move I've made. I've been able to work with diverse accounting firms across the India, expanding my expertise while maintaining a healthy work-life balance.",
+        "I’ve been working with Wisely Yours for over 3 years now, and I have been very happy with their services. From tax planning to financial advice, they’ve consistently exceeded my expectations. Their team is knowledgeable, responsive, and always willing to go the extra mile. They’ve helped me navigate complex financial situations and provided valuable insights that have positively impacted my business. If you’re looking for a reliable and trustworthy accounting partner, I highly recommend Wisely Yours.",
       image: "../../assets/team/david.webp",
     },
     {
       id: 2,
-      name: "Priya Sharma",
-      position: "Tax Specialist",
+      name: "Prathamesh Gosavi",
       quote:
-        "What stands out at Wisely Yours is the investment in professional development. I've completed multiple certifications fully funded by the company, and there's always support available when tackling complex tax scenarios.",
+        "Anshul Sir has been handling my CA work for a while now and I couldn’t be happier. He’s super helpful always available to clear doubts and makes the whole process smooth and stress-free. Whether it's taxes, filings or any kind of financial advice. he knows his stuff and explains things in a simple way. Really appreciate his professionalism and friendly nature. Totally recommend him if you're looking for someone reliable and easy to work with.",
       image: "../../assets/team/priya.webp",
     },
     {
       id: 3,
-      name: "Thomas Wright",
-      position: "Client Relationship Manager",
+      name: "Janaky Iyer",
       quote:
-        "The collaborative culture here is incredible. Everyone is committed to delivering excellence for our clients, and there's a genuine sense of teamwork that makes even the busiest periods enjoyable.",
+        "I had given my income tax returns filing for the year 2023-2024 to Mr.Anshul Mittal. He has done a good job in filing my returns promptly. He has a courteous approach towards his clients, which makes it easy to discuss and clarify any doubts with satisfaction. I will recommend his name to others Best of luck to Mr Anshul Mittal for all your future endeavours.",
+      image: "../../assets/team/thomas.webp",
+    },
+    {
+      id: 4,
+      name: "Gianelle Pereira",
+      quote:
+        "Wisely Yours is extremely prompt and professional. They were able to help me out a lot with relevant service. I'm extremely grateful for their help and guidance in the matter.",
       image: "../../assets/team/thomas.webp",
     },
   ];
@@ -178,10 +178,10 @@ const Career = () => {
         </p>
 
         <h2 className="my-6 text-3xl font-bold text-[#2a4768]">
-          Our Culture: Collaboration, InnoGSTion, and Growth
+          Our Culture: Collaboration, Innovation, and Growth
         </h2>
         <p className="text-justify leading-6.5 text-gray-500">
-          At Wisely Yours, collaboration, transparency, and innoGSTion drive
+          At Wisely Yours, collaboration, transparency, and innovation drive
           everything we do. As a leading provider of outsourced accounting
           services, we believe that great ideas come from teamwork and open
           communication. Every team member plays a crucial role in shaping our
@@ -247,8 +247,6 @@ const Career = () => {
                     className={`mt-2 flex items-center ${activeJob === job.id ? "text-gray-200" : "text-gray-500"}`}
                   >
                     <FaBriefcase className="mr-2" />
-                    <span>{job.location}</span>
-                    <span className="mx-2">•</span>
                     <span>{job.type}</span>
                   </div>
                 </div>
@@ -266,8 +264,6 @@ const Career = () => {
                     </h3>
                     <div className="mb-6 flex items-center text-gray-500">
                       <FaBriefcase className="mr-2" />
-                      <span>{job.location}</span>
-                      <span className="mx-2">•</span>
                       <span>{job.type}</span>
                     </div>
 

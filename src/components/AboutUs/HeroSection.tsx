@@ -36,8 +36,7 @@ const HeroSection: React.FC = () => {
             <h2 className="mb-1 text-lg font-medium text-gray-700">About Us</h2>
             <h1 className="text-3xl leading-tight font-bold text-gray-900 md:text-4xl lg:text-5xl">
               Expert Outsourced{" "}
-              <span className="text-blue-700">Accounting Services</span> for India
-              Accounting & CA Firms — Save Time & Cut Costs
+              <span className="text-blue-700">Accounting Services</span> for Indian Start-Ups & CA Firms — Save Time & Cut Costs
             </h1>
           </div>
 
@@ -47,14 +46,14 @@ const HeroSection: React.FC = () => {
               <span className="font-medium">
                 expert outsourced accounting services
               </span>{" "}
-              to help India accounting and CA firms{" "}
+              to help Indian start-ups and CA firms{" "}
               <span className="font-medium">
                 streamline operations and boost efficiency
               </span>
               . Our team handles{" "}
               <span className="font-medium">back-office tasks</span> such as{" "}
               <span className="font-medium">
-                bookkeeping, payroll, tax preparation, VAT filings, and more
+                bookkeeping, payroll, tax preparation, GST filings, and more
               </span>
               , allowing you to{" "}
               <span className="font-medium">

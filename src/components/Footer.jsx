@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Logo and Tagline Column */}
           <div className="md:col-span-1">
             <div className="mb-4">
-              <h1 className="text-3xl font-bold">Yours Wisely</h1>
+              <h1 className="text-3xl font-bold">Wisely Yours financial services</h1>
             </div>
             <p className="mb-6 text-sm md:mb-0 md:text-base">
               Turning complex financial data into clear, actionable insights.
@@ -27,11 +27,6 @@ const Footer = () => {
               <li>
                 <Link to="/about" className="hover:text-gray-300">
                   About Us
-                </Link>
-              </li>
-              <li>
-                <Link to={"/blog"} className="hover:text-gray-300">
-                  Blog
                 </Link>
               </li>
               <li>
@@ -60,14 +55,6 @@ const Footer = () => {
                   className="hover:text-gray-300"
                 >
                   Bookkeeping Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/services/yearendaccounting"}
-                  className="hover:text-gray-300"
-                >
-                  Year-End Accounting
                 </Link>
               </li>
               <li>

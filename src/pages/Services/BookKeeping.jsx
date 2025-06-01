@@ -96,7 +96,7 @@ const BookKeeping = () => {
                 with Wisely Yours’s expert bookkeeping solutions.
               </p>
               <p className="my-5 text-justify leading-7 text-gray-500">
-                <span className="font-semibold text-gray-600">Pan Point:</span>{" "}
+                <span className="font-semibold text-gray-600">Pain Point:</span>{" "}
                 As your firm grows, managing bookkeeping becomes increasingly
                 complex. Delays in reconciliations or errors in financial data
                 can expose your firm to compliance risks. With Wisely Yours
@@ -134,7 +134,7 @@ const BookKeeping = () => {
                 Expertise in India Accounting & Compliance
               </h2>
               <p className="leading-6.5 text-gray-500">
-                Our team is highly experienced in India GAAP, IFRS, and HMRC
+                Our team is highly experienced in India GAAP, IFRS, and Ind-AS
                 compliance, ensuring error-free financial records and audit
                 readiness. We keep your firm and your clients aligned with
                 regulatory requirements, minimizing compliance risks.
@@ -155,8 +155,7 @@ const BookKeeping = () => {
                 Seamless Integration with Accounting Software
               </h2>
               <p className="leading-6.5 text-gray-500">
-                We work with leading accounting platforms, including QuickBooks,
-                Xero, Sage, and FreeAgent, ensuring a smooth and efficient
+                We work with leading accounting platforms, including Xero, QuickBooks, SAP, Zoho, Tally, Busy, ensuring a smooth and efficient
                 bookkeeping process that aligns with your firm’s workflow.
               </p>
               <p className="my-5 text-justify leading-7 font-bold text-gray-500">
@@ -216,7 +215,7 @@ const BookKeeping = () => {
                 <li>
                   ✔ Maintain organized and tax-compliant financial records.
                 </li>
-                <li>✔ Ensure seamless GST returns and HMRC submissions.</li>
+                <li>✔ Ensure seamless GST returns.</li>
               </ul>
 
               {/* 4 */}
@@ -297,7 +296,7 @@ const BookKeeping = () => {
               </p>
 
               <p className="my-5 text-justify leading-7 text-gray-500">
-                <span className="font-semibold text-gray-600">Pan Point:</span>{" "}
+                <span className="font-semibold text-gray-600">Pain Point:</span>{" "}
                 Without reliable bookkeeping support, firms face the risk of
                 missed deadlines, inaccurate data, and compliance issues. Wisely
                 Yours ensures that client records are meticulously maintained,

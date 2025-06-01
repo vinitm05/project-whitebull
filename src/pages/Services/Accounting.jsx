@@ -38,7 +38,7 @@ const Accounting = () => {
   return (
     <div>
       <LandingImage
-        title="Outsourced Accounting Services for India Accounting Firms"
+        title="Outsourced Accounting Services for Indian Accounting Firms"
         link="Services / Accounting Services"
       />
 
@@ -75,7 +75,7 @@ const Accounting = () => {
               <h3 className="text-4xl font-bold">
                 Expert{" "}
                 <span className="text-[#2a4768]">Accounting Solutions</span> for
-                CA & Accounting Firms in the India – Boost Efficiency &
+                start-ups & Accounting Firms in the India – Boost Efficiency &
                 Compliance
               </h3>
               <p className="my-5 text-justify leading-7 text-gray-500">
@@ -102,7 +102,7 @@ const Accounting = () => {
                 staff.
               </p>
               <p className="my-5 text-justify leading-7 text-gray-500">
-                <span className="font-semibold text-gray-600">Pan Point:</span>{" "}
+                <span className="font-semibold text-gray-600">Pain Point:</span>{" "}
                 Growing your client base and meeting increasing demands doesn’t
                 have to come at the expense of quality. With Wisely Yours, you
                 can scale effortlessly, focusing on building stronger client
@@ -181,7 +181,7 @@ const Accounting = () => {
                 business growth.
               </p>
               <p className="my-5 text-justify leading-7 text-gray-500">
-                <span className="font-bold">Pan Point: </span>The pressure to
+                <span className="font-bold">Pain Point: </span>The pressure to
                 stay organized, compliant, and profitable can feel overwhelming.
                 Let Wisely Yours take care of the financial details, so you can
                 keep your focus on delivering value to your clients, confidently
@@ -365,7 +365,7 @@ const Accounting = () => {
                 </span>{" "}
                 we ensure full compliance with{" "}
                 <span className="font-bold text-gray-600">
-                  India GAAP, IFRS, and HMRC regulations.
+                  India GAAP, IFRS, and Ind-AS regulations.
                 </span>
               </p>
               <ul className="text-gray-500">

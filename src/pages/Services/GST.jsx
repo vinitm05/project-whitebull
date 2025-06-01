@@ -15,7 +15,7 @@ const GST = () => {
     {
       question: "What GST services does Wisely Yours provide?",
       answer:
-        "Wisely Yours offers comprehensive GST services, including GST return preparation, filing, registration, and support with audits, ensuring full compliance with HMRC guidelines.",
+        "Wisely Yours offers comprehensive GST services, including GST return preparation, filing, registration, and support with audits, ensuring full guidelines.",
     },
     {
       question: "How does Wisely Yours ensure accurate GST return filings?",
@@ -95,7 +95,7 @@ const GST = () => {
 
               <p className="mt-4 mb-5 text-justify text-gray-500">
                 Why wrestle with ever-changing
-                <span className="font-bold"> HMRC regulations </span>when you
+                <span className="font-bold"> Ind-AS regulations </span>when you
                 can have<span className="font-bold"> GST experts </span>handle
                 it for you? By outsourcing
                 <span className="font-bold"> GST return filing </span>to Wisely
@@ -166,7 +166,7 @@ const GST = () => {
                 </li>
                 <li>
                   <span className="font-bold">
-                    ❌ Compliance mistakes can trigger HMRC audits.
+                    ❌ Compliance mistakes can trigger audits.
                   </span>
                 </li>
                 <li>
@@ -203,7 +203,7 @@ const GST = () => {
                   returns are submitted on time, every time.
                 </li>
                 <li>
-                  <span className="font-bold">✅ 100% HMRC Compliance – </span>
+                  <span className="font-bold">✅ 100% Ind-AS Compliance – </span>
                   Tax laws change faster than fashion trends! We stay updated so
                   you don’t have to.
                 </li>
@@ -296,7 +296,7 @@ const GST = () => {
                 errors can lead to
                 <span className="font-bold">
                   {" "}
-                  hefty fines and HMRC headaches.{" "}
+                  hefty fines and headaches.{" "}
                 </span>
                 Wisely Yours helps firms stay ahead with
                 <span className="font-bold">
@@ -385,7 +385,7 @@ const GST = () => {
                 <li>
                   <span className="font-bold">🔹 Dedicated GST Experts: </span>
                   We keep up with the
-                  <span className="font-bold"> latest HMRC regulations </span>so
+                  <span className="font-bold"> latest Ind-AS regulations </span>so
                   your clients stay compliant.
                 </li>
                 <li>
@@ -428,7 +428,7 @@ const GST = () => {
                 </li>
                 <li>
                   <span className="font-bold">
-                    ✅ Seamless GST-related communication with HMRC
+                    ✅ Seamless GST-related communication
                   </span>
                 </li>
               </ul>
