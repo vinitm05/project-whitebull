@@ -21,7 +21,7 @@ const FAQItem: React.FC<FAQItemProps> = ({
       <button
         className={`flex w-full items-center justify-between p-4 text-left transition-all duration-300 ${
           isOpen
-            ? "bg-blue-700 text-white"
+            ? "bg-[#2a4768] text-white"
             : "bg-white text-gray-900 hover:bg-blue-50"
         }`}
         onClick={onClick}
@@ -37,7 +37,7 @@ const FAQItem: React.FC<FAQItemProps> = ({
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="transform bg-white p-4 text-gray-700 transition-transform duration-300">
+        <div className="transform bg-[#2a4768] p-4 text-white transition-transform duration-300">
           {answer}
         </div>
       </div>
@@ -97,8 +97,8 @@ const FAQSection: React.FC = () => {
 
           <div className="hover-lift rounded-lg border border-gray-200 bg-white p-6">
             <div className="mb-4 flex items-start">
-              <div className="mr-4 transform rounded-full bg-blue-50 p-3 transition-transform duration-300 hover:scale-110 hover:rotate-12">
-                <HelpCircle className="h-6 w-6 text-blue-700" />
+              <div className="mr-4 transform rounded-full bg-[#2a4768] p-3 transition-transform duration-300 hover:scale-110 hover:rotate-12">
+                <HelpCircle className="h-6 w-6 text-white" />
               </div>
               <div>
                 <h3 className="mb-2 text-xl font-semibold text-gray-900">
@@ -112,7 +112,7 @@ const FAQSection: React.FC = () => {
               </div>
             </div>
 
-            <button className="w-full transform rounded-lg bg-blue-700 px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-[1.02] hover:bg-blue-800 hover:shadow-lg">
+            <button className="w-full transform rounded-lg bg-[#2a4768] px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-[1.02] hover:bg-black hover:shadow-lg">
               <Link to={"/contact"}>We're Here To Help!</Link>
             </button>
           </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TestimonialCard from "../ui/TestimonialCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import imageCutout from "../../assets/image-cutout.svg";
 
 const testimonials = [
   {
@@ -49,11 +50,13 @@ const TestimonialsSection: React.FC = () => {
         <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
           <div className="overflow-hidden rounded-2xl" data-aos="fade-right">
             <img
-              src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src={imageCutout}
               alt="Business professionals shaking hands"
-              className="h-auto w-full object-cover"
+              className="h-auto w-4/5 object-cover"
             />
           </div>
+
+          
 
           <div data-aos="fade-left">
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">
@@ -81,13 +84,13 @@ const TestimonialsSection: React.FC = () => {
             <div className="flex space-x-2">
               <button
                 onClick={prevTestimonial}
-                className="bg-navy-100 text-navy-700 hover:bg-navy-200 rounded-full p-3 transition-colors"
+                className="bg-navy-100 rounded-full bg-[#2a4768] p-3 text-white hover:cursor-pointer hover:bg-black transition-colors"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={nextTestimonial}
-                className="bg-navy-100 text-navy-700 hover:bg-navy-200 rounded-full p-3 transition-colors"
+                className="bg-navy-100 rounded-full bg-[#2a4768] p-3 text-white hover:cursor-pointer hover:bg-black transition-colors"
               >
                 <ChevronRight size={20} />
               </button>

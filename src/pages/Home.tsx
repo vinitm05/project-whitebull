@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import HomeVideo from "../components/sections/HomeVideo";
 import HomeImageClg from "../components/AboutUs/HomeImageClg";
+import FAQSection from "../components/AboutUs/FAQSection";
 
 function Home() {
   useEffect(() => {
@@ -28,13 +29,30 @@ function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-grow">
-        <HomeVideo />
-        <HomeImageClg/>
-        <ServicesSection />
-        <CompanyOverviewSection />
-        <OnboardingProcessSection />
-        <TestimonialsSection />
-        <CtaSection />
+        <section>
+          <HomeVideo />
+        </section>
+        <section className="bg-white">
+          <HomeImageClg />
+        </section>
+        <section className="md:py-16">
+          <ServicesSection />
+        </section>
+        <section className="bg-white">
+          <CompanyOverviewSection />
+        </section>
+        <section className="md:py-16">
+          <OnboardingProcessSection />
+        </section>
+        <section className="bg-white">
+          <TestimonialsSection />
+        </section>
+        <section className="bg-gray-50 py-8 md:py-16">
+          <FAQSection />
+        </section>
+        <section className="bg-white">
+          <CtaSection />
+        </section>
       </main>
     </div>
   );

@@ -10,7 +10,7 @@ import {
   FileText,
 } from "lucide-react";
 import Container2 from "../Layout/Container2.tsx";
-import ProcessCard from "../AboutUs/ProcessCard";
+import ServiceCard from "./ServicesCard.tsx";
 
 const ServicesSection: React.FC = () => {
   const services = [
@@ -115,7 +115,7 @@ const ServicesSection: React.FC = () => {
 
             {/* Card content above the water */}
             <div className="relative z-10">
-              <ProcessCard
+              <ServiceCard
                 title={service.title}
                 content={service.content}
                 icon={service.icon}
