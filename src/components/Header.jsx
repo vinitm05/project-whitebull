@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "../index.css";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { BiPhoneCall } from "react-icons/bi";
+import Logo from "../assets/Wyfs_Logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,8 +56,8 @@ const Header = () => {
           {/* desktop view */}
           <div className="hidden items-center justify-between lg:flex">
             <div className="flex-shrink-0">
-              <Link to={"/"} className="text-5xl font-bold text-[#2a4768]">
-                Wisely Yours
+              <Link to={"/"} className="text-4xl font-bold text-[#2a4768]">
+                Wisely Yours Financial Service
               </Link>
             </div>
             <div className="flex items-center space-x-8">
