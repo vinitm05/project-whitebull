@@ -13,7 +13,9 @@ const Footer = () => {
           {/* Logo and Tagline Column */}
           <div className="md:col-span-1">
             <div className="mb-4">
-              <h1 className="text-3xl font-bold">Wisely Yours financial services</h1>
+              <h1 className="text-3xl font-bold">
+                Wisely Yours Financial Services
+              </h1>
             </div>
             <p className="mb-6 text-sm md:mb-0 md:text-base">
               Turning complex financial data into clear, actionable insights.
@@ -47,14 +49,6 @@ const Footer = () => {
                   className="hover:text-gray-300"
                 >
                   Accounting Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"/services/bookkeeping"}
-                  className="hover:text-gray-300"
-                >
-                  Bookkeeping Services
                 </Link>
               </li>
               <li>
@@ -95,10 +89,6 @@ const Footer = () => {
                 <a href="https://maps.google.com/" target="_blank">
                   Mumabi - India
                 </a>
-              </li>
-              <li className="flex items-start">
-                <IoIosCall className="mr-2" />
-                <a href="tel:+022-49647976">+022 49647976</a>
               </li>
               <li className="flex items-start">
                 <IoMdMail className="mr-2" />

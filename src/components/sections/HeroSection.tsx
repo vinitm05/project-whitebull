@@ -36,11 +36,8 @@ const HeroSection: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            WiselyYours provides expert outsourced accounting services for Indian Start-Ups and accounting firms, including bookkeeping, payroll, and tax
-            preparation. We streamline operations, ensure compliance, and help
-            you scale efficiently—while you stay focused on growth. Your clients
-            won't see us, but you'll experience the accuracy and reliability
-            behind the scenes.
+            WiselyYours provides expert outsourced accounting services for Indian Start-Ups and accounting firms, including payroll, and tax preparation. We streamline operations, ensure compliance, and help
+            you scale efficiently—while you stay focused on growth. Your clients won't see us, but you'll experience the accuracy and reliability behind the scenes.
           </p>
 
           <div data-aos="fade-up" data-aos-delay="400">
