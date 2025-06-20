@@ -17,7 +17,7 @@ const WorkingProcess: React.FC = () => {
       title: "Reliable, Secure, And Efficient",
       icon: <Shield className="h-8 w-8 text-blue-700" />,
       content:
-        "We prioritize data security and compliance, ensuring your clients' financial information remains protected at all times. Our ISO 27001-certified security framework enforces strict data protection protocols, encryption, and multi-layered security measures. Whether it's payroll, tax filing, or accounts reconciliation, we handle every aspect with professional integrity, and complete confidentiality.",
+        "We prioritize data security and compliance, ensuring your clients' financial information remains protected at all times. Our security framework enforces strict data protection protocols, encryption, and multi-layered security measures. Whether it's payroll, tax filing, or accounts reconciliation, we handle every aspect with professional integrity, and complete confidentiality.",
     },
     {
       id: 3,
