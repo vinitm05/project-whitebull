@@ -406,7 +406,7 @@ const FinancialAnalysis = () => {
 
             <div>
               <h2 className="text-left text-4xl font-bold text-[#2a4768]">
-                Ready to EleGSTe Your Financial Analysis Services?
+                Ready to Elevate Your Financial Analysis Services?
               </h2>
 
               <p className="mt-4 mb-5 text-justify text-gray-500">

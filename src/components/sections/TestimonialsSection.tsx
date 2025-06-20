@@ -7,23 +7,20 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "WiselyYours has exceeded our expectations with their professional approach and tailored solutions. Our clients have noticed the difference.",
-    name: "Karen T.",
-    position: "CMO",
+      "Wisely Yours is extremely prompt and professional. They were able to help me out a lot with relevant service. I'm extremely grateful for their help and guidance in the matter.",
+    name: "Gianelle Pereira",
   },
-  {
+    {
     id: 2,
     quote:
-      "Since partnering with WiselyYours, we've been able to take on 30% more clients without increasing our core team. Their accuracy and attention to detail is outstanding.",
-    name: "David M.",
-    position: "Managing Partner",
+      "I’ve been working with Wisely Yours for over 3 years now, and I have been very happy with their services. From tax planning to financial advice, they’ve consistently exceeded my expectations. Their team is knowledgeable, responsive, and always willing to go the extra mile. They’ve helped me navigate complex financial situations and provided valuable insights that have positively impacted my business. If you’re looking for a reliable and trustworthy accounting partner, I highly recommend Wisely Yours.",
+    name: "MAYUR KHAMBETE",
   },
   {
     id: 3,
     quote:
-      "The team at WiselyYours understands the unique challenges faced by India accounting firms. Their support has been invaluable during our busiest tax seasons.",
-    name: "Sarah J.",
-    position: "Finance Director",
+      "I had given my income tax returns filing for the year 2023-2024 to Mr.Anshul Mittal. He has done a good job in filing my returns promptly. He has a courteous approach towards his clients, which makes it easy to discuss and clarify any doubts with satisfaction. I will recommend his name to others Best of luck to Mr Anshul Mittal for all your future endeavours.",
+    name: "Janaky Iyer",
   },
 ];
 
@@ -64,7 +61,7 @@ const TestimonialsSection: React.FC = () => {
               Us
             </h2>
 
-            <p className="mb-8 text-gray-600">
+            <p className="mb-8 text-gray-700 text-lg">
               We take pride in the positive experiences and successful outcomes
               we've facilitated for our clients.
             </p>
@@ -75,7 +72,6 @@ const TestimonialsSection: React.FC = () => {
                   key={testimonial.id}
                   quote={testimonial.quote}
                   name={testimonial.name}
-                  position={testimonial.position}
                   isActive={index === activeIndex}
                 />
               ))}

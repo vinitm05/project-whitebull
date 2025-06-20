@@ -159,10 +159,7 @@ const Accounting = () => {
 
               <p className="rounded-2xl bg-[#325271] px-8 py-9 text-xl text-white">
                 Ready to boost your firm’s cash flow management? Discover our
-                Outsourced{" "}
-                <Link to={"/services/bookkeeping"} className="font-bold">
-                  Bookkeeping Services
-                </Link>{" "}
+                Outsourced{" "} <strong>Services </strong>
                 designed to streamline your financial processes.
               </p>
             </div>
@@ -434,7 +431,7 @@ const Accounting = () => {
                 to see how we can help your firm meet strategic goals and grow.
               </p>
               <h3 className="mt-5 font-bold text-gray-500">
-                Ready to EleGSTe Your Firm? Let’s Talk! 🚀
+                Ready to Elevate Your Firm? Let’s Talk! 🚀
               </h3>
               <ul className="text-gray-500">
                 <li>

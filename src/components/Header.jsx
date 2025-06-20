@@ -36,13 +36,6 @@ const Header = () => {
     <div>
       <div className="flex gap-5 bg-[#2a4768] px-5 py-2 text-sm text-white sm:justify-center md:justify-normal md:gap-10 md:px-28 md:text-lg">
         <a
-          href="tel:+02249647976"
-          className="underline-offset-8.5 flex items-center gap-1 hover:underline"
-        >
-          <BiPhoneCall />
-          +022-49647976
-        </a>
-        <a
           href="mailto:partners@wiselyyours.com"
           className="underline-offset-8.5 flex items-center gap-1 hover:underline"
         >
@@ -99,12 +92,6 @@ const Header = () => {
                     className="block py-1 underline-offset-8 hover:underline"
                   >
                     Accounting Services
-                  </Link>
-                  <Link
-                    to={"/services/bookkeeping"}
-                    className="block py-1 underline-offset-8 hover:underline"
-                  >
-                    Bookkeeping Services
                   </Link>
                   <Link
                     to={"/services/taxreturn"}
@@ -236,13 +223,6 @@ const Header = () => {
                       className={`py-1 text-white underline-offset-8 hover:underline ${isActive("/services/accounting") ? "font-bold" : ""}`}
                     >
                       Accounting Services
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      to={"/services/bookkeeping"}
-                      className={`py-1 text-white underline-offset-8 hover:underline ${isActive("/services/bookkeeping") ? "font-bold" : ""}`}
-                    >
-                      Bookkeeping Services
                     </Link>
                     <Link
                       onClick={closeMenu}

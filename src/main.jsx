@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./components/Layout.jsx";
 import About from "./pages/About.jsx";
 import Accounting from "./pages/Services/Accounting.jsx";
-import BookKeeping from "./pages/Services/BookKeeping.jsx";
 import FinancialAnalysis from "./pages/Services/FinancialAnalysis.jsx";
 import Payroll from "./pages/Services/Payroll.jsx";
 import TaxReturn from "./pages/Services/TaxReturn.jsx";
@@ -25,7 +24,6 @@ const router = createBrowserRouter([
       { path: "/", element: <Home />, errorElement: <NotFound /> },
       { path: "/about", element: <About /> },
       { path: "/services/accounting", element: <Accounting /> },
-      { path: "/services/bookkeeping", element: <BookKeeping /> },
       { path: "/services/taxreturn", element: <TaxReturn /> },
       { path: "/services/payroll", element: <Payroll /> },
       { path: "/services/GST", element: <GST /> },

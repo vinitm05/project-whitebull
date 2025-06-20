@@ -20,15 +20,6 @@ const ServiceList = () => {
         </li>
         <li className="border-b border-gray-200 py-3.5 pr-4">
           <Link
-            to="/services/bookkeeping"
-            className="flex items-center justify-between"
-          >
-            <p className="text-gray-400 hover:text-[#2a4768]">Bookkeeping Services</p>
-            <MdOutlineKeyboardArrowRight className="text-[#2a4768]" />
-          </Link>
-        </li>
-        <li className="border-b border-gray-200 py-3.5 pr-4">
-          <Link
             to="/services/taxreturn"
             className="flex items-center justify-between"
           >

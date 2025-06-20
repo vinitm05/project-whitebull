@@ -10,18 +10,16 @@ interface TestimonialCardProps {
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
   quote,
   name,
-  position,
   isActive = false,
 }) => {
   return (
     <div className={`${isActive ? "block" : "hidden"}`}>
-      <blockquote className="mb-6 text-lg text-gray-700 md:text-xl">
+      <blockquote className="mb-6 text-gray-600 md:text-xl">
         "{quote}"
       </blockquote>
 
       <div>
-        <h4 className="text-navy-800 text-lg font-semibold">{name}</h4>
-        <p className="text-gray-600">{position}</p>
+        <h5 className="text-[#2a4768] font-semibold">{name}</h5>
       </div>
     </div>
   );
