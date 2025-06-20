@@ -1,8 +1,14 @@
 import React from "react";
 import StatCard from "../ui/StatCard";
 import Button from "../ui/Button";
+import { useNavigate } from "react-router-dom";
 
 const CompanyOverviewSection: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleContactNow = () => {
+    navigate("/contact");
+  };
   return (
     <section id="about" className="py-20">
       <div className="container mx-auto px-4 md:px-6">
@@ -42,7 +48,9 @@ const CompanyOverviewSection: React.FC = () => {
               exceptional results to your clients while freeing up your time.
             </p>
 
-            <Button variant="primary">Contact Now</Button>
+            <Button variant="primary" onClick={handleContactNow}>
+              Contact Now
+            </Button>
           </div>
 
           <div className="overflow-hidden rounded-xl">
