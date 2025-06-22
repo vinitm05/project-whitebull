@@ -75,19 +75,6 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            {/* call */}
-            <div>
-              <p className="text-lg font-semibold">Call Us</p>
-              <p className="text-gray-400">
-                Call our team Mon-Fri from 8am to 5pm
-              </p>
-              <div className="mt-4 flex items-center gap-2">
-                <PiPhone />
-                <a href="tel:+02249647976" className="underline">
-                  +123456789
-                </a>
-              </div>
-            </div>
             {/* visit */}
             <div>
               <p className="text-lg font-semibold">Visit Us</p>
@@ -205,7 +192,7 @@ const Contact = () => {
               </p>
               <p className="mt-4 mb-6 text-gray-500">
                 You can contact us via our website's contact form, email us at
-                info@white-bull.India, or call us at +44 (0) 20 458 60266.
+                partners@wiselyyours.com.
               </p>
             </div>
             <div className="flex flex-col">

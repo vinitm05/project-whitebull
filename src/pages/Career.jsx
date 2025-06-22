@@ -23,7 +23,7 @@ const Career = () => {
       title: "Accounts Assistant",
       type: "Full-time",
       description:
-        "An opportunity for an AAT qualified or part-qualified accountant to support our team in delivering high-quality accounting services. You'll be involved in bookkeeping, basic accounts preparation, and GST returns for a variety of clients.",
+        "An opportunity for an AAT qualified or part-qualified accountant to support our team in delivering high-quality accounting services. You'll be involved in basic accounts preparation, and GST returns for a variety of clients.",
     },
     {
       id: 3,
@@ -161,11 +161,7 @@ const Career = () => {
         </h2>
         <p className="my-5 text-justify leading-6.5 text-gray-500">
           Wisely Yours thrives on exceptional talent—because great businesses
-          are built by great people. As a leading provider of outsourced
-          accounting services, we’re always looking for skilled and driven
-          professionals to join our team. Whether you’re an expert in
-          accounting, bookkeeping, tax preparation, or just starting your
-          career, Wisely Yours offers endless opportunities for growth and
+          are built by great people. As a leading provider of outsourced accounting services, we’re always looking for skilled and driven professionals to join our team. Whether you’re an expert in accounting, tax preparation, or just starting your career, Wisely Yours offers endless opportunities for growth and
           professional development in a dynamic work environment.
         </p>
         <p className="text-justify leading-6.5 text-gray-500">
@@ -199,11 +195,7 @@ const Career = () => {
           Start Your Journey with Wisely Yours
         </h2>
         <p className="text-justify leading-6.5 text-gray-500">
-          If you’re looking to grow in the field of accounting, bookkeeping, tax
-          preparation, or payroll services, Wisely Yours is the perfect place to
-          build your career. We provide a supportive environment where talent
-          meets opportunity, ensuring that every professional has the chance to
-          succeed.
+          If you’re looking to grow in the field of accounting, tax preparation, or payroll services, Wisely Yours is the perfect place to build your career. We provide a supportive environment where talent meets opportunity, ensuring that every professional has the chance to succeed.
         </p>
         <p className="my-6 text-justify leading-6.5 text-gray-500">
           Join us and be part of a forward-thinking company that values

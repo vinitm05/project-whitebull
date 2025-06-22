@@ -1,8 +1,14 @@
 import React from "react";
 import StatCard from "../ui/StatCard";
 import Button from "../ui/Button";
+import { useNavigate } from "react-router-dom";
 
 const CompanyOverviewSection: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleContactNow = () => {
+    navigate("/contact");
+  };
   return (
     <section id="about" className="py-20">
       <div className="container mx-auto px-4 md:px-6">
@@ -23,7 +29,7 @@ const CompanyOverviewSection: React.FC = () => {
             deadlines, growing client demands, and the constant chase to stay
             ahead. That's where we step in as your trusted outsourcing partner.
             Think of us as an extension of your team, working behind the scenes
-            to handle bookkeeping, tax return preparation, and GST returns with precision and care.
+            to handle tax return preparation, and GST returns with precision and care.
           </p>
         </div>
 
@@ -38,11 +44,13 @@ const CompanyOverviewSection: React.FC = () => {
           <div>
             <p className="mb-6 text-gray-600">
               As your dedicated outsourcing partner, we specialize in seamless
-              bookkeeping, accurate tax preparation, and payroll management. Our expertise allows you to deliver
+              accurate tax preparation, and payroll management. Our expertise allows you to deliver
               exceptional results to your clients while freeing up your time.
             </p>
 
-            <Button variant="primary">Contact Now</Button>
+            <Button variant="primary" onClick={handleContactNow}>
+              Contact Now
+            </Button>
           </div>
 
           <div className="overflow-hidden rounded-xl">

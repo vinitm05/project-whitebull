@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
               . Our team handles{" "}
               <span className="font-medium">back-office tasks</span> such as{" "}
               <span className="font-medium">
-                bookkeeping, payroll, tax preparation, GST filings, and more
+                payroll, tax preparation, GST filings, and more
               </span>
               , allowing you to{" "}
               <span className="font-medium">

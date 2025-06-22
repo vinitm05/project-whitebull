@@ -16,22 +16,6 @@ const ServicesSection: React.FC = () => {
   const services = [
     {
       id: 1,
-      title: "Bookkeeping Services",
-      icon: <BookOpen className="h-8 w-8 group-hover:text-white" />,
-      content:
-        "Keep your clients' financials in order with our streamlined bookkeeping services that improve clarity and decision-making.",
-        path:"/services/bookkeeping"
-    },
-    {
-      id: 3,
-      title: "Taxation-Self Assessment",
-      icon: <FileCheck className="h-8 w-8 group-hover:text-white" />,
-      content:
-        "We handle self-assessment returns, ensuring your clients stay organized, punctual, and fully compliant with tax requirements.",
-        path:"/services/taxreturn"
-    },
-    {
-      id: 4,
       title: "Tax Return Preparation",
       icon: <FilePen className="h-8 w-8 group-hover:text-white" />,
       content:
@@ -39,7 +23,7 @@ const ServicesSection: React.FC = () => {
         path:"/services/taxreturn"
     },
     {
-      id: 5,
+      id: 2,
       title: "Payroll Services",
       icon: <HandCoins className="h-8 w-8 group-hover:text-white" />,
       content:
@@ -47,7 +31,7 @@ const ServicesSection: React.FC = () => {
         path:"/services/payroll"
     },
     {
-      id: 6,
+      id: 3,
       title: "GST Return Filing",
       icon: <Banknote className="h-8 w-8 group-hover:text-white" />,
       content:
@@ -55,7 +39,7 @@ const ServicesSection: React.FC = () => {
         path:"/services/GST"
     },
     {
-      id: 7,
+      id: 4,
       title: "Accounting Services",
       icon: <FileText className="h-8 w-8 group-hover:text-white" />,
       content:
@@ -63,7 +47,7 @@ const ServicesSection: React.FC = () => {
         path:"/services/accounting"
     },
     {
-      id: 8,
+      id: 5,
       title: "Financial Analysis",
       icon: <ChartSpline className="h-8 w-8 group-hover:text-white" />,
       content:
