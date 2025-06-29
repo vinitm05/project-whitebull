@@ -1,56 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { FiMapPin } from "react-icons/fi";
-import { PiPhone } from "react-icons/pi";
 import { RiMailSendLine } from "react-icons/ri";
-import { FaLinkedinIn } from "react-icons/fa6";
 import LandingImage from "../components/LandingImage";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-  const [status, setStatus] = useState("");
+  const [state, handleSubmit] = useForm("xdkzyrng");
+  if (state.succeeded) {
+    return (
+      <p>Thanks for contacting! We will get back to you as soon as possible.</p>
+    );
+  }
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("sending");
-
-    try {
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setStatus("success");
-        setFormData({
-          firstname: "",
-          lastname: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-      } else {
-        setStatus("error");
-      }
-    } catch (error) {
-      setStatus("error");
-    }
-  };
   return (
     <>
       {/* image */}
@@ -112,21 +73,26 @@ const Contact = () => {
                     type="text"
                     name="firstname"
                     id="firstname"
-                    value={formData.firstname}
-                    onChange={handleChange}
                     placeholder="First Name"
                     className="h-12 w-full rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
                     required
+                  />
+                  <ValidationError
+                    prefix="FirstName"
+                    field="firstname"
+                    errors={state.errors}
                   />
                   <input
                     type="text"
                     name="lastname"
                     id="lastname"
-                    value={formData.lastname}
-                    onChange={handleChange}
                     placeholder="Last Name"
                     className="h-12 w-full rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
-                    required
+                  />
+                  <ValidationError
+                    prefix="LastName"
+                    field="lastname"
+                    errors={state.errors}
                   />
                 </div>
 
@@ -135,46 +101,45 @@ const Contact = () => {
                     type="email"
                     name="email"
                     id="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     placeholder="Email Address"
                     className="h-12 w-full rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
                     required
+                  />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
                   />
                   <input
                     type="tel"
                     name="phone"
                     id="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
                     placeholder="Phone"
                     className="h-12 w-full rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
                     required
+                  />
+                  <ValidationError
+                    prefix="PhoneNumber"
+                    field="phone"
+                    errors={state.errors}
                   />
                 </div>
 
                 <textarea
                   name="message"
                   id="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   placeholder="Write a Message"
                   className="h-24 w-full resize-none rounded-md border-0 bg-[#eceef6] px-4 py-2 focus:outline-none"
-                  required
-                ></textarea>
-
-                {status === "success" && (
-                  <p className="text-green-500">Message sent successfully!</p>
-                )}
-                {status === "error" && (
-                  <p className="text-red-500">
-                    Failed to send message. Please try again.
-                  </p>
-                )}
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
 
                 <button
                   type="submit"
-                  disabled={status === "sending"}
+                  disabled={state.submitting}
                   className="h-12 rounded-md bg-gradient-to-r from-[#2b4969] to-[#7cb5be] px-4 py-2 font-semibold text-white hover:cursor-pointer disabled:opacity-50"
                 >
                   Send Message
@@ -200,9 +165,9 @@ const Contact = () => {
                 Where is Wisely Yours India located?
               </p>
               <p className="mt-4 mb-6 text-gray-500">
-                We provide outsourced accounting services to start-ups, CA's and accounting
-                firms across the India, with our operations center based in
-                Ahmedabad, India.
+                We provide outsourced accounting services to start-ups, CA's and
+                accounting firms across the India, with our operations center
+                based in Ahmedabad, India.
               </p>
             </div>
             <div className="flex flex-col">
