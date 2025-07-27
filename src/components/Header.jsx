@@ -50,7 +50,7 @@ const Header = () => {
           <div className="hidden items-center justify-between lg:flex">
             <div className="flex-shrink-0">
               <Link to={"/"} className="text-4xl font-bold text-[#2a4768]">
-                Wisely Yours Financial Service
+                Wisely Yours
               </Link>
             </div>
             <div className="flex items-center space-x-8">
